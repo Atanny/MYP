@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/resources/fonts/Roboto-Regular.woff2') format('woff2');
+    font-weight: 100; /* Regular */
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'early-sunday';
+    src: url('/resources/fonts/early-sunday.woff2') format('woff2');
+    font-weight: 3;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/resources/fonts/intrepid.woff2') format('woff2');
+    font-weight: 700;
+    font-style: bold;
+}
+
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/resources/fonts/intrebol.woff2') format('woff2');
+    font-weight: 700;
+    font-style: bolder;
+}
+
+
+/* Apply the custom font globally */
+
+
+p{
+    font-family: 'customFont';
+}

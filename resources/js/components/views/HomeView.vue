@@ -64,6 +64,16 @@ body{
     z-index: 1;
 }
 
+.btn-danger:disabled {
+    border-style: solid;
+    border-color: #7EA122;
+    border-radius: 0%;
+    overflow: hidden;
+    background-color: transparent;
+    color: #7EA122;
+    z-index: 1;
+}
+
 .btn-danger::before {
     content: '';
     border-style: solid;

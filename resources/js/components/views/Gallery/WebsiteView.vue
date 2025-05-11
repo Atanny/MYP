@@ -1,5 +1,5 @@
 <template>
-    <div class="container mb-5" style="margin-top:20vh;">
+    <div class="container mb-5" style="margin-top:2vh;">
       <!-- Header Row -->
       <div class="d-flex justify-content-between align-items-center">
         <div class="row">
@@ -8,30 +8,37 @@
           </div>
   
           <div class="col-sm-12 col-lg-auto">
-            <div class="d-flex flex-wrap">
-              <router-link to="/animation" class="me-1">
-                <button class="btn btn-danger">ANIMATION</button>
-              </router-link>
-              <router-link to="/illustrator" class="me-1">
-                <button class="btn btn-danger">ILLUSTRATION</button>
-              </router-link>
-              <router-link to="/digital-arts" class="me-1">
-                <button class="btn btn-danger">DIGITAL ARTS</button>
-              </router-link>
-              <router-link to="/graphic-design" class="me-1">
-                <button class="btn btn-danger">GRAPHIC DESIGNS</button>
-              </router-link>
-              <router-link to="/web-design">
-                <button class="btn btn-danger">WEB DESIGN</button>
-              </router-link>
+                    <div class="d-flex flex-wrap">
+                        <router-link to="/animation" class="me-1 mt-1" active-class="active-link">
+                        <button class="btn btn-danger">ANIMATION</button>
+                        </router-link>
+                        <router-link to="/illustrator" class="me-1 mt-1" active-class="active-link">
+                        <button class="btn btn-danger">ILLUSTRATION</button>
+                        </router-link>
+                        <router-link to="/digital-arts" class="me-1 mt-1" active-class="active-link">
+                        <button class="btn btn-danger">DIGITAL ARTS</button>
+                        </router-link>
+                        <router-link to="/graphic-design" class="me-1 mt-1" active-class="active-link">
+                        <button class="btn btn-danger">GRAPHIC DESIGNS</button>
+                        </router-link>
+                        <router-link to="/web-design" class="me-1 mt-1" active-class="active-link">
+                        <button class="btn btn-danger">WEB DESIGNS</button>
+                        </router-link>
+                        <router-link to="/website" active-class="active-link">
+                        <button class="btn btn-danger mt-1">WEBSITES</button>
+                        </router-link>
+                    </div>
             </div>
-          </div>
         </div>
       </div>
   
-      <!-- Artwork Cards -->
       <div class="row">
-        <div class="col-md-3 mt-5 h-auto" v-for="artwork in paginatedArtworks" :key="artwork.id">
+        <div
+            class="col-md-3 mt-5 h-auto"
+            v-for="artwork in paginatedArtworks"
+            :key="artwork.id"
+            v-if="paginatedArtworks.length > 0"
+          >
           <div class="d-flex">
             <h6 class="fw-bolder outline-text2" data-aos="fade-right" data-aos-duration="1500">{{ artwork.number }}</h6>
             <h6 class="ms-2 fw-bolder" data-aos="fade-right" data-aos-duration="1000">
@@ -47,6 +54,11 @@
             data-aos-duration="900"
           />
         </div>
+        <div v-else>
+            <div  class="text-center mt-5 card p-3  bg-light-shadow-sm">
+            <p class="text-muted mt-3">No artworks available yet.</p>
+            </div>
+          </div>
       </div>
   
       <!-- Pagination Controls -->

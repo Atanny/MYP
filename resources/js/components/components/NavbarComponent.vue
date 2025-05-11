@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
         <div class="container-fluid">
 
             
@@ -10,23 +10,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav text-center mx-auto ">
-                    <li class="nav-item m-1 d-inline-block">
-                        <router-link to="/" class="btn btn-success container" active-class="active-link">
-                            <a>Home</a>
-                        </router-link>
-                    </li>
-
-                    <li class="nav-item m-1 d-inline-block">
-                        <router-link to="/admin" class="btn btn-success container" active-class="active-link">
-                            <a>Gallery</a>
-                        </router-link>
-                    </li>
-
-                    <li class="nav-item m-1 d-inline-block">
-                        <router-link to="/example2" class="btn btn-success container" active-class="active-link">
-                            <a>Achievements</a>
-                        </router-link>
-                    </li>
+                    
                     
 
                    

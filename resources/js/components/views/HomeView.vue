@@ -22,7 +22,7 @@ body{
     position: relative;
     overflow: hidden;
     background-color: transparent; 
-    color: black; 
+  
     border: transparent;
     z-index: 1; 
 }
@@ -38,6 +38,7 @@ body{
     background-color: #7EA122;
     transition: left 0.10s ease;
     z-index: -1;
+    color: #fff;
 }
 
 .btn-success:hover::before {
@@ -49,19 +50,22 @@ body{
     background-color: #7EA122;
 }
 
-.active-link{
-    color: white;
-    background-color: #7EA122;
+.active-link .btn-danger {
+  background-color: #7EA122 !important;
+  color: white !important;
+  border-style: solid;
+  border-radius: 0%;
 }
-
 .btn-danger {
+    position: relative; /* Needed for ::before absolute positioning */
     border-style: solid;
     border-color: #7EA122;
     border-radius: 0%;
     overflow: hidden;
     background-color: transparent;
-    color: #7EA122;
     z-index: 1;
+    color: #7EA122; /* Initially text color matches border */
+    transition: color 0.3s ease;
 }
 
 .btn-danger:disabled {
@@ -92,7 +96,6 @@ body{
     border-style: solid;
     border-color: #7EA122;
     left: 0;
-    
 }
 
 .btn-danger:hover {
@@ -101,6 +104,21 @@ body{
     border-color: #7EA122;
     background-color: #7EA122;
 }
+
+/* ADD THIS: Active state styling for router-link or buttons */
+
+.btn-danger.active,
+.btn-danger.router-link-exact-active {
+    color: white !important;
+    background-color: #7EA122 !important;
+    border-color: #7EA122 !important;
+}
+
+.btn-danger.active::before,
+.btn-danger.router-link-exact-active::before {
+    left: 0 !important;
+}
+
 
 
 .frontFont{

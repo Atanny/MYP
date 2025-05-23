@@ -1,120 +1,156 @@
 <template>
-    <div class="container mb-5" style="margin-top:2vh;">
-      <!-- Header Row -->
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="row">
-          <div class="col-sm-12 col-lg-6 fw-bolder">
-            <h1><b>WEB DESIGNS</b></h1>
+  <div class="container mb-5" style="margin-top:2vh;">
+    <!-- Header Row -->
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="row">
+        <div class="col-sm-12 col-lg-6 fw-bolder">
+          <h1><b>WEBSITES</b></h1>
+        </div>
+
+        <div class="col-sm-12 col-lg-auto">
+          <div class="d-flex flex-wrap">
+            <router-link to="/" class="me-1 mt-1">
+              <button class="btn btn-primary rounded-0">
+                <i class="fa fa-home"></i> Return Home
+              </button>
+            </router-link>
+            <router-link to="/animation" class="me-1 mt-1" active-class="active-link">
+              <div class="btn btn-danger">ANIMATION</div>
+            </router-link>
+            <router-link to="/illustrator" class="me-1 mt-1" active-class="active-link">
+              <div class="btn btn-danger">ILLUSTRATION</div>
+            </router-link>
+            <router-link to="/digital-arts" class="me-1 mt-1" active-class="active-link">
+              <div class="btn btn-danger">DIGITAL ARTS</div>
+            </router-link>
+            <router-link to="/graphic-design" class="me-1 mt-1" active-class="active-link">
+              <div class="btn btn-danger">GRAPHIC DESIGNS</div>
+            </router-link>
+            <router-link to="/web-design" class="me-1 mt-1" active-class="active-link">
+              <div class="btn btn-danger">WEB DESIGNS</div>
+            </router-link>
+            <router-link to="/website" active-class="active-link">
+              <div class="btn btn-danger mt-1">WEBSITES</div>
+            </router-link>
           </div>
-  
-          <div class="col-sm-12 col-lg-auto">
-                    <div class="d-flex flex-wrap">
-                        <router-link to="/animation" class="me-1 mt-1" active-class="active-link">
-                        <button class="btn btn-danger">ANIMATION</button>
-                        </router-link>
-                        <router-link to="/illustrator" class="me-1 mt-1" active-class="active-link">
-                        <button class="btn btn-danger">ILLUSTRATION</button>
-                        </router-link>
-                        <router-link to="/digital-arts" class="me-1 mt-1" active-class="active-link">
-                        <button class="btn btn-danger">DIGITAL ARTS</button>
-                        </router-link>
-                        <router-link to="/graphic-design" class="me-1 mt-1" active-class="active-link">
-                        <button class="btn btn-danger">GRAPHIC DESIGNS</button>
-                        </router-link>
-                        <router-link to="/web-design" class="me-1 mt-1" active-class="active-link">
-                        <button class="btn btn-danger">WEB DESIGNS</button>
-                        </router-link>
-                        <router-link to="/website" active-class="active-link">
-                        <button class="btn btn-danger mt-1">WEBSITES</button>
-                        </router-link>
-                    </div>
-            </div>
         </div>
       </div>
-  
-      <div class="row">
-        <div
-            class="col-md-3 mt-5 h-auto"
-            v-for="artwork in paginatedArtworks"
-            :key="artwork.id"
-            v-if="paginatedArtworks.length > 0"
-          >
-          <div class="d-flex">
-            <h6 class="fw-bolder outline-text2" data-aos="fade-right" data-aos-duration="1500">{{ artwork.number }}</h6>
-            <h6 class="ms-2 fw-bolder" data-aos="fade-right" data-aos-duration="1000">
-              <b>{{ artwork.name }}</b>
-            </h6>
-          </div>
-  
+    </div>
+
+    <!-- Artwork Cards -->
+    <div class="row">
+      <div
+        class="col-md-3 mt-4"
+        v-for="artwork in paginatedArtworks"
+        :key="artwork.id"
+        v-if="paginatedArtworks.length > 0"
+      >
+        <div class="card h-100 shadow-sm border-0">
           <img
-            class="rounded-0 shadow-lg border-0"
-            :src="`/storage/${artwork.image}`"
+            :src="artwork.image"
+            class="card-img-top rounded-0"
+            alt="artwork image"
             style="object-fit: cover; height: 250px; width: 100%;"
             data-aos="fade-right"
             data-aos-duration="900"
           />
-        </div>
-        <div v-else>
-            <div  class="text-center mt-5 card p-3  bg-light-shadow-sm">
-            <p class="text-muted mt-3">No artworks available yet.</p>
-            </div>
+          <div class="card-body d-flex flex-column">
+            <h6 class="fw-bold mb-1">{{ artwork.number }} - {{ artwork.name }}</h6>
+            <p class="card-text text-muted small flex-grow-1">{{ artwork.description }}</p>
+            <a
+              :href="artwork.link"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-sm btn-danger mt-2"
+            >
+              View
+            </a>
           </div>
+        </div>
       </div>
-  
-      <!-- Pagination Controls -->
-      <div class="text-center mt-4">
-        <button class="btn btn-danger me-2" :disabled="currentPage === 1" @click="currentPage--">Previous</button>
-        <span class="mx-2">Page {{ currentPage }} of {{ totalPages }}</span>
-        <button class="btn btn-danger ms-2" :disabled="currentPage === totalPages" @click="currentPage++">Next</button>
+
+      <div v-else>
+        <div class="text-center mt-5 card p-3 bg-light shadow-sm border-0">
+          <p class="text-muted mt-3">No artworks available yet.</p>
+        </div>
       </div>
     </div>
-  </template>
-  
-  <script>
-  export default {
-    data() {
-      return {
-        artworks: [],
-        loading: false,
-        error: 'error',
-        currentPage: 1,
-        pageSize: 8,
-      };
+
+    <!-- Pagination Controls -->
+    <div class="text-center mt-4">
+      <button
+        class="btn btn-danger me-2"
+        :disabled="currentPage === 1"
+        @click="currentPage--"
+      >
+        Previous
+      </button>
+      <span class="mx-2">Page {{ currentPage }} of {{ totalPages }}</span>
+      <button
+        class="btn btn-danger ms-2"
+        :disabled="currentPage === totalPages"
+        @click="currentPage++"
+      >
+        Next
+      </button>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      artworks: [
+        {
+          id: 1,
+          number: "001",
+          name: "Design 1",
+          image: "../storage/gallery/weddes/art (5).png",
+          tags: ["WEB DESIGN"],
+          link: "https://atanny.onrender.com/#/",
+          description: "A sleek, responsive portfolio site showcasing minimal design.",
+        },
+        {
+          id: 2,
+          number: "002",
+          name: "Design 2",
+          image: "../storage/gallery/weddes/art (6).png",
+          tags: ["WEB DESIGN"],
+          link: "https://avocadoweb.onrender.com/?fbclid=IwZXh0bgNhZW0CMTEAAR6wyqEI96YD2ky7MgpFjOORMWcIerRw96WeRVg9xVdVABxrLg3JZWt532PKDw_aem_uY9SNLmPdVZqWTeCXdVfRA",
+          description:
+            "Modern web layout featuring animated elements and vibrant colors.",
+        },
+        {
+          id: 3,
+          number: "003",
+          name: "EFITMO: Online Ordering System",
+          image: "../storage/gallery/weddes/art (4).png",
+          tags: ["WEB DESIGN"],
+          link: "https://www.figma.com/proto/uraHMKJBGUlzXWTqTAVREh/OWL?page-id=2303%3A2321&node-id=3116-51369&viewport=919%2C619%2C0.06&t=Ec5rtpHc3s814bhz-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=3116%3A51369",
+          description: "An intuitive online food ordering prototype designed for efficiency.",
+        },
+        // Add more artworks here as needed
+      ],
+      currentPage: 1,
+      pageSize: 8,
+    };
+  },
+
+  computed: {
+    animationArtworks() {
+      return this.artworks.filter((artwork) =>
+        artwork.tags.includes("WEB DESIGN")
+      );
     },
-  
-    computed: {
-      animationArtworks() {
-        return this.artworks.filter((artwork) =>
-          artwork.tags.includes("WEBSITE")
-        );
-      },
-      totalPages() {
-        return Math.ceil(this.animationArtworks.length / this.pageSize);
-      },
-      paginatedArtworks() {
-        const start = (this.currentPage - 1) * this.pageSize;
-        const end = start + this.pageSize;
-        return this.animationArtworks.slice(start, end);
-      },
+    totalPages() {
+      return Math.ceil(this.animationArtworks.length / this.pageSize);
     },
-  
-    methods: {
-      async artworkFetch() {
-        this.loading = true;
-        try {
-          const response = await axios.get("/home/Artworks");
-          this.artworks = response.data;
-        } catch {
-          this.error = "Failed";
-        } finally {
-          this.loading = false;
-        }
-      },
+    paginatedArtworks() {
+      const start = (this.currentPage - 1) * this.pageSize;
+      const end = start + this.pageSize;
+      return this.animationArtworks.slice(start, end);
     },
-  
-    created() {
-      this.artworkFetch();
-    },
-  };
-  </script>
-  
+  },
+};
+</script>

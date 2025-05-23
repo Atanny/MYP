@@ -18,7 +18,7 @@
                 </video>
                 <div>
                     <h5 class="card-title fw-bolder mt-4">ANIMATIONS</h5>
-                    <div class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio perspiciatis architecto, tempora aut, ut explicabo officiis non nobis laborum maxime porro libero consequatur quibusdam sequi!</div>
+                    <div class="card-text">With Adobe Animate CC, Flash, and Krita Animate, I develop animations that add movement and life to my ideas.</div>
                 </div>
                 
             </div>
@@ -34,7 +34,7 @@
                 <img class="img-fluid card-img-top rounded-0" src="/storage/gallery/Artworks/hi.jpg" style="height: 50%; object-fit: cover;" alt="">
                 <div>
                     <h5 class="card-title fw-bolder mt-4">DIGITAL ARTS</h5>
-                    <div class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio perspiciatis architecto, tempora aut, ut explicabo officiis non nobis laborum maxime porro libero consequatur quibusdam sequi!</div>
+                    <div class="card-text">I enjoy creating digital art as a way to express my ideas and emotions through vibrant and creative visuals.</div>
                 </div>
                 
             </div>
@@ -51,7 +51,7 @@
                 <img class="img-fluid card-img-top rounded-0" src="/storage/gallery/Illustrator/69.png" style="height: 50%; object-fit: cover;" alt="">
                 <div>
                     <h5 class="card-title fw-bolder mt-4">ILLUSTRATION</h5>
-                    <div class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio perspiciatis architecto, tempora aut, ut explicabo officiis non nobis laborum maxime porro libero consequatur quibusdam sequi!</div>
+                    <div class="card-text">I use illustration to bring concepts to life, focusing on clear and engaging drawings that tell a story.</div>
                 </div>
             </div>
             <div class="card-footer bg-white border-0">
@@ -66,7 +66,7 @@
                 <img class="img-fluid card-img-top rounded-0" src="/storage/gallery/Poster/PARADE.png" style="height: 50%; object-fit: cover;" alt="">
                 <div>
                     <h5 class="card-title fw-bolder mt-4">GRAPHIC DESIGN</h5>
-                    <div class="card-text"></div>
+                    <div class="card-text">Using Photoshop and Illustrator, I create effective graphic designs like posters and branding materials that communicate messages clearly.</div>
                 </div>
                 
             </div>
@@ -85,7 +85,7 @@
             <div class="card-body d-flex flex-column">
                 <img class="img-fluid card-img-top rounded-0" src="/storage/websites/6.png" style="height: 200px; object-fit: cover;" alt="">
                 <h5 class="card-title fw-bolder mt-4">WEBSITES</h5>
-                <p>Websites i Built manually using the softwares indicated above.</p>
+                <p>Websites i Built manually using the softwares indicated above. i usually create this for fun and hobbies. this also help me to give an idea of how web develpment works. i use usually here is the html/css.</p>
             </div>
             <div class="card-footer bg-white border-0 mt-auto">
                 <a class="btn btn-danger mb-3">See More</a>
@@ -98,7 +98,7 @@
             <div class="card-body d-flex flex-column">
                 <img class="img-fluid card-img-top rounded-0" src="/storage/websites/4.png" style="height: 200px; object-fit: cover;" alt="">
                 <h5 class="card-title fw-bolder mt-4">WEB DESIGN</h5>
-                <P>Web Design who i mostly design on purpose. this designs help mo acoomplish growth and purposes</P>
+                <P>Web Design who i mostly design on purpose. this designs help mo acoomplish growth and purposes using figma, i have experience of creating this in of my OJT</P>
             </div>
             <div class="card-footer bg-white border-0 mt-auto">
                 <a class="btn btn-danger mb-3" href="https://atanny.onrender.com/#/">See More</a>

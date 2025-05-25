@@ -88,8 +88,10 @@
                 <h5 class="card-title fw-bolder mt-4">WEBSITES</h5>
                 <p>Websites i Built manually using the softwares indicated above. i usually create this for fun and hobbies. this also help me to give an idea of how web develpment works. i use usually here is the html/css.</p>
             </div>
-            <div class="card-footer bg-white border-0 mt-auto btn-sm">
-                <a class="btn btn-success mb-3 btn-sm">See More</a>
+             <div class="card-footer bg-white border-0">
+                <router-link to="//web-design"><a class="btn btn-success mb-3 btn-sm">
+                    See More
+                </a></router-link>
             </div>
         </div>
     </div>
@@ -101,8 +103,10 @@
                 <h5 class="card-title fw-bolder mt-4">WEB DESIGN</h5>
                 <P>Web Design who i mostly design on purpose. this designs help mo acoomplish growth and purposes using figma, i have experience of creating this in of my OJT</P>
             </div>
-            <div class="card-footer bg-white border-0 mt-auto">
-                <a class="btn btn-success mb-3 btn-sm" href="https://atanny.onrender.com/#/">See More</a>
+             <div class="card-footer bg-white border-0">
+                <router-link to="/website"><a class="btn btn-success mb-3 btn-sm">
+                    See More
+                </a></router-link>
             </div>
         </div>
     </div>

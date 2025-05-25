@@ -6,7 +6,7 @@
            
            <img class="navbar-brand shadow-lg bg-white mt-0  px-3 rounded border-1 border-secondary" width="50px" src="/images/logo.png">
 
-           <h6 class="fw-bolder mt-1"><b>JONATHAN MARIANO</b></h6>
+           <h6 class="navbar-brand fw-bolder mt-1"><b>JONATHAN MARIANO</b></h6>
           
             <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav"

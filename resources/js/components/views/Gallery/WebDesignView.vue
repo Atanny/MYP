@@ -119,31 +119,31 @@ export default {
         {
           id: 1,
           number: "1",
-          name: "Design 1",
+          name: "THREAD TESI",
           image: "../images/gallery/weddes/art (1).png",
           tags: ["WEB DESIGN"],
           link: "https://www.figma.com/proto/KG0sGFhseCbCT9AZHFqwLd/new-version-thread?page-id=0%3A1&node-id=51-630&starting-point-node-id=51%3A630&scaling=scale-down-width&content-scaling=fixed&t=RcZBuJ0MsA0r5xaR-1",
           description:
-            "A modern UI design featuring clean lines and bold red accents.",
+            "One of my recent work in my TESI UI/UX journey.",
         },
         {
           id: 2,
           number: "2",
-          name: "Design 2",
+          name: "WISTEC",
           image: "../images/gallery/weddes/art (2).png",
           tags: ["WEB DESIGN"],
           link: "https://www.figma.com/proto/ARHu89EZEUAts2KU9v48Qd/winslet?page-id=0%3A1&node-id=1-3&starting-point-node-id=1%3A3&t=gHYr1oJNp1Tfie47-1",
-          description: "A sleek product landing page layout built for performance and style.",
+          description: "One of the freelance project I did.",
         },
         {
           id: 3,
           number: "3",
-          name: "Design 3",
+          name: "OWL OUTSOURCING PORTAL",
           image: "../images/gallery/weddes/art (3).png",
           tags: ["WEB DESIGN"],
           link: "https://www.figma.com/proto/uraHMKJBGUlzXWTqTAVREh/OWL?page-id=2303%3A2321&node-id=3116-51369&viewport=919%2C619%2C0.06&t=Ec5rtpHc3s814bhz-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=3116%3A51369",
           description:
-            "An e-commerce concept built with minimalist structure and strong UX.",
+            "One of my recent work in my TESI UI/UX journey.",
         },
         // Add more artworks if needed
       ],

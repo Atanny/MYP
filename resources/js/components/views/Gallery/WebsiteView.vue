@@ -117,8 +117,8 @@ export default {
       artworks: [
         {
           id: 1,
-          number: "001",
-          name: "Design 1",
+          number: "1",
+          name: "OLD PORTFOLIO",
           image: "../images/gallery/weddes/art (5).png",
           tags: ["WEB DESIGN"],
           link: "https://atanny.onrender.com/#/",
@@ -126,22 +126,22 @@ export default {
         },
         {
           id: 2,
-          number: "002",
-          name: "Design 2",
+          number: "2",
+          name: "AVOCADO WEB",
           image: "../images/gallery/weddes/art (6).png",
           tags: ["WEB DESIGN"],
           link: "https://avocadoweb.onrender.com/?fbclid=IwZXh0bgNhZW0CMTEAAR6wyqEI96YD2ky7MgpFjOORMWcIerRw96WeRVg9xVdVABxrLg3JZWt532PKDw_aem_uY9SNLmPdVZqWTeCXdVfRA",
           description:
-            "Modern web layout featuring animated elements and vibrant colors.",
+            "Modern web layout featuring animated elements and vibrant colors for my Girlfriend.",
         },
         {
           id: 3,
-          number: "003",
+          number: "3",
           name: "EFITMO: Online Ordering System",
           image: "../images/gallery/weddes/art (4).png",
           tags: ["WEB DESIGN"],
           link: "https://www.figma.com/proto/uraHMKJBGUlzXWTqTAVREh/OWL?page-id=2303%3A2321&node-id=3116-51369&viewport=919%2C619%2C0.06&t=Ec5rtpHc3s814bhz-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=3116%3A51369",
-          description: "An intuitive online food ordering prototype designed for efficiency.",
+          description: "An intuitive online UNIFORM ordering system designed for efficiency.",
         },
         // Add more artworks here as needed
       ],

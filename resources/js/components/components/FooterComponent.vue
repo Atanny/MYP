@@ -22,26 +22,26 @@
             <div class="card-body">
                 <div class="row ">
                     <div class="d-flex gap-2 justify-content-center" >
-                        <a href="https://web.telegram.org/k/#@Atanny" class="display-6 text-white"  src="/storage/ww/telegram.png" >
+                        <a href="https://web.telegram.org/k/#@Atanny" class="display-6 text-white"  src="/images/ww/telegram.png" >
                             <i class="fa-brands fa-telegram"></i>
                         </a>
 
-                        <a href="https://web.telegram.org/k/#@Atanny" class="display-6 text-white"  src="/storage/ww/linkedin.png" >
+                        <a href="https://web.telegram.org/k/#@Atanny" class="display-6 text-white"  src="/images/ww/linkedin.png" >
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
 
-                        <a href="https://web.telegram.org/k/#@Atanny" class="display-6 text-white"  src="/storage/ww/facebook.png" >
+                        <a href="https://web.telegram.org/k/#@Atanny" class="display-6 text-white"  src="/images/ww/facebook.png" >
                             <i class="fa-brands fa-square-facebook"></i>
                         </a>
 
-                        <a href="https://web.telegram.org/k/#@Atanny" class="display-6 text-white"  src="/storage/ww/instagram.png" >
+                        <a href="https://web.telegram.org/k/#@Atanny" class="display-6 text-white"  src="/images/ww/instagram.png" >
                             <i class="fa-brands fa-square-instagram"></i>
                         </a>
 
-                        <a href="https://web.telegram.org/k/#@Atanny" class="display-6 text-white"  src="/storage/ww/messenger.png" >
+                        <a href="https://web.telegram.org/k/#@Atanny" class="display-6 text-white"  src="/images/ww/messenger.png" >
                             <i class="fa-brands fa-facebook-messenger"></i>
                         </a>
-                        <a href="https://web.telegram.org/k/#@Atanny" class="display-6 text-white"  src="/storage/ww/gmail.png" >
+                        <a href="https://web.telegram.org/k/#@Atanny" class="display-6 text-white"  src="/images/ww/gmail.png" >
                             <i class="fa-solid fa-envelope"></i>
                         </a>
                         

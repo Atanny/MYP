@@ -25,7 +25,7 @@
                                             <p>Transnational E-Business Solutions, Inc. (TESI)</p>
                                         </div>
                                     </div>
-                               <p>Freelancing for almost 3 Years, I'am creating what we called pubmats, brandings, and posters.</p>
+                               <p>One of my Role here is Intern Graphic Designer. i help and assist my heads to finish their Design within the said deadlines. </p>
                                 </div>
                                
                             </div>
@@ -39,7 +39,7 @@
                                             <p>Kalawaan SK</p>
                                         </div>
                                     </div>
-                               <p>Freelancing for almost 3 Years, I'am creating what we called pubmats, brandings, and posters.</p>
+                               <p>Freelancing for almost a year. I work here as a basic Graphic Desinger for their Public Materials. such as posters, announcements, and congratualtion cards</p>
                                 </div>
                                
                             </div>
@@ -53,7 +53,7 @@
                                             <p>Transnational E-Business Solutions, Inc. (TESI)</p>
                                         </div>
                                     </div>
-                                <p>I work as an intern for 300 hours. I redesign their Outsourcing Portal into User-friendly. etc..</p>
+                                <p>I Redesign their OWL Portal, i Design their Thread Outsourcing as an Intern</p>
                                 </div>
                                
                             </div>
@@ -68,7 +68,7 @@
                                             <p>Alight Solutions</p>
                                         </div>
                                     </div>
-                                <p>This is the most skilled i have. I draw using Krita, based on my creativity and thinking.</p>
+                                <p>Intern of Align Solution. This help me gain knowledge about how deployment works and how debugging of server will help.</p>
                                 </div>
                                
                             </div>

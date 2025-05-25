@@ -18,13 +18,13 @@
           <div class="row align-items-center justify-content-center gap-3">
             <!-- Software List -->
             <div
-              class="col-sm-6 col-lg-2 text shadow-lg rounded p-2 mt-4"
+              class="col-5 col-lg-2 text shadow-lg rounded p-2 mt-4"
               v-for="software2 in softwares2"
               :key="software2.id"
             >
-              <div class="d-flex">
+              <div class="d-flex align-items-center mt-3">
                 <h1
-                  class="fw-bolder outline-text2"
+                  class="fw-bolder "
                   data-aos="fade-right"
                   data-aos-duration="1000"
                 >
@@ -40,8 +40,8 @@
                 </h1>
               </div>
                <hr class="rounded" style="border: 0.5px solid gray; width: 100%;">
-              <h6 class="mb-0 fw-bold text3" data-aos="fade-right">{{ software2.name }}</h6>
-              <p data-aos="fade-right" data-aos-duration="500">{{ software2.proficiency }}</p>
+              <h5 class="mb-0 fw-bold text3 " data-aos="fade-right">{{ software2.name }}</h5>
+              <p class="small" data-aos="fade-right" data-aos-duration="500">{{ software2.proficiency }}</p>
             </div>
           </div>
         </div>

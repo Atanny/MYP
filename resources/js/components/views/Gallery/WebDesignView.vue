@@ -7,12 +7,12 @@
           <h1><b>WEB DESIGNS</b></h1>
         </div>
 
-       <div class="col-sm-12 col-lg-auto mt-3 d-inline-block">
+     <div class="col-sm-12 col-lg-auto mt-3  d-inline-block">
  
 
-          <div class="d-flex flex-wrap justify-content-start justify-content-lg-start">
+          <div class="d-flex flex-wrap justify-content-start justify-content-lg-start mb-3">
             <router-link to="/" class="">
-              <button class="btn btn-warning rounded-pill d-inline-block"><i class="fa fa-home"></i> Return Home</button>
+              <button class="btn btn-success rounded-pill d-inline-block"><i class="fa fa-home"></i> Return Home</button>
             </router-link>
             <button class="btn btn-success  d-lg-none d-inline-block  ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
             <i class="fa fa-bars"></i>
@@ -120,7 +120,7 @@ export default {
           id: 1,
           number: "1",
           name: "Design 1",
-          image: "../storage/gallery/weddes/art (1).png",
+          image: "../images/gallery/weddes/art (1).png",
           tags: ["WEB DESIGN"],
           link: "https://www.figma.com/proto/KG0sGFhseCbCT9AZHFqwLd/new-version-thread?page-id=0%3A1&node-id=51-630&starting-point-node-id=51%3A630&scaling=scale-down-width&content-scaling=fixed&t=RcZBuJ0MsA0r5xaR-1",
           description:
@@ -130,7 +130,7 @@ export default {
           id: 2,
           number: "2",
           name: "Design 2",
-          image: "../storage/gallery/weddes/art (2).png",
+          image: "../images/gallery/weddes/art (2).png",
           tags: ["WEB DESIGN"],
           link: "https://www.figma.com/proto/ARHu89EZEUAts2KU9v48Qd/winslet?page-id=0%3A1&node-id=1-3&starting-point-node-id=1%3A3&t=gHYr1oJNp1Tfie47-1",
           description: "A sleek product landing page layout built for performance and style.",
@@ -139,7 +139,7 @@ export default {
           id: 3,
           number: "3",
           name: "Design 3",
-          image: "../storage/gallery/weddes/art (3).png",
+          image: "../images/gallery/weddes/art (3).png",
           tags: ["WEB DESIGN"],
           link: "https://www.figma.com/proto/uraHMKJBGUlzXWTqTAVREh/OWL?page-id=2303%3A2321&node-id=3116-51369&viewport=919%2C619%2C0.06&t=Ec5rtpHc3s814bhz-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=3116%3A51369",
           description:

@@ -7,19 +7,18 @@
           <h1><b>WEBSITES</b></h1>
         </div>
 
-       <div class="col-sm-12 col-lg-auto mt-3 d-inline-block">
+      <div class="col-sm-12 col-lg-auto mt-3  d-inline-block">
  
 
-          <div class="d-flex flex-wrap justify-content-start justify-content-lg-start">
+          <div class="d-flex flex-wrap justify-content-start justify-content-lg-start mb-3">
             <router-link to="/" class="">
-              <button class="btn btn-warning rounded-pill d-inline-block"><i class="fa fa-home"></i> Return Home</button>
+              <button class="btn btn-success rounded-pill d-inline-block"><i class="fa fa-home"></i> Return Home</button>
             </router-link>
             <button class="btn btn-success  d-lg-none d-inline-block  ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
             <i class="fa fa-bars"></i>
             </button>
             
           </div>
-          
 
 
 
@@ -120,7 +119,7 @@ export default {
           id: 1,
           number: "001",
           name: "Design 1",
-          image: "../storage/gallery/weddes/art (5).png",
+          image: "../images/gallery/weddes/art (5).png",
           tags: ["WEB DESIGN"],
           link: "https://atanny.onrender.com/#/",
           description: "A sleek, responsive portfolio site showcasing minimal design.",
@@ -129,7 +128,7 @@ export default {
           id: 2,
           number: "002",
           name: "Design 2",
-          image: "../storage/gallery/weddes/art (6).png",
+          image: "../images/gallery/weddes/art (6).png",
           tags: ["WEB DESIGN"],
           link: "https://avocadoweb.onrender.com/?fbclid=IwZXh0bgNhZW0CMTEAAR6wyqEI96YD2ky7MgpFjOORMWcIerRw96WeRVg9xVdVABxrLg3JZWt532PKDw_aem_uY9SNLmPdVZqWTeCXdVfRA",
           description:
@@ -139,7 +138,7 @@ export default {
           id: 3,
           number: "003",
           name: "EFITMO: Online Ordering System",
-          image: "../storage/gallery/weddes/art (4).png",
+          image: "../images/gallery/weddes/art (4).png",
           tags: ["WEB DESIGN"],
           link: "https://www.figma.com/proto/uraHMKJBGUlzXWTqTAVREh/OWL?page-id=2303%3A2321&node-id=3116-51369&viewport=919%2C619%2C0.06&t=Ec5rtpHc3s814bhz-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=3116%3A51369",
           description: "An intuitive online food ordering prototype designed for efficiency.",

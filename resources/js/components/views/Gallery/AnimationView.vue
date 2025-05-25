@@ -8,12 +8,12 @@
           <h1><b>ANIMATION</b></h1>
         </div>
 
-    <div class="col-sm-12 col-lg-auto mt-3 d-inline-block">
+    <div class="col-sm-12 col-lg-auto mt-3  d-inline-block">
  
 
-          <div class="d-flex flex-wrap justify-content-start justify-content-lg-start">
+          <div class="d-flex flex-wrap justify-content-start justify-content-lg-start mb-3">
             <router-link to="/" class="">
-              <button class="btn btn-warning rounded-pill d-inline-block"><i class="fa fa-home"></i> Return Home</button>
+              <button class="btn btn-success rounded-pill d-inline-block"><i class="fa fa-home"></i> Return Home</button>
             </router-link>
             <button class="btn btn-success  d-lg-none d-inline-block  ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
             <i class="fa fa-bars"></i>
@@ -124,84 +124,84 @@ export default {
           id: 1,
           number: "1",  // Fixed number (without leading zeros)
           name: "WALK CYCLE TRIANGLE",
-          videoSrc: "./storage/gallery/Animation/1 (1).mp4", // Replace with actual video path
+          videoSrc: "./images/gallery/Animation/1 (1).mp4", // Replace with actual video path
           description: "School project freelance.",
         },
         {
           id: 2,
           number: "2",  // Fixed number (without leading zeros)
           name: "WALK CYCLE ASSASIN",
-          videoSrc: "./storage/gallery/Animation/1 (2).mp4", // Replace with actual video path
+          videoSrc: "./images/gallery/Animation/1 (2).mp4", // Replace with actual video path
           description: "School project freelance.",
         },
         {
           id: 3,
           number: "3",  // Fixed number (without leading zeros)
           name: "CAT",
-          videoSrc: "./storage/gallery/Animation/1 (3).mp4", // Replace with actual video path
+          videoSrc: "./images/gallery/Animation/1 (3).mp4", // Replace with actual video path
           description: "This is my activity for the 2nd quarter.",
         },
         {
           id: 4,
           number: "4",  // Fixed number (without leading zeros)
           name: "RAINING IN MANILA LYRICS",
-          videoSrc: "./storage/gallery/Animation/1 (4).mp4",
+          videoSrc: "./images/gallery/Animation/1 (4).mp4",
           description: "This is inspired by the song Raining in Manila.",
         },
         {
           id: 5,
           number: "5",  // Fixed number (without leading zeros)
           name: "MORPHING ANIMATION",
-          videoSrc: "./storage/gallery/Animation/1 (5).mp4", // Replace with actual video path
+          videoSrc: "./images/gallery/Animation/1 (5).mp4", // Replace with actual video path
           description: "This school activity help me to understand the morphing animation.",
         },
         {
           id: 6,
           number: "6",  // Fixed number (without leading zeros)
           name: "WALK CYCLE EGG",
-          videoSrc: "./storage/gallery/Animation/1 (6).mp4", // Replace with actual video path
+          videoSrc: "./images/gallery/Animation/1 (6).mp4", // Replace with actual video path
           description: "School project freelance.",
         },
         {
           id: 7,
           number: "7",  // Fixed number (without leading zeros)
           name: "SOYA",
-          videoSrc: "./storage/gallery/Animation/1 (7).mp4", // Replace with actual video path
+          videoSrc: "./images/gallery/Animation/1 (7).mp4", // Replace with actual video path
           description: "The SOYA is a youth fellowship, this animation is for introducing the SOYA itself.",
         },
         {
           id: 8,
           number: "8",  // Fixed number (without leading zeros)
           name: "WALK CYCLE ALIEN",
-          videoSrc: "./storage/gallery/Animation/1 (8).mp4", // Replace with actual video path
+          videoSrc: "./images/gallery/Animation/1 (8).mp4", // Replace with actual video path
           description: "School project freelance.",
         },
         {
           id: 9,
           number: "9",  // Fixed number (without leading zeros)
           name: "ESTRANGHERO",
-          videoSrc: "./storage/gallery/Animation/1 (9).mp4", // Replace with actual video path
+          videoSrc: "./images/gallery/Animation/1 (9).mp4", // Replace with actual video path
           description: "This animation was created using adobe animate.",
         },
         {
           id: 10,
           number: "10",  // Fixed number (without leading zeros)
           name: "FAN AND BLINKING ANIMATION",
-          videoSrc: "./storage/gallery/Animation/1 (10).mp4", // Replace with actual video path
+          videoSrc: "./images/gallery/Animation/1 (10).mp4", // Replace with actual video path
           description: "I created this due to my curiosity about how to animate a fan and blinking.",
         },
         {
           id: 11,
           number: "11",  // Fixed number (without leading zeros)
           name: "BUSKING",
-          videoSrc: "./storage/gallery/Animation/1 (1).3gp", // Replace with actual video path
+          videoSrc: "./images/gallery/Animation/1 (1).3gp", // Replace with actual video path
           description: "This is my first animation that i created using krita.",
         },
         {
           id: 12,
           number: "12",  // Fixed number (without leading zeros)
           name: "RAIN ANIMATION",
-          videoSrc: "./storage/gallery/Animation/1 (1).MOV", // Replace with actual video path
+          videoSrc: "./images/gallery/Animation/1 (1).MOV", // Replace with actual video path
           description: "No Description.",
         },
         // Add more mock artworks as needed

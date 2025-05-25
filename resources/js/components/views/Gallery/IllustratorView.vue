@@ -7,19 +7,18 @@
           <h1><b>ILLUSTRATION</b></h1>
         </div>
 
-     <div class="col-sm-12 col-lg-auto mt-3 d-inline-block">
+    <div class="col-sm-12 col-lg-auto mt-3  d-inline-block">
  
 
-          <div class="d-flex flex-wrap justify-content-start justify-content-lg-start">
+          <div class="d-flex flex-wrap justify-content-start justify-content-lg-start mb-3">
             <router-link to="/" class="">
-              <button class="btn btn-warning rounded-pill d-inline-block"><i class="fa fa-home"></i> Return Home</button>
+              <button class="btn btn-success rounded-pill d-inline-block"><i class="fa fa-home"></i> Return Home</button>
             </router-link>
             <button class="btn btn-success  d-lg-none d-inline-block  ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
             <i class="fa fa-bars"></i>
             </button>
             
           </div>
-          
 
 
 
@@ -106,30 +105,30 @@ export default {
   data() {
     return {
       artworks: [
-        { id: 1, number: "1", name: "CONVINNIENCE STORE", image: "../storage/gallery/Illustrator/art (1).JPG",  description: "Inspired by the song of Dilaw."},
-        { id: 2, number: "2", name: "GELOU", image: "../storage/gallery/Illustrator/art (1).png",  description: "Commission." },
-        { id: 3, number: "3", name: "CHARACTER ILLUSTRATION", image: "../storage/gallery/Illustrator/art (2).jpg",  description: "i drew this becuase of i want to learn how the proportion of the abs will work." },
-        { id: 4, number: "4", name: "REFERENCING HAND", image: "../storage/gallery/Illustrator/art (2).png",  description: "This is Actually me determine and analizing the proportion of hand." },
-        { id: 5, number: "5", name: "KAPASIGAN", image: "../storage/gallery/Illustrator/art (3).jpg",  description: "Inspired by Me and my Girlfriend, first data." },
-        { id: 6, number: "6", name: "SCHOOL BUS", image: "../storage/gallery/Illustrator/art (3).png",  description: "Illustration of a girl gossiping how the boy looking at her" },
-        { id: 7, number: "7", name: "BURGER", image: "../storage/gallery/Illustrator/art (4).jpg",  description: "No Description." },
-        { id: 8, number: "8", name: "GELOU 2", image: "../storage/gallery/Illustrator/art (4).png",  description: "Commission." },
-        { id: 9, number: "9", name: "DRAWING ILLUSTRATION", image: "../storage/gallery/Illustrator/art (5).jpg",  description: "Inspired from my first setup." },
-        { id: 10, number: "10", name: "TERRACE", image: "../storage/gallery/Illustrator/art (5).png",  description: "No Description." },
-        { id: 11, number: "11", name: "JEEPNEY", image: "../storage/gallery/Illustrator/art (6).png",  description: "THe Girl and the Boy Sleeping on a Jeepney together." },
-        { id: 12, number: "12", name: "KRISTO LANG", image: "../storage/gallery/Illustrator/art (7).jpg",  description: "Inspired by my profile picture." },
-        { id: 13, number: "13", name: "DALAGANG PILIPINA", image: "../storage/gallery/Illustrator/art (7).png",  description: "The girl who riding jeepney with Pilipinyana. This is inspired by the new policy of the boverment that every monday wear formal attire." },
-        { id: 14, number: "14", name: "BAWAT PIYESA", image: "../storage/gallery/Illustrator/art (8).jpg",  description: "Inspired by the song BAWAT PIYESA. (for music video)" },
-        { id: 15, number: "15", name: "ESTRANGHERO", image: "../storage/gallery/Illustrator/art (8).png",  description: "Inspired by the song ESTRANGHERO by Cup of Joe" },
-        { id: 16, number: "16", name: "RAINING IN MANILA", image: "../storage/gallery/Illustrator/art (9).jpg",  description: "Inspired by the song Raining in Manila by Lola Amore" },
-        { id: 17, number: "17", name: "HEARTS CAN'T SEPERATE TWO MILES THAT IS REALLY CARE", image: "../storage/gallery/Illustrator/art (9).png",  description: "A Love that no matter what they still see the precense." },
-        { id: 18, number: "18", name: "COFFEE", image: "../storage/gallery/Illustrator/art (10).jpg",  description: "No Description." },
-        { id: 19, number: "19", name: "CLASSIC BIKE", image: "../storage/gallery/Illustrator/art (10).png",  description: "Created in Adobe Illustrator." },
-        { id: 20, number: "20", name: "TAGAYTAY", image: "../storage/gallery/Illustrator/art (11).jpg",  description: "No Description." },
-        { id: 21, number: "21", name: "TAGATAY 2", image: "../storage/gallery/Illustrator/art (12).jpg",  description: "No Description." },
-        { id: 22, number: "22", name: "SELF VECTOR", image: "../storage/gallery/Illustrator/art (12).png",  description: "A self Vector of mine." },
-        { id: 23, number: "23", name: "MIDNIGHT SKY", image: "../storage/gallery/Illustrator/art (13).jpg",  description: "Created in Krita." },
-        { id: 24, number: "24", name: "CAFE IN THE SKY", image: "../storage/gallery/Illustrator/art (14).jpg",  description: "Created in Krita too." },
+        { id: 1, number: "1", name: "CONVINNIENCE STORE", image: "../images/gallery/Illustrator/art (1).JPG",  description: "Inspired by the song of Dilaw."},
+        { id: 2, number: "2", name: "GELOU", image: "../images/gallery/Illustrator/art (1).png",  description: "Commission." },
+        { id: 3, number: "3", name: "CHARACTER ILLUSTRATION", image: "../images/gallery/Illustrator/art (2).jpg",  description: "i drew this becuase of i want to learn how the proportion of the abs will work." },
+        { id: 4, number: "4", name: "REFERENCING HAND", image: "../images/gallery/Illustrator/art (2).png",  description: "This is Actually me determine and analizing the proportion of hand." },
+        { id: 5, number: "5", name: "KAPASIGAN", image: "../images/gallery/Illustrator/art (3).jpg",  description: "Inspired by Me and my Girlfriend, first data." },
+        { id: 6, number: "6", name: "SCHOOL BUS", image: "../images/gallery/Illustrator/art (3).png",  description: "Illustration of a girl gossiping how the boy looking at her" },
+        { id: 7, number: "7", name: "BURGER", image: "../images/gallery/Illustrator/art (4).jpg",  description: "No Description." },
+        { id: 8, number: "8", name: "GELOU 2", image: "../images/gallery/Illustrator/art (4).png",  description: "Commission." },
+        { id: 9, number: "9", name: "DRAWING ILLUSTRATION", image: "../images/gallery/Illustrator/art (5).jpg",  description: "Inspired from my first setup." },
+        { id: 10, number: "10", name: "TERRACE", image: "../images/gallery/Illustrator/art (5).png",  description: "No Description." },
+        { id: 11, number: "11", name: "JEEPNEY", image: "../images/gallery/Illustrator/art (6).png",  description: "THe Girl and the Boy Sleeping on a Jeepney together." },
+        { id: 12, number: "12", name: "KRISTO LANG", image: "../images/gallery/Illustrator/art (7).jpg",  description: "Inspired by my profile picture." },
+        { id: 13, number: "13", name: "DALAGANG PILIPINA", image: "../images/gallery/Illustrator/art (7).png",  description: "The girl who riding jeepney with Pilipinyana. This is inspired by the new policy of the boverment that every monday wear formal attire." },
+        { id: 14, number: "14", name: "BAWAT PIYESA", image: "../images/gallery/Illustrator/art (8).jpg",  description: "Inspired by the song BAWAT PIYESA. (for music video)" },
+        { id: 15, number: "15", name: "ESTRANGHERO", image: "../images/gallery/Illustrator/art (8).png",  description: "Inspired by the song ESTRANGHERO by Cup of Joe" },
+        { id: 16, number: "16", name: "RAINING IN MANILA", image: "../images/gallery/Illustrator/art (9).jpg",  description: "Inspired by the song Raining in Manila by Lola Amore" },
+        { id: 17, number: "17", name: "HEARTS CAN'T SEPERATE TWO MILES THAT IS REALLY CARE", image: "../images/gallery/Illustrator/art (9).png",  description: "A Love that no matter what they still see the precense." },
+        { id: 18, number: "18", name: "COFFEE", image: "../images/gallery/Illustrator/art (10).jpg",  description: "No Description." },
+        { id: 19, number: "19", name: "CLASSIC BIKE", image: "../images/gallery/Illustrator/art (10).png",  description: "Created in Adobe Illustrator." },
+        { id: 20, number: "20", name: "TAGAYTAY", image: "../images/gallery/Illustrator/art (11).jpg",  description: "No Description." },
+        { id: 21, number: "21", name: "TAGATAY 2", image: "../images/gallery/Illustrator/art (12).jpg",  description: "No Description." },
+        { id: 22, number: "22", name: "SELF VECTOR", image: "../images/gallery/Illustrator/art (12).png",  description: "A self Vector of mine." },
+        { id: 23, number: "23", name: "MIDNIGHT SKY", image: "../images/gallery/Illustrator/art (13).jpg",  description: "Created in Krita." },
+        { id: 24, number: "24", name: "CAFE IN THE SKY", image: "../images/gallery/Illustrator/art (14).jpg",  description: "Created in Krita too." },
       ],
       currentPage: 1,
       pageSize: 8,

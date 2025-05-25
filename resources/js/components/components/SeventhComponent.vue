@@ -39,7 +39,7 @@
                                             <p>Kalawaan SK</p>
                                         </div>
                                     </div>
-                               <p>Freelancing for almost a year. I work here as a basic Graphic Designer for their Public Materials. such as posters, announcements, and congratualtion cards</p>
+                               <p>Freelancing for almost a year. I work here as a basic Graphic Designer for their Public Materials. such as posters, announcements, and congratualtion cards.</p>
                                 </div>
                                
                             </div>
@@ -53,7 +53,7 @@
                                             <p>Transnational E-Business Solutions, Inc. (TESI)</p>
                                         </div>
                                     </div>
-                                <p>I Redesign their OWL Portal, i Design their Thread Outsourcing as an Intern</p>
+                                <p>I Redesign their OWL Portal, i Design their Thread Outsourcing as an Intern too.</p>
                                 </div>
                                
                             </div>
@@ -68,7 +68,7 @@
                                             <p>Alight Solutions</p>
                                         </div>
                                     </div>
-                                <p>Intern of Align Solution. This help me gain knowledge about how deployment works and how debugging of server will help.</p>
+                                <p>Intern of Alight Solutions. This help me gain knowledge about how deployment works and how debugging of server will help.</p>
                                 </div>
                                
                             </div>

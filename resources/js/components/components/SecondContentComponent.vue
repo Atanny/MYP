@@ -53,7 +53,7 @@
                    
                         <h1><i class="fa-solid fa-code mb-0"></i></h1>
                         <h6 class="mb-0 fw-bold">FRONT-END DEV</h6>
-                        <p class="mt-2">Graphic Design gave me more knowledge in creativity, which helped me gain more experience by creating posters, public materials, and banners.</p>
+                        <p class="mt-2">Front-End Development gave me more knowledge in creativity, which helped me gain more experience by creating user interfaces, interactive components, and responsive web layouts.</p>
                    
                
             </div>

@@ -4,7 +4,7 @@ FROM php:8.2-fpm
 # Set working directory
 WORKDIR /var/www
 
-# Install dependencies
+# Install dependencies (added libpq-dev)
 RUN apt-get update && apt-get install -y \
     build-essential \
     libpng-dev \
@@ -22,7 +22,8 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     npm \
     nodejs \
-    postgresql-client
+    postgresql-client \
+    libpq-dev   # <<<<< Add this line
 
 # Install PHP extensions
 RUN docker-php-ext-install pdo pdo_pgsql mbstring zip exif pcntl bcmath gd

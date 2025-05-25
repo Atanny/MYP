@@ -5,7 +5,7 @@
         <div class="row justify-content-center  g-3 ">
     <div class="col-lg-3 py-2">
         <h1 class="display-1 fw-bolder me-5 outline-text" data-aos="fade-right" data-aos-duration="1000">01</h1>
-        <div class="card rounded-0 text-white h-75 border-0 shadow-lg" style="background-color: #fca311;" data-aos="fade-right" data-aos-duration="5000">
+        <div class="card rounded p-3 border-2 bg-transparent text-dark h-75 border-dark " style="background-color: #fca311;" data-aos="fade-right" data-aos-duration="5000">
             <div class="card-body ">
                    
                         <h1><i class="fa-solid fa-desktop mb-0"></i></h1>
@@ -18,7 +18,7 @@
 
     <div class="col-lg-3 py-2">
         <h1 class="display-1 fw-bolder outline-text" data-aos="fade-right" data-aos-duration="1000">02</h1>
-        <div class="card rounded-0 text-white card-group h-75 border-0 shadow-lg" style="background-color: #7EA122;" data-aos="fade-right" data-aos-duration="5000">
+        <div class="card rounded p-3 border-2 bg-transparent text-dark card-group h-75 border-dark " style="background-color: #7EA122;" data-aos="fade-right" data-aos-duration="5000">
             <div class="card-body ">
               
                    
@@ -32,7 +32,7 @@
 
     <div class="col-lg-3 py-2">
         <h1 class="display-1 fw-bolder outline-text" data-aos="fade-right" data-aos-duration="1000">03</h1>
-        <div class="card rounded-0 text-white card-group h-75 border-0 shadow-lg" style="background-color: #fca311;" data-aos="fade-right" data-aos-duration="5000">
+        <div class="card rounded p-3 border-2 bg-transparent text-dark card-group h-75 border-dark " style="background-color: #fca311;" data-aos="fade-right" data-aos-duration="5000">
             <div class="card-body">
               
                    
@@ -47,7 +47,7 @@
 
     <div class="col-lg-3 py-2">
         <h1 class="display-1 fw-bolder outline-text" data-aos="fade-right" data-aos-duration="1000">04</h1>
-        <div class="card rounded-0 text-white card-group  h-75 border-0 shadow-lg"  style="background-color: #7EA122;" data-aos="fade-right" data-aos-duration="5000">
+        <div class="card rounded p-3 border-2 bg-transparent text-dark card-group  h-75 border-dark "  style="background-color: #7EA122;" data-aos="fade-right" data-aos-duration="5000">
             <div class="card-body">
               
                    

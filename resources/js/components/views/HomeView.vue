@@ -1,8 +1,9 @@
 <template>
     <div class="">
-        <header-component class=""></header-component>
-        <seven-component class=""></seven-component>
+        <header-component class="mt-5"></header-component>
+       
         <second-component class=""></second-component>
+         <seven-component class=""></seven-component>
         <third-component class=""></third-component>
         <four-component class=""></four-component>
         <fourone-component class=""></fourone-component>
@@ -17,46 +18,15 @@
 body{
     overflow-x: hidden;
 }
-.btn-success {
-    border-radius: 0%;
-    position: relative;
-    overflow: hidden;
-    background-color: transparent; 
-  
-    border: transparent;
-    z-index: 1; 
-}
 
-
-.btn-success::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: #7EA122;
-    transition: left 0.10s ease;
-    z-index: -1;
-    color: #fff;
-}
-
-.btn-success:hover::before {
-    left: 0;
-}
-
-.btn-success:hover {
-    color: white;
-    background-color: #7EA122;
-}
-
-.active-link .btn-danger {
+.active-link .btn-success {
   background-color: #7EA122 !important;
   color: white !important;
   border-style: solid;
+  border-color: #7EA122;
   border-radius: 0%;
 }
-.btn-danger {
+.btn-success {
     position: relative; /* Needed for ::before absolute positioning */
     border-style: solid;
     border-color: #7EA122;
@@ -68,7 +38,7 @@ body{
     transition: color 0.3s ease;
 }
 
-.btn-danger:disabled {
+.btn-success:disabled {
     border-style: solid;
     border-color: #7EA122;
     border-radius: 0%;
@@ -78,7 +48,7 @@ body{
     z-index: 1;
 }
 
-.btn-danger::before {
+.btn-success::before {
     content: '';
     border-style: solid;
     border-color: #7EA122;
@@ -92,13 +62,13 @@ body{
     z-index: -1;
 }
 
-.btn-danger:hover::before {
+.btn-success:hover::before {
     border-style: solid;
     border-color: #7EA122;
     left: 0;
 }
 
-.btn-danger:hover {
+.btn-success:hover {
     color: white;
     border-style: solid;
     border-color: #7EA122;
@@ -107,15 +77,15 @@ body{
 
 /* ADD THIS: Active state styling for router-link or buttons */
 
-.btn-danger.active,
-.btn-danger.router-link-exact-active {
+.btn-success.active,
+.btn-success.router-link-exact-active {
     color: white !important;
     background-color: #7EA122 !important;
     border-color: #7EA122 !important;
 }
 
-.btn-danger.active::before,
-.btn-danger.router-link-exact-active::before {
+.btn-success.active::before,
+.btn-success.router-link-exact-active::before {
     left: 0 !important;
 }
 

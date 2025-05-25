@@ -15,12 +15,12 @@
         </h1>
       </marquee>
 
-      <div>
-        <div class="card rounded-0 mt-5 bg-light border-0 shadow-lg p-5">
+      <div class="container justify-content-center">
+        <div class="card rounded mt-5 bg-light border-0 shadow-lg p-5">
           <div class="card-body">
-            <div class="row">
+            <div class="row align-items-center justify-content-center gap-3">
               <div
-                class="col-sm-6 col-lg-2 text"
+                class="col-sm-6 col-lg-2 text shadow-lg rounded p-2 mt-4"
                 v-for="software in softwares"
                 :key="software.id"
               >
@@ -30,7 +30,7 @@
                     data-aos="fade-right"
                     data-aos-duration="1000"
                   >
-                    0{{ software.id }}
+                    {{ software.id }}
                   </h1>
                   <h1
                     class="ms-3"
@@ -41,10 +41,13 @@
                     <iconify-icon :icon="software.iconClass" width="40" height="40"></iconify-icon>
                   </h1>
                 </div>
+                   <hr class="rounded" style="border: 0.5px solid gray; width: 100%;">
                 <h6
                   class="mb-0 fw-bold text3"
                   data-aos="fade-right"
                 >
+               
+
                   {{ software.name }}
                 </h6>
                 <p data-aos="fade-right" data-aos-duration="500">Proficient</p>
@@ -93,11 +96,7 @@ export default {
           name: "Premiere Pro",
           iconClass: "logos:adobe-premiere", // Official Premiere Pro logo
         },
-         {
-          id: 5,
-          name: "Premiere Pro",
-          iconClass: "simple-icons:krita", // Official Premiere Pro logo
-        },
+       
       ],
     };
   },

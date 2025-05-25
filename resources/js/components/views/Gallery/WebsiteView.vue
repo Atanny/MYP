@@ -7,35 +7,49 @@
           <h1><b>WEBSITES</b></h1>
         </div>
 
-        <div class="col-sm-12 col-lg-auto">
-          <div class="d-flex flex-wrap">
-            <router-link to="/" class="me-1 mt-1">
-              <button class="btn btn-primary rounded-0">
-                <i class="fa fa-home"></i> Return Home
-              </button>
+       <div class="col-sm-12 col-lg-auto mt-3 d-inline-block">
+ 
+
+          <div class="d-flex flex-wrap justify-content-start justify-content-lg-start">
+            <router-link to="/" class="">
+              <button class="btn btn-warning rounded-pill d-inline-block"><i class="fa fa-home"></i> Return Home</button>
             </router-link>
-            <router-link to="/animation" class="me-1 mt-1" active-class="active-link">
-              <div class="btn btn-danger">ANIMATION</div>
+            <button class="btn btn-success  d-lg-none d-inline-block  ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
+            <i class="fa fa-bars"></i>
+            </button>
+            
+          </div>
+          
+
+
+
+  <!-- Collapsible container for the buttons -->
+          <div class="collapse d-lg-flex flex-wrap" id="navButtons">
+          
+            <router-link to="/animation" class="" active-class="active-link">
+              <button class="btn btn-success me-1 mt-2">ANIMATION</button>
             </router-link>
-            <router-link to="/illustrator" class="me-1 mt-1" active-class="active-link">
-              <div class="btn btn-danger">ILLUSTRATION</div>
+            <router-link to="/illustrator" class="" active-class="active-link">
+              <button class="btn btn-success me-1 mt-2">ILLUSTRATION</button>
             </router-link>
-            <router-link to="/digital-arts" class="me-1 mt-1" active-class="active-link">
-              <div class="btn btn-danger">DIGITAL ARTS</div>
+            <router-link to="/digital-arts" class="" active-class="active-link">
+              <button class="btn btn-success me-1 mt-2">DIGITAL ARTS</button>
             </router-link>
-            <router-link to="/graphic-design" class="me-1 mt-1" active-class="active-link">
-              <div class="btn btn-danger">GRAPHIC DESIGNS</div>
+            <router-link to="/graphic-design" class="" active-class="active-link">
+              <button class="btn btn-success me-1 mt-2">GRAPHIC DESIGNS</button>
             </router-link>
-            <router-link to="/web-design" class="me-1 mt-1" active-class="active-link">
-              <div class="btn btn-danger">WEB DESIGNS</div>
+            <router-link to="/web-design" class="" active-class="active-link">
+              <button class="btn btn-success me-1 mt-2 ">WEB DESIGNS</button>
             </router-link>
             <router-link to="/website" active-class="active-link">
-              <div class="btn btn-danger mt-1">WEBSITES</div>
+              <button class="btn btn-success me-1 mt-2 ">WEBSITES</button>
             </router-link>
           </div>
-        </div>
+      </div>
+
       </div>
     </div>
+
 
     <!-- Artwork Cards -->
     <div class="row">
@@ -45,14 +59,14 @@
         :key="artwork.id"
         v-if="paginatedArtworks.length > 0"
       >
-        <div class="card h-100 shadow-sm border-0">
+        <div class="card h-100 shadow-lg rounded"   data-aos="fade-right"
+            data-aos-duration="900">
           <img
             :src="artwork.image"
             class="card-img-top rounded-0"
             alt="artwork image"
             style="object-fit: cover; height: 250px; width: 100%;"
-            data-aos="fade-right"
-            data-aos-duration="900"
+          
           />
           <div class="card-body d-flex flex-column">
             <h6 class="fw-bold mb-1">{{ artwork.number }} - {{ artwork.name }}</h6>
@@ -61,7 +75,7 @@
               :href="artwork.link"
               target="_blank"
               rel="noopener noreferrer"
-              class="btn btn-sm btn-danger mt-2"
+              class="btn btn-sm btn-success mt-2"
             >
               View
             </a>
@@ -79,7 +93,7 @@
     <!-- Pagination Controls -->
     <div class="text-center mt-4">
       <button
-        class="btn btn-danger me-2"
+        class="btn btn-success me-2"
         :disabled="currentPage === 1"
         @click="currentPage--"
       >
@@ -87,7 +101,7 @@
       </button>
       <span class="mx-2">Page {{ currentPage }} of {{ totalPages }}</span>
       <button
-        class="btn btn-danger ms-2"
+        class="btn btn-success ms-2"
         :disabled="currentPage === totalPages"
         @click="currentPage++"
       >

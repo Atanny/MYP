@@ -16,26 +16,26 @@
                 <!-- Social Links -->
                 <div class="row justify-content-center my-2" data-aos="fade-right" data-aos-duration="1100">
                     <div class="d-flex gap-2" >
-                        <a href="https://web.telegram.org/k/#@Atanny" class=" display-6"  src="/storage/ww/telegram.png" >
+                        <a href="https://web.telegram.org/k/#@Atanny" class=" display-6 text-warning"  src="/storage/ww/telegram.png" >
                             <i class="fa-brands fa-telegram"></i>
                         </a>
 
-                        <a href="https://web.telegram.org/k/#@Atanny" class=" display-6"  src="/storage/ww/linkedin.png" >
+                        <a href="https://web.telegram.org/k/#@Atanny" class=" display-6 text-warning"  src="/storage/ww/linkedin.png" >
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
 
-                        <a href="https://web.telegram.org/k/#@Atanny" class=" display-6"  src="/storage/ww/facebook.png" >
+                        <a href="https://web.telegram.org/k/#@Atanny" class=" display-6 text-warning"  src="/storage/ww/facebook.png" >
                             <i class="fa-brands fa-square-facebook"></i>
                         </a>
 
-                        <a href="https://web.telegram.org/k/#@Atanny" class=" display-6"  src="/storage/ww/instagram.png" >
+                        <a href="https://web.telegram.org/k/#@Atanny" class=" display-6 text-warning"  src="/storage/ww/instagram.png" >
                             <i class="fa-brands fa-square-instagram"></i>
                         </a>
 
-                        <a href="https://web.telegram.org/k/#@Atanny" class=" display-6"  src="/storage/ww/messenger.png" >
+                        <a href="https://web.telegram.org/k/#@Atanny" class=" display-6 text-warning"  src="/storage/ww/messenger.png" >
                             <i class="fa-brands fa-facebook-messenger"></i>
                         </a>
-                        <a href="https://web.telegram.org/k/#@Atanny" class=" display-6"  src="/storage/ww/gmail.png" >
+                        <a href="https://web.telegram.org/k/#@Atanny" class=" display-6 text-warning"  src="/storage/ww/gmail.png" >
                             <i class="fa-solid fa-envelope"></i>
                         </a>
                         
@@ -44,10 +44,17 @@
                     </div>
                 </div>
 
-                <!-- Download CV Button -->
-                <button class="btn btn-danger shadow-sm mt-3" style="" data-aos="fade-right" data-aos-duration="1300">
-                    <i class="fa-solid fa-download"></i> Download CV
-                </button>
+           
+                    <a href="storage/gallery/Poster/FINAL CV2.png" download="My_CV.png">
+                    <button
+                        class="btn btn-success rounded-pill shadow-sm mt-3"
+                        data-aos="fade-right"
+                        data-aos-duration="1300"
+                    >
+                        <i class="fa-solid fa-download"></i> Download CV
+                    </button>
+                    </a>
+
 
 
                 

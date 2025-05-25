@@ -12,13 +12,13 @@
       </h1>
     </marquee>
 
-    <div>
-      <div class="card rounded-0 mt-5 bg-light border-0 shadow-lg p-5">
-        <div class="card-body">
-          <div class="row">
+    <div class="container justify-content-center">
+      <div class="card rounded-0 mt-5 bg-light border-0 shadow-lg p-5 ">
+        <div class="card-body  ">
+          <div class="row align-items-center justify-content-center gap-3">
             <!-- Software List -->
             <div
-              class="col-sm-6 col-lg-2"
+              class="col-sm-6 col-lg-2 text shadow-lg rounded p-2 mt-4"
               v-for="software2 in softwares2"
               :key="software2.id"
             >
@@ -28,7 +28,7 @@
                   data-aos="fade-right"
                   data-aos-duration="1000"
                 >
-                  0{{ software2.id }}
+                  {{ software2.id }}
                 </h1>
                 <h1
                   class="ms-3"
@@ -39,6 +39,7 @@
                   <iconify-icon :icon="software2.iconClass" width="40" height="40"></iconify-icon>
                 </h1>
               </div>
+               <hr class="rounded" style="border: 0.5px solid gray; width: 100%;">
               <h6 class="mb-0 fw-bold text3" data-aos="fade-right">{{ software2.name }}</h6>
               <p data-aos="fade-right" data-aos-duration="500">{{ software2.proficiency }}</p>
             </div>
@@ -84,19 +85,19 @@ export default {
           id: 4,
           name: "GitHub",
           iconClass: "devicon:github", // Official Git logo
-          proficiency: "Proficient"
+          proficiency: "Basic"
         },
         {
           id: 5,
           name: "PHP",
           iconClass: "logos:php", // Official PHP logo
-          proficiency: "Proficient"
+          proficiency: "Basic"
         },
         {
           id: 6,
           name: "Vue.js",
           iconClass: "logos:vue", // Official Vue.js logo
-          proficiency: "Proficient"
+          proficiency: "Basic"
         },
         {
           id: 7,
@@ -106,13 +107,13 @@ export default {
         },
         {
           id: 8,
-          name: "HTML5",
+          name: "HTML",
           iconClass: "logos:html-5", // Official HTML5 logo
           proficiency: "Proficient"
         },
         {
           id: 9,
-          name: "CSS3",
+          name: "CSS",
           iconClass: "logos:css-3", // Official CSS3 logo
           proficiency: "Proficient"
         },
@@ -120,7 +121,7 @@ export default {
           id: 10,
           name: "JavaScript",
           iconClass: "logos:javascript", // Official JavaScript logo
-          proficiency: "Proficient"
+          proficiency: "Beginner"
         }
       ]
     };

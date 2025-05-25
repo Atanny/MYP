@@ -1,10 +1,10 @@
 <template>
-    <div class="background shadow-lg p-3 p-lg-5 gap-2">
+    <div class="background shadow-lg p-3 p-lg-5 gap-2  " >
         <div class="container mt-2 " >
             <hr class="bg-white mb-5" style="border: none; height: 1px; margin: 20px 0; border-radius: 5px;" data-aos="fade-up" data-aos-duration="1600">
         <div class="row justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1000">
 
-        <div class="col-lg-8">
+        <div class="col-lg-8" >
             <div class="">
                 <div class="text-white">
                     <h3 class="fw-bolder italic">
@@ -18,7 +18,7 @@
 
 
         <div class="col-lg-4">
-            <div class="card shadow-lg border-0 rounded-0 feature-card">
+            <div class="card shadow-lg border-0 rounded feature-card">
             <div class="card-body">
                 <div class="row ">
                     <div class="d-flex gap-2 justify-content-center" >

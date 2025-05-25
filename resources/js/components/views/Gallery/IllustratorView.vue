@@ -7,31 +7,46 @@
           <h1><b>ILLUSTRATION</b></h1>
         </div>
 
-        <div class="col-sm-12 col-lg-auto">
-          <div class="d-flex flex-wrap">
-              <router-link to="/" class="me-1 mt-1">
-          <button class="btn btn-primary rounded-0"><i class="fa fa-home"></i> Return Home</button>
-           </router-link>
-            <router-link to="/animation" class="me-1 mt-1" active-class="active-link">
-              <button class="btn btn-danger">ANIMATION</button>
+     <div class="col-sm-12 col-lg-auto mt-3 d-inline-block">
+ 
+
+          <div class="d-flex flex-wrap justify-content-start justify-content-lg-start">
+            <router-link to="/" class="">
+              <button class="btn btn-warning rounded-pill d-inline-block"><i class="fa fa-home"></i> Return Home</button>
             </router-link>
-            <router-link to="/illustrator" class="me-1 mt-1" active-class="active-link">
-              <button class="btn btn-danger">ILLUSTRATION</button>
+            <button class="btn btn-success  d-lg-none d-inline-block  ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
+            <i class="fa fa-bars"></i>
+            </button>
+            
+          </div>
+          
+
+
+
+  <!-- Collapsible container for the buttons -->
+          <div class="collapse d-lg-flex flex-wrap" id="navButtons">
+          
+            <router-link to="/animation" class="" active-class="active-link">
+              <button class="btn btn-success me-1 mt-2">ANIMATION</button>
             </router-link>
-            <router-link to="/digital-arts" class="me-1 mt-1" active-class="active-link">
-              <button class="btn btn-danger">DIGITAL ARTS</button>
+            <router-link to="/illustrator" class="" active-class="active-link">
+              <button class="btn btn-success me-1 mt-2">ILLUSTRATION</button>
             </router-link>
-            <router-link to="/graphic-design" class="me-1 mt-1" active-class="active-link">
-              <button class="btn btn-danger">GRAPHIC DESIGNS</button>
+            <router-link to="/digital-arts" class="" active-class="active-link">
+              <button class="btn btn-success me-1 mt-2">DIGITAL ARTS</button>
             </router-link>
-            <router-link to="/web-design" class="me-1 mt-1" active-class="active-link">
-              <button class="btn btn-danger">WEB DESIGNS</button>
+            <router-link to="/graphic-design" class="" active-class="active-link">
+              <button class="btn btn-success me-1 mt-2">GRAPHIC DESIGNS</button>
+            </router-link>
+            <router-link to="/web-design" class="" active-class="active-link">
+              <button class="btn btn-success me-1 mt-2 ">WEB DESIGNS</button>
             </router-link>
             <router-link to="/website" active-class="active-link">
-              <button class="btn btn-danger mt-1">WEBSITES</button>
+              <button class="btn btn-success me-1 mt-2 ">WEBSITES</button>
             </router-link>
           </div>
-        </div>
+      </div>
+
       </div>
     </div>
 
@@ -44,7 +59,7 @@
         v-if="paginatedArtworks.length > 0"
       >
         <!-- Card with image, title, and description -->
-        <div class="card h-100 shadow-sm border-0 rounded-0 "  data-aos="fade-right"
+        <div class="card h-100 shadow-lg border-0 rounded "  data-aos="fade-right"
               data-aos-duration="900">
           <a
             :href="artwork.link"
@@ -52,7 +67,7 @@
             rel="noopener noreferrer"
           >
             <img  @click="viewFullScreen(artwork.image)"
-              class="card-img-top rounded-0"
+              class="card-img-top "
               :src="artwork.image"
               style="object-fit: cover; height: 250px; width: 100%;"
              
@@ -73,9 +88,9 @@
     </div>
     <!-- Pagination Controls -->
     <div class="text-center mt-4">
-      <button class="btn btn-danger me-2" :disabled="currentPage === 1" @click="currentPage--">Previous</button>
+      <button class="btn btn-success me-2" :disabled="currentPage === 1" @click="currentPage--">Previous</button>
       <span class="mx-2">Page {{ currentPage }} of {{ totalPages }}</span>
-      <button class="btn btn-danger ms-2" :disabled="currentPage === totalPages" @click="currentPage++">Next</button>
+      <button class="btn btn-success ms-2" :disabled="currentPage === totalPages" @click="currentPage++">Next</button>
     </div>
 
     <!-- Fullscreen Image Modal -->
@@ -91,32 +106,30 @@ export default {
   data() {
     return {
       artworks: [
-        { id: 1, number: "1", name: "Digital Artwork 1", image: "../storage/gallery/Illustrator/art (1).JPG",  description: "A sleek product landing page layout built for performance and style."},
-        { id: 5, number: "5", name: "Digital Artwork 5", image: "../storage/gallery/Illustrator/art (1).png",  description: "A sleek product landing page layout built for performance and style." },
-        { id: 7, number: "7", name: "Digital Artwork 7", image: "../storage/gallery/Illustrator/art (2).jpg",  description: "A sleek product landing page layout built for performance and style." },
-        { id: 8, number: "8", name: "Digital Artwork 8", image: "../storage/gallery/Illustrator/art (2).png",  description: "A sleek product landing page layout built for performance and style." },
-        { id: 9, number: "9", name: "Digital Artwork 9", image: "../storage/gallery/Illustrator/art (3).jpg",  description: "A sleek product landing page layout built for performance and style." },
-        { id: 10, number: "10", name: "Digital Artwork 10", image: "../storage/gallery/Illustrator/art (3).png",  description: "A sleek product landing page layout built for performance and style." },
-        { id: 11, number: "11", name: "Digital Artwork 11", image: "../storage/gallery/Illustrator/art (4).jpg",  description: "A sleek product landing page layout built for performance and style." },
-        { id: 13, number: "13", name: "Digital Artwork 13", image: "../storage/gallery/Illustrator/art (4).png",  description: "A sleek product landing page layout built for performance and style." },
-        { id: 14, number: "14", name: "Digital Artwork 14", image: "../storage/gallery/Illustrator/art (5).jpg",  description: "A sleek product landing page layout built for performance and style." },
-        { id: 15, number: "15", name: "Digital Artwork 15", image: "../storage/gallery/Illustrator/art (5).png",  description: "A sleek product landing page layout built for performance and style." },
-        { id: 16, number: "16", name: "Digital Artwork 16", image: "../storage/gallery/Illustrator/art (6).jpg",  description: "A sleek product landing page layout built for performance and style." },
-        { id: 17, number: "17", name: "Digital Artwork 17", image: "../storage/gallery/Illustrator/art (6).png",  description: "A sleek product landing page layout built for performance and style." },
-        { id: 18, number: "18", name: "Digital Artwork 18", image: "../storage/gallery/Illustrator/art (7).jpg",  description: "A sleek product landing page layout built for performance and style." },
-        { id: 19, number: "19", name: "Digital Artwork 19", image: "../storage/gallery/Illustrator/art (7).png",  description: "A sleek product landing page layout built for performance and style." },
-        { id: 20, number: "20", name: "Digital Artwork 20", image: "../storage/gallery/Illustrator/art (8).jpg",  description: "A sleek product landing page layout built for performance and style." },
-        { id: 21, number: "21", name: "Digital Artwork 21", image: "../storage/gallery/Illustrator/art (8).png",  description: "A sleek product landing page layout built for performance and style." },
-        { id: 22, number: "22", name: "Digital Artwork 22", image: "../storage/gallery/Illustrator/art (9).jpg",  description: "A sleek product landing page layout built for performance and style." },
-        { id: 23, number: "23", name: "Digital Artwork 23", image: "../storage/gallery/Illustrator/art (9).png",  description: "A sleek product landing page layout built for performance and style." },
-        { id: 24, number: "24", name: "Digital Artwork 24", image: "../storage/gallery/Illustrator/art (10).jpg",  description: "A sleek product landing page layout built for performance and style." },
-        { id: 25, number: "25", name: "Digital Artwork 25", image: "../storage/gallery/Illustrator/art (10).png",  description: "A sleek product landing page layout built for performance and style." },
-        { id: 26, number: "26", name: "Digital Artwork 26", image: "../storage/gallery/Illustrator/art (11).jpg",  description: "A sleek product landing page layout built for performance and style." },
-        { id: 27, number: "27", name: "Digital Artwork 27", image: "../storage/gallery/Illustrator/art (11).png",  description: "A sleek product landing page layout built for performance and style." },
-        { id: 28, number: "28", name: "Digital Artwork 28", image: "../storage/gallery/Illustrator/art (12).jpg",  description: "A sleek product landing page layout built for performance and style." },
-        { id: 29, number: "29", name: "Digital Artwork 29", image: "../storage/gallery/Illustrator/art (12).png",  description: "A sleek product landing page layout built for performance and style." },
-        { id: 30, number: "30", name: "Digital Artwork 30", image: "../storage/gallery/Illustrator/art (13).jpg",  description: "A sleek product landing page layout built for performance and style." },
-        { id: 31, number: "31", name: "Digital Artwork 31", image: "../storage/gallery/Illustrator/art (14).jpg",  description: "A sleek product landing page layout built for performance and style." },
+        { id: 1, number: "1", name: "CONVINNIENCE STORE", image: "../storage/gallery/Illustrator/art (1).JPG",  description: "Inspired by the song of Dilaw."},
+        { id: 2, number: "2", name: "GELOU", image: "../storage/gallery/Illustrator/art (1).png",  description: "Commission." },
+        { id: 3, number: "3", name: "CHARACTER ILLUSTRATION", image: "../storage/gallery/Illustrator/art (2).jpg",  description: "i drew this becuase of i want to learn how the proportion of the abs will work." },
+        { id: 4, number: "4", name: "REFERENCING HAND", image: "../storage/gallery/Illustrator/art (2).png",  description: "This is Actually me determine and analizing the proportion of hand." },
+        { id: 5, number: "5", name: "KAPASIGAN", image: "../storage/gallery/Illustrator/art (3).jpg",  description: "Inspired by Me and my Girlfriend, first data." },
+        { id: 6, number: "6", name: "SCHOOL BUS", image: "../storage/gallery/Illustrator/art (3).png",  description: "Illustration of a girl gossiping how the boy looking at her" },
+        { id: 7, number: "7", name: "BURGER", image: "../storage/gallery/Illustrator/art (4).jpg",  description: "No Description." },
+        { id: 8, number: "8", name: "GELOU 2", image: "../storage/gallery/Illustrator/art (4).png",  description: "Commission." },
+        { id: 9, number: "9", name: "DRAWING ILLUSTRATION", image: "../storage/gallery/Illustrator/art (5).jpg",  description: "Inspired from my first setup." },
+        { id: 10, number: "10", name: "TERRACE", image: "../storage/gallery/Illustrator/art (5).png",  description: "No Description." },
+        { id: 11, number: "11", name: "JEEPNEY", image: "../storage/gallery/Illustrator/art (6).png",  description: "THe Girl and the Boy Sleeping on a Jeepney together." },
+        { id: 12, number: "12", name: "KRISTO LANG", image: "../storage/gallery/Illustrator/art (7).jpg",  description: "Inspired by my profile picture." },
+        { id: 13, number: "13", name: "DALAGANG PILIPINA", image: "../storage/gallery/Illustrator/art (7).png",  description: "The girl who riding jeepney with Pilipinyana. This is inspired by the new policy of the boverment that every monday wear formal attire." },
+        { id: 14, number: "14", name: "BAWAT PIYESA", image: "../storage/gallery/Illustrator/art (8).jpg",  description: "Inspired by the song BAWAT PIYESA. (for music video)" },
+        { id: 15, number: "15", name: "ESTRANGHERO", image: "../storage/gallery/Illustrator/art (8).png",  description: "Inspired by the song ESTRANGHERO by Cup of Joe" },
+        { id: 16, number: "16", name: "RAINING IN MANILA", image: "../storage/gallery/Illustrator/art (9).jpg",  description: "Inspired by the song Raining in Manila by Lola Amore" },
+        { id: 17, number: "17", name: "HEARTS CAN'T SEPERATE TWO MILES THAT IS REALLY CARE", image: "../storage/gallery/Illustrator/art (9).png",  description: "A Love that no matter what they still see the precense." },
+        { id: 18, number: "18", name: "COFFEE", image: "../storage/gallery/Illustrator/art (10).jpg",  description: "No Description." },
+        { id: 19, number: "19", name: "CLASSIC BIKE", image: "../storage/gallery/Illustrator/art (10).png",  description: "Created in Adobe Illustrator." },
+        { id: 20, number: "20", name: "TAGAYTAY", image: "../storage/gallery/Illustrator/art (11).jpg",  description: "No Description." },
+        { id: 21, number: "21", name: "TAGATAY 2", image: "../storage/gallery/Illustrator/art (12).jpg",  description: "No Description." },
+        { id: 22, number: "22", name: "SELF VECTOR", image: "../storage/gallery/Illustrator/art (12).png",  description: "A self Vector of mine." },
+        { id: 23, number: "23", name: "MIDNIGHT SKY", image: "../storage/gallery/Illustrator/art (13).jpg",  description: "Created in Krita." },
+        { id: 24, number: "24", name: "CAFE IN THE SKY", image: "../storage/gallery/Illustrator/art (14).jpg",  description: "Created in Krita too." },
       ],
       currentPage: 1,
       pageSize: 8,

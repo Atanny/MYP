@@ -20,7 +20,7 @@ import 'aos/dist/aos.css';
 
 AOS.init();
 
-
+import '../css/app.css';
 import HeaderComponent from './components/components/HeaderComponent.vue';
 import NavbarComponent from './components/components/NavbarComponent.vue';
 import SecondComponent from './components/components/SecondContentComponent.vue';

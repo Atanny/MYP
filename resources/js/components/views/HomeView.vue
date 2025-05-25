@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-5">
+    <div style="margin-top: 75px;">
         <header-component class="mt-5"></header-component>
        
         <second-component class=""></second-component>

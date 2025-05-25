@@ -21,7 +21,7 @@
 <body>
     <div id="app" class="container-fluid">
         <Navbar-component></Navbar-component>
-        <router-view class="mt-4"></router-view>
+        <router-view class=""></router-view>
     </div>
 </body>
 

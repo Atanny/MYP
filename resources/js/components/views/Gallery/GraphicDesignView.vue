@@ -60,7 +60,7 @@
         v-if="paginatedArtworks.length > 0"
       >
         <!-- Card with image, title, and description -->
-        <div class="card h-100 shadow-sm border-0 rounded "  data-aos="fade-right"
+        <div class="card h-100 shadow-lg border-0 rounded "  data-aos="fade-right"
               data-aos-duration="900">
           <a
             :href="artwork.link"

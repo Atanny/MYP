@@ -24,3 +24,7 @@ Route::get('/{any}', function () {return view('layouts.app');})->where('any', '.
 Route::get('/healthz', function () {
     return response()->json(['status' => 'ok']);
 });
+
+Route::get('/check-storage-link', function () {
+    return is_link(public_path('storage')) ? 'Storage link exists' : 'Storage link missing';
+});

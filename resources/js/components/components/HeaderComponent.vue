@@ -71,7 +71,7 @@
 
     <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
         <div class="p-0 p-lg-5">
-            <img class=" img-fluid" src="/storage/mine.png" alt="">
+            <img class=" img-fluid" src="/storage/mine.png" alt=""/>
         </div>
      
     </div>

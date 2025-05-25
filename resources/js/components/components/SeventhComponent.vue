@@ -15,7 +15,7 @@
                     <div class="col-lg-12 d-flex justify-content-center align-items-center">
                         <div class="row">
                             <!-- Card 1 -->
-                            <div class="col-lg-6 card border-0 shadow-lg rounded mb-2" data-aos="fade-left" data-aos-duration="1600">
+                            <div class="col-lg-6 card border-0 shadow-lg rounded mb-2" data-aos="fade-right" data-aos-duration="1600">
                                 <div class="card-body">
                                     <div class="card-title d-flex mt-4">
                                        
@@ -29,7 +29,7 @@
                                 </div>
                                
                             </div>
-                            <div class="col-lg-6 card border-0 shadow-lg rounded mb-2" data-aos="fade-left" data-aos-duration="1600">
+                            <div class="col-lg-6 card border-0 shadow-lg rounded mb-2" data-aos="fade-right" data-aos-duration="1600">
                                 <div class="card-body">
                                     <div class="card-title d-flex mt-4">
                                        
@@ -43,7 +43,7 @@
                                 </div>
                                
                             </div>
-                            <div class="col-lg-6 card border-0 shadow-lg rounded mb-2" data-aos="fade-left" data-aos-duration="1200">
+                            <div class="col-lg-6 card border-0 shadow-lg rounded mb-2" data-aos="fade-right" data-aos-duration="1200">
                                 <div class="card-body">
                                     <div class="card-title d-flex mt-4">
                                      
@@ -58,7 +58,7 @@
                                
                             </div>
 
-                            <div class="col-lg-6 card border-0 shadow-lg rounded mb-2" data-aos="fade-left" data-aos-duration="800">
+                            <div class="col-lg-6 card border-0 shadow-lg rounded mb-2" data-aos="fade-right" data-aos-duration="800">
                                 <div class="card-body">
                                     <div class="card-title d-flex mt-4">
                                        

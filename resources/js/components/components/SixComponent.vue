@@ -75,7 +75,7 @@
             class="col-lg-6 img-fluid mb-5 mb-lg-0 mb-md-0 d-none d-sm-block d-lg-block p-5"
             src="/storage/atanny (2).png"
             alt=""
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-duration="2000"
           />
 
@@ -83,7 +83,7 @@
             class="col-lg-6 img-fluid mt-5 mb-lg-0 mb-md-0 d-lg-none d-block"
             src="/storage/atanny (2).png"
             alt=""
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-duration="2000"
           />
         </div>

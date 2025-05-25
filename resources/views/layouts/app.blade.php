@@ -19,9 +19,9 @@
 
 </head>
 <body>
-    <div id="app" >
+    <div id="app" class="container-fluid">
         <Navbar-component></Navbar-component>
-        <router-view class=""></router-view>
+        <router-view class="mt-4"></router-view>
     </div>
 </body>
 

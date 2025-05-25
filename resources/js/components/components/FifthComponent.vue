@@ -45,7 +45,7 @@
             </div>
         </div>
 
-         <div class="card mt-4 rounded shadow-lg border-0"  data-aos="fade-left" data-aos-duration="1000">
+         <div class="card mt-4 rounded shadow-lg border-0"  data-aos="fade-right" data-aos-duration="1000">
             <div class="card-body">
                 <img class="img-fluid card-img-top rounded" src="/storage/gallery/Artworks/hi.jpg" style="height: 200px; object-fit: cover;" alt="">
                 <div>
@@ -62,7 +62,7 @@
             </div>
         </div>
 
-        <div class="card mt-4 rounded shadow-lg border-0"  data-aos="fade-left" data-aos-duration="1600">
+        <div class="card mt-4 rounded shadow-lg border-0"  data-aos="fade-right" data-aos-duration="1600">
             <div class="card-body">
                 <img class="img-fluid card-img-top rounded" src="/storage/gallery/Poster/art (1).jpeg" style="height: 200px; object-fit: cover;" alt="">
                 <div>

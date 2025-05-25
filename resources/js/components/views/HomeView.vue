@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div class="mt-5">
         <header-component class="mt-5"></header-component>
        
         <second-component class=""></second-component>

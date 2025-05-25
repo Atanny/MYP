@@ -3,7 +3,7 @@
     <marquee
       class="bg-dark text-white p-2 transform2 mt-5 container-fluid"
       behavior="scroll"
-      direction="left"
+      direction="right"
       scrollamount="20"
       scrolldelay="1"
     >

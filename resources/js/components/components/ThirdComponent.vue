@@ -22,12 +22,12 @@
         </div>
 
         <div class="col-lg-6 mb-5">
-            <h1 class="display-1 fw-bolder outline-text2 text-start " data-aos="fade-left" data-aos-duration="1000">IIIIIIIIIIIIII</h1>
-            <div class="card shadow-lg  feature-card text-light rounded"  data-aos="fade-left" data-aos-duration="">
+            <h1 class="display-1 fw-bolder outline-text2 text-start " data-aos="fade-right" data-aos-duration="1000">IIIIIIIIIIIIII</h1>
+            <div class="card shadow-lg  feature-card text-light rounded"  data-aos="fade-right" data-aos-duration="">
                 <img class="card-image img-fluid rounded" src="/storage/333 (2).jpg" style="height: 500px; object-fit: cover;" alt="">
             </div>
 
-            <div class="card shadow-lg rounded mt-4 feature-card text-light"  data-aos="fade-left" data-aos-duration="1000">
+            <div class="card shadow-lg rounded mt-4 feature-card text-light"  data-aos="fade-right" data-aos-duration="1000">
                 <div class="card-body">
                     
                      <p>As a person who loves Art, I still have more hobbies. Another hobby I love is riding motorcycles. Not art related, but it is Fun!! Haha, anyways, scroll more to know about my Skills! Thank you.</p>

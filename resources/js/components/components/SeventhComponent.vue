@@ -61,8 +61,8 @@
                             <div class="col-lg-6 card border-0 shadow-lg rounded mb-2" data-aos="fade-right" data-aos-duration="800">
                                 <div class="card-body">
                                     <div class="card-title d-flex mt-4">
-                                       
-                                        <h5> <i class="fa-solid fa-pen-fancy me-2 display-5"></i></h5>
+                                    
+                                        <h5> <i class="fa-solid fa-ticket me-2 display-5"></i></h5>
                                         <div>
                                             <h5 class="mb-0"><b>IT SUPPORT</b></h5>
                                             <p>Alight Solutions</p>

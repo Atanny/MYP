@@ -105,7 +105,7 @@ export default {
   data() {
     return {
       artworks: [
-        { id: 1, number: "1", name: "CONVINNIENCE STORE", image: "../images/gallery/Illustrator/art (1).JPG",  description: "Inspired by the song of Dilaw."},
+        { id: 1, number: "1", name: "CONVINNIENCE STORE", image: "../images/gallery/Illustrator/art (1).jpg",  description: "Inspired by the song of Dilaw."},
         { id: 2, number: "2", name: "GELOU", image: "../images/gallery/Illustrator/art (1).png",  description: "Commission." },
         { id: 3, number: "3", name: "CHARACTER ILLUSTRATION", image: "../images/gallery/Illustrator/art (2).jpg",  description: "i drew this becuase of i want to learn how the proportion of the abs will work." },
         { id: 4, number: "4", name: "REFERENCING HAND", image: "../images/gallery/Illustrator/art (2).png",  description: "This is Actually me determine and analizing the proportion of hand." },

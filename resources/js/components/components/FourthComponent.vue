@@ -20,15 +20,15 @@
           <div class="card-body">
             <div class="row align-items-center justify-content-center gap-3">
               <div
-                class="col-5 col-lg-2 text shadow-lg rounded  mt-4 mb-5"
+                class="col-5 col-lg-2 text shadow-lg rounded  "
                 v-for="software in softwares"
                 :key="software.id"
               >
-                <div class="d-flex align-items-center mt-3">
-                  <h1 class="fw-bolder " data-aos="fade-right" data-aos-duration="1000">
+                <div class="d-flex align-items-center ">
+                  <h1 class="fw-bolder mt-3" data-aos="fade-right" data-aos-duration="1000">
                     {{ software.id }}
                   </h1>
-                  <h1 class="ms-3"data-aos="fade-right"data-aos-duration="500">
+                  <h1 class="ms-3 mt-3"data-aos="fade-right"data-aos-duration="500">
 
                     <iconify-icon :icon="software.iconClass" width="40" height="40" ></iconify-icon>
                   </h1>

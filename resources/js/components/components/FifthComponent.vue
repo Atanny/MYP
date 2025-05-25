@@ -32,7 +32,7 @@
        
         <div class="card mt-4 rounded shadow-lg border-0"  data-aos="fade-right" data-aos-duration="1000">
             <div class="card-body">
-                <img class="img-fluid card-img-top rounded" src="/images/gallery/Illustrator/art (1).JPG" style="height: 200px; object-fit: cover;" alt="">
+                <img class="img-fluid card-img-top rounded" src="/images/gallery/Illustrator/art (1).jpg" style="height: 200px; object-fit: cover;" alt="">
                 <div>
                     <h5 class="card-title fw-bolder mt-4">ILLUSTRATION</h5>
                     <div class="card-text">I use illustration to bring concepts to life, focusing on clear and engaging drawings that tell a story.</div>

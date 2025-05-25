@@ -18,20 +18,20 @@
           <div class="row align-items-center justify-content-center gap-3">
             <!-- Software List -->
             <div
-              class="col-5 col-lg-2 text shadow-lg rounded p-2 mt-4 mb-5"
+              class="col-5 col-lg-2 text shadow-lg rounded p-2  "
               v-for="software2 in softwares2"
               :key="software2.id"
             >
-              <div class="d-flex align-items-center mt-3">
+              <div class="d-flex align-items-center">
                 <h1
-                  class="fw-bolder "
+                  class="fw-bolder mt-3"
                   data-aos="fade-right"
                   data-aos-duration="1000"
                 >
                   {{ software2.id }}
                 </h1>
                 <h1
-                  class="ms-3"
+                  class="ms-3 mt-3"
                   data-aos="fade-right"
                   data-aos-duration="500"
                 >

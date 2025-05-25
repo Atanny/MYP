@@ -118,22 +118,22 @@ body{
 
 .outline-text { 
     font-weight: bold;
-    color: transparent;
-    -webkit-text-stroke: 1px #000; 
+    color: #7EA122;
+   
     text-align: start;
 }
 
 .outline-text2 { 
     font-weight: bold;
-    color: transparent;
-    -webkit-text-stroke: 1px #7EA122; 
+    color: #fca311;
+   
     text-align: start;
 }
 
 .outline-text3 { 
     font-weight: bold;
-    color: transparent;
-    -webkit-text-stroke: 1px #fff; 
+    color: white;
+   
     text-align: start;
 }
 

@@ -3,6 +3,7 @@ import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
+    base: '/',  // <-- Add this line to ensure correct base URL for assets
     plugins: [
         laravel({
             input: [

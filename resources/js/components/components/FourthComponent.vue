@@ -15,12 +15,12 @@
         </h1>
       </marquee>
 
-      <div class="container justify-content-center">
-        <div class="card rounded mt-5 bg-light border-0 shadow-lg p-5">
+      <div class=" justify-content-center ">
+        <div class="card rounded mt-5  bg-light border-0 shadow-lg ">
           <div class="card-body">
             <div class="row align-items-center justify-content-center gap-3">
               <div
-                class="col-5 col-lg-2 text shadow-lg rounded p-2 mt-4"
+                class="col-5 col-lg-2 text shadow-lg rounded  mt-4 mb-5"
                 v-for="software in softwares"
                 :key="software.id"
               >

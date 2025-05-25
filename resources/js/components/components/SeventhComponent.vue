@@ -39,7 +39,7 @@
                                             <p>Kalawaan SK</p>
                                         </div>
                                     </div>
-                               <p>Freelancing for almost a year. I work here as a basic Graphic Desinger for their Public Materials. such as posters, announcements, and congratualtion cards</p>
+                               <p>Freelancing for almost a year. I work here as a basic Graphic Designer for their Public Materials. such as posters, announcements, and congratualtion cards</p>
                                 </div>
                                
                             </div>

@@ -10,7 +10,7 @@
 
     
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-    @vite([ 'resources/js/app.js'])
+    @vite(['/resources/css/app.css', '/resources/js/app.js'])
 
 </head>
 <body>
@@ -19,5 +19,5 @@
         <router-view class=""></router-view>
     </div>
 </body>
-<script src="{{ mix('js/app.js') }}"></script>
+
 </html>

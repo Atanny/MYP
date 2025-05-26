@@ -50,39 +50,39 @@
     </div>
 
 
-    <!-- Artwork Thumbnails -->
+    <!-- Design Thumbnails -->
           <div class="row">
       <div
         class="col-md-3 mt-4 h-auto"
-        v-for="artwork in paginatedArtworks"
-        :key="artwork.id"
-        v-if="paginatedArtworks.length > 0"
+        v-for="Design in paginatedDesigns"
+        :key="Design.id"
+        v-if="paginatedDesigns.length > 0"
       >
         <!-- Card with image, title, and description -->
         <div class="card h-100 shadow-lg border-0 rounded "  data-aos="fade-right"
               data-aos-duration="900">
           <a
-            :href="artwork.link"
+            :href="Design.link"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img  @click="viewFullScreen(artwork.image)"
+            <img  @click="viewFullScreen(Design.image)"
               class="card-img-top "
-              :src="artwork.image"
+              :src="Design.image"
               style="object-fit: cover; height: 250px; width: 100%;"
              
             />
           </a>
           <div class="card-body">
-            <h6 class="fw-bold mb-1">{{ artwork.number }} - {{ artwork.name }}</h6>
-            <p class="card-text text-muted small">{{ artwork.description }}</p>
+            <h6 class="fw-bold mb-1">{{ Design.number }} - {{ Design.name }}</h6>
+            <p class="card-text text-muted small">{{ Design.description }}</p>
           </div>
         </div>
       </div>
 
       <div v-else>
         <div class="text-center mt-5 card p-3 bg-light shadow-sm">
-          <p class="text-muted mt-3">No artworks available yet.</p>
+          <p class="text-muted mt-3">No Designs available yet.</p>
         </div>
       </div>
     </div>
@@ -105,20 +105,20 @@
 export default {
   data() {
     return {
-      artworks: [
+      Designs: [
  
   { id: 1, number: "1", name: "POSTER", image: "../images/gallery/Poster/art (1).jpeg", description: "A simple design made using Photoshop." },
-  { id: 2, number: "2", name: "2ND WORN-OUT", image: "../images/gallery/Poster/art (64).png", description: "A basic artwork edited with Photoshop." },
+  { id: 2, number: "2", name: "2ND WORN-OUT", image: "../images/gallery/Poster/art (64).png", description: "A basic Design edited with Photoshop." },
   { id: 3, number: "3", name: "2ND WORN-OUT 2", image: "../images/gallery/Poster/art (41).png", description: "Made with Photoshop to add some colors." },
   { id: 4, number: "4", name: "2ND WORN-OUT 3", image: "../images/gallery/Poster/art (1).png", description: "A Photoshop design created with care." },
   { id: 5, number: "5", name: "MANIPULATION", image: "../images/gallery/Poster/art (2).jpeg", description: "A simple piece improved in Photoshop." },
-  { id: 6, number: "6", name: "POSTER PORJECT 1ST YEAR", image: "../images/gallery/Poster/art (2).jpg", description: "An artwork touched up with Photoshop." },
+  { id: 6, number: "6", name: "POSTER PORJECT 1ST YEAR", image: "../images/gallery/Poster/art (2).jpg", description: "An Design touched up with Photoshop." },
   { id: 7, number: "7", name: "TRANSNENE", image: "../images/gallery/Poster/art (2).png", description: "Created using Photoshop with some care." },
-  { id: 8, number: "8", name: "2ND YEAR ACTIVITY", image: "../images/gallery/Poster/art (3).jpg", description: "A neat Photoshop edit on this artwork." },
+  { id: 8, number: "8", name: "2ND YEAR ACTIVITY", image: "../images/gallery/Poster/art (3).jpg", description: "A neat Photoshop edit on this Design." },
   { id: 9, number: "9", name: "BASKETBALL LEAGUE", image: "../images/gallery/Poster/art (3).png", description: "Made better with some Photoshop work." },
   { id: 10, number: "10", name: "CHURCH INIVATION", image: "../images/gallery/Poster/art (4).jpg", description: "A clean design done in Photoshop." },
   { id: 11, number: "11", name: "KILINIKKALAWAAN", image: "../images/gallery/Poster/art (24).png", description: "A Photoshop edit to improve the look." },
-  { id: 12, number: "12", name: "KILINIKKALAWAAN 2", image: "../images/gallery/Poster/art (4).png", description: "A basic artwork polished in Photoshop." },
+  { id: 12, number: "12", name: "KILINIKKALAWAAN 2", image: "../images/gallery/Poster/art (4).png", description: "A basic Design created in Photoshop." },
   { id: 13, number: "13", name: "KILINIKKALAWAAN 3", image: "../images/gallery/Poster/art (23).png", description: "Made a little nicer with Photoshop." },
   { id: 14, number: "14", name: "CONGRATULATIONS POSTER SQUARE ", image: "../images/gallery/Poster/art (5).png", description: "Edited in Photoshop for a smoother look." },
   { id: 15, number: "15", name: "CONGRATULATIONS POSTER PORTRAIT", image: "../images/gallery/Poster/art (10).png", description: "A simple Photoshop layered design." },
@@ -126,13 +126,13 @@ export default {
   { id: 17, number: "17", name: "OWN THE STAGE", image: "../images/gallery/Poster/art (7).png", description: "A Photoshop touch to improve colors." },
   { id: 18, number: "18", name: "CHURCH POSTER", image: "../images/gallery/Poster/art (8).png", description: "A simple design with Photoshop help." },
   { id: 19, number: "19", name: "MENS BASKETBALL", image: "../images/gallery/Poster/art (17).png", description: "Smoothed out with Photoshop." },
-  { id: 20, number: "20", name: "MENS BASKETBALL 2", image: "../images/gallery/Poster/art (9).png", description: "An artwork with Photoshop corrections." },
+  { id: 20, number: "20", name: "MENS BASKETBALL 2", image: "../images/gallery/Poster/art (9).png", description: "An Design with Photoshop corrections." },
   { id: 21, number: "21", name: "BASKETBALL LEAGUE", image: "../images/gallery/Poster/art (11).png", description: "Basic edits done using Photoshop." },
-  { id: 22, number: "22", name: "SOYA LOGO", image: "../images/gallery/Poster/art (12).png", description: "Made better with Photoshop tools." },
-  { id: 23, number: "23", name: "SOYA LOGO", image: "../images/gallery/Poster/art (13).png", description: "Simple Photoshop editing on this piece." },
+  { id: 22, number: "22", name: "SOYA LOGO", image: "../images/gallery/Poster/art (12).png", description: "Made better with illustrator tools." },
+  { id: 23, number: "23", name: "SOYA LOGO", image: "../images/gallery/Poster/art (13).png", description: "Second Version of the Logo." },
   { id: 24, number: "24", name: "YOUTH AWARDS NIGHT", image: "../images/gallery/Poster/art (14).png", description: "Clean design with Photoshop help." },
-  { id: 25, number: "25", name: "CHURCH ANNIVERSARU", image: "../images/gallery/Poster/art (15).png", description: "A Photoshop touch-up to improve it." },
-  { id: 26, number: "26", name: "BORDER 1", image: "../images/gallery/Poster/art (16).png", description: "Light Photoshop work on this artwork." },
+  { id: 25, number: "25", name: "PORTFOLIOERSARU", image: "../images/gallery/Poster/art (15).png", description: "A Photoshop touch-up to improve it." },
+  { id: 26, number: "26", name: "BORDER 1", image: "../images/gallery/Poster/art (16).png", description: "Light Photoshop work on this Design." },
   { id: 27, number: "27", name: "BORDER 2", image: "../images/gallery/Poster/art (18).png", description: "Photoshop used to add some details." },
   { id: 28, number: "28", name: "DISTRBUTION PUBMATS", image: "../images/gallery/Poster/art (19).png", description: "A simple Photoshop edit for clarity." },
   { id: 29, number: "29", name: "BORDER 3", image: "../images/gallery/Poster/art (20).png", description: "Layers combined with Photoshop." },
@@ -178,34 +178,18 @@ export default {
    { id: 69, number: "72", name: "WOMENS VOLLEYBALL 2", image: "../images/gallery/Poster/art (67).png", description: "A layered Photoshop design with nice contrast." },
   { id: 70, number: "73", name: "MEAL MISSION", image: "../images/gallery/Poster/art (68).png", description: "Clean and simple Photoshop work." },
   { id: 71, number: "74", name: "DART CLASH", image: "../images/gallery/Poster/art (69).png", description: "Photoshop added some depth and detail." },
-  { id: 72, number: "75", name: "KABATAAN LIMITLESS", image: "../images/gallery/Poster/art (70).png", description: "A Photoshop polish on this digital art." },
-      { id: 73, number: "76", name: "BIDA NG PASKO", image: "../images/gallery/Poster/final.png", description: "A Photoshop polish on this digital art." },
-{ id: 74, number: "77", name: "TESI 1", image: "../images/gallery/Poster/1.png", description: "A Photoshop polish on this digital art." },
-{ id: 75, number: "78", name: "TESI 2", image: "../images/gallery/Poster/2.png", description: "A Photoshop polish on this digital art." },
-{ id: 76, number: "79", name: "TESI 3", image: "../images/gallery/Poster/3.png", description: "A Photoshop polish on this digital art." },
-{ id: 77, number: "80", name: "CHURCH ANNIV", image: "../images/gallery/Poster/4.png", description: "A Photoshop polish on this digital art." },
-{ id: 77, number: "80", name: "CHURCH ANNIV", image: "../images/gallery/Poster/old portfolio pdf (1).png", description: "A Photoshop polish on this digital art." },
-      { id: 78, number: "81", name: "CHURCH ANNIV 2", image: "../images/gallery/Poster/old portfolio pdf (2).png", description: "A Photoshop polish on this digital art." },
-      { id: 79, number: "82", name: "CHURCH ANNIV 3", image: "../images/gallery/Poster/old portfolio pdf (3).png", description: "A Photoshop polish on this digital art." },
-      { id: 80, number: "83", name: "CHURCH ANNIV 4", image: "../images/gallery/Poster/old portfolio pdf (4).png", description: "A Photoshop polish on this digital art." },
-      { id: 81, number: "84", name: "CHURCH ANNIV 5", image: "../images/gallery/Poster/old portfolio pdf (5).png", description: "A Photoshop polish on this digital art." },
-      { id: 82, number: "85", name: "CHURCH ANNIV 6", image: "../images/gallery/Poster/old portfolio pdf (6).png", description: "A Photoshop polish on this digital art." },
-      { id: 83, number: "86", name: "CHURCH ANNIV 7", image: "../images/gallery/Poster/old portfolio pdf (7).png", description: "A Photoshop polish on this digital art." },
-      { id: 84, number: "87", name: "CHURCH ANNIV 8", image: "../images/gallery/Poster/old portfolio pdf (8).png", description: "A Photoshop polish on this digital art." },
-      { id: 85, number: "88", name: "CHURCH ANNIV 9", image: "../images/gallery/Poster/old portfolio pdf (9).png", description: "A Photoshop polish on this digital art." },
-      { id: 86, number: "89", name: "CHURCH ANNIV 10", image: "../images/gallery/Poster/old portfolio pdf (10).png", description: "A Photoshop polish on this digital art." },
-      { id: 87, number: "90", name: "CHURCH ANNIV 11", image: "../images/gallery/Poster/old portfolio pdf (11).png", description: "A Photoshop polish on this digital art." },
-      { id: 88, number: "91", name: "CHURCH ANNIV 12", image: "../images/gallery/Poster/old portfolio pdf (12).png", description: "A Photoshop polish on this digital art." },
-      { id: 89, number: "92", name: "CHURCH ANNIV 13", image: "../images/gallery/Poster/old portfolio pdf (13).png", description: "A Photoshop polish on this digital art." },
-      { id: 90, number: "93", name: "CHURCH ANNIV 14", image: "../images/gallery/Poster/old portfolio pdf (14).png", description: "A Photoshop polish on this digital art." },
-      { id: 91, number: "94", name: "CHURCH ANNIV 15", image: "../images/gallery/Poster/old portfolio pdf (15).png", description: "A Photoshop polish on this digital art." },
-      { id: 92, number: "95", name: "CHURCH ANNIV 16", image: "../images/gallery/Poster/old portfolio pdf (16).png", description: "A Photoshop polish on this digital art." },
-      { id: 93, number: "96", name: "CHURCH ANNIV 17", image: "../images/gallery/Poster/old portfolio pdf (17).png", description: "A Photoshop polish on this digital art." },
-      { id: 94, number: "97", name: "CHURCH ANNIV 18", image: "../images/gallery/Poster/old portfolio pdf (18).png", description: "A Photoshop polish on this digital art." },
-      { id: 95, number: "98", name: "CHURCH ANNIV 19", image: "../images/gallery/Poster/old portfolio pdf (19).png", description: "A Photoshop polish on this digital art." },
-      { id: 96, number: "99", name: "CHURCH ANNIV 20", image: "../images/gallery/Poster/old portfolio pdf (20).png", description: "A Photoshop polish on this digital art." },
-      { id: 97, number: "100", name: "CHURCH ANNIV 21", image: "../images/gallery/Poster/old portfolio pdf (21).png", description: "A Photoshop polish on this digital art." },
-      { id: 98, number: "101", name: "CHURCH ANNIV 22", image: "../images/gallery/Poster/RUTT.png", description: "A Photoshop polish on this digital art." },
+  { id: 72, number: "75", name: "KABATAAN LIMITLESS", image: "../images/gallery/Poster/art (70).png", description: "No Description." },
+      { id: 73, number: "76", name: "BIDA NG PASKO", image: "../images/gallery/Poster/final.png", description: "No Description." },
+{ id: 74, number: "77", name: "TESI 1", image: "../images/gallery/Poster/1.png", description: "No Description." },
+{ id: 75, number: "78", name: "TESI 2", image: "../images/gallery/Poster/2.png", description: "No Description." },
+{ id: 76, number: "79", name: "TESI 3", image: "../images/gallery/Poster/3.png", description: "No Description." },
+{ id: 77, number: "80", name: "PORTFOLIO", image: "../images/gallery/Poster/4.png", description: "No Description." },
+{ id: 77, number: "80", name: "PORTFOLIO", image: "../images/gallery/Poster/old portfolio pdf (1).png", description: "No Description." },
+      { id: 78, number: "81", name: "PORTFOLIO 2", image: "../images/gallery/Poster/old portfolio pdf (2).png", description: "No Description." },
+      { id: 79, number: "82", name: "PORTFOLIO 3", image: "../images/gallery/Poster/old portfolio pdf (3).png", description: "No Description." },
+      { id: 80, number: "83", name: "PORTFOLIO 4", image: "../images/gallery/Poster/old portfolio pdf (4).png", description: "No Description." },
+     { id: 89, number: "92", name: "PORTFOLIO 5", image: "../images/gallery/Poster/old portfolio pdf (13).png", description: "No Description." },
+     { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/gallery/Poster/RUTT.png", description: "No Description." },
        ],
       currentPage: 1,
       pageSize: 8,
@@ -214,12 +198,12 @@ export default {
   },
   computed: {
     totalPages() {
-      return Math.ceil(this.artworks.length / this.pageSize);
+      return Math.ceil(this.Designs.length / this.pageSize);
     },
-    paginatedArtworks() {
+    paginatedDesigns() {
       const start = (this.currentPage - 1) * this.pageSize;
       const end = start + this.pageSize;
-      return this.artworks.slice(start, end);
+      return this.Designs.slice(start, end);
     },
   },
   methods: {

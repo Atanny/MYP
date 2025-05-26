@@ -80,8 +80,8 @@
 
     </div>
 </div>
-<marquee class="bg-dark text-white" behavior="scroll" direction="right" scrollamount="20" scrolldelay="1">
-    <h1 class="fw-bolder outline-text3">
+<marquee class="bg-dark text-white mt-5" behavior="scroll" direction="right" scrollamount="20" scrolldelay="1">
+    <h1 class="fw-bolder outline-text3 mt-1 mt-lg-0">
         <b>
             WEB DESIGNER &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             DIGITAL ARTIST &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

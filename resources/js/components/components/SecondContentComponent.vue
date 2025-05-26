@@ -1,7 +1,7 @@
 <template>
-    <div class="mb-5 container">
+    <div class="mb-5  container">
       
-        <h1 class="fw-bolder text-dark mt-4"><b>SKILLS AND SPECIALITY</b></h1>
+        <h1 class="fw-bolder text-dark mt-5"><b>SKILLS AND SPECIALITY</b></h1>
         <div class="row justify-content-center  g-3 ">
     <div class="col-lg-3 py-2">
         <h1 class="display-1 fw-bolder me-5 outline-text" data-aos="fade-right" data-aos-duration="1000">01</h1>

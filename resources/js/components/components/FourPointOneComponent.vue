@@ -7,7 +7,7 @@
       scrollamount="20"
       scrolldelay="1"
     >
-      <h1 class="fw-bolder outline-text3 text-center">
+      <h1 class="fw-bolder outline-text3 text-center mt-1 mt-lg-0">
         <b>FOR WEB DESIGN & WEB DEVELOPMENT</b>
       </h1>
     </marquee>

@@ -6,6 +6,7 @@
         <div class="col-sm-12 col-lg-6 fw-bolder">
           <h1><b>DIGITAL ARTS</b></h1>
         </div>
+        
 <div class="col-sm-12 col-lg-auto mt-3  d-inline-block">
  
 
@@ -107,23 +108,23 @@ export default {
   data() {
     return {
      artworks: [
-        { id: 1, number: "1", name: "WEDNESDAY ADAMS", image: "../images/gallery/Artworks/art (1).JPG", description: "I drew this black and white picture of a girl who looks serious. I wanted to show some emotion and drama." },
+        { id: 1, number: "1", name: "WEDNESDAY ADAMS", image: "../images/gallery/Artworks/art (1).jpg", description: "I drew this black and white picture of a girl who looks serious. I wanted to show some emotion and drama." },
         { id: 2, number: "2", name: "I LIKE THE VIEW", image: "../images/gallery/Artworks/art (1).png", description: "I made this colorful drawing of a happy girl holding a tablet. I wanted it to feel light and creative." },
         { id: 3, number: "3", name: "KIM X LATO-LATO", image: "../images/gallery/Artworks/art (2).png", description: "I drew these three cartoon people wearing glasses. It’s a fun design called 'KIM x LATO-LATO'." },
-        { id: 4, number: "4", name: "LUFFY", image: "../images/gallery/Artworks/art (2).JPG", description: "This is a funny drawing I made of a wide-eyed anime-style character with a straw hat. It has an intense look." },
-        { id: 5, number: "5", name: "RED BLADE SAMURAI", image: "../images/gallery/Artworks/art (3).JPG", description: "I created this red-themed action scene with a girl holding a sword. It’s inspired by anime fights." },
+        { id: 4, number: "4", name: "LUFFY", image: "../images/gallery/Artworks/art (2).jpg", description: "This is a funny drawing I made of a wide-eyed anime-style character with a straw hat. It has an intense look." },
+        { id: 5, number: "5", name: "RED BLADE SAMURAI", image: "../images/gallery/Artworks/art (3).jpg", description: "I created this red-themed action scene with a girl holding a sword. It’s inspired by anime fights." },
         { id: 6, number: "6", name: "ME", image: "../images/gallery/Artworks/art (3).png", description: "Here’s a simple and friendly drawing I made of a smiling person with glasses." },
-        { id: 7, number: "7", name: "GOOD MORNING, SIR!", image: "../images/gallery/Artworks/art (4).JPG", description: "I drew a hotel worker saying 'Good Morning, Sir.' I wanted it to show kindness and good service." },
-        { id: 8, number: "8", name: "CHILL GREEN VIBES", image: "../images/gallery/Artworks/art (5).JPG", description: "This is a cartoon I made of a person in a green outfit. It gives off a chill, cool vibe." },
+        { id: 7, number: "7", name: "GOOD MORNING, SIR!", image: "../images/gallery/Artworks/art (4).jpg", description: "I drew a hotel worker saying 'Good Morning, Sir.' I wanted it to show kindness and good service." },
+        { id: 8, number: "8", name: "CHILL GREEN VIBES", image: "../images/gallery/Artworks/art (5).jpg", description: "This is a cartoon I made of a person in a green outfit. It gives off a chill, cool vibe." },
         { id: 9, number: "9", name: "CONFIDENT STYLE", image: "../images/gallery/Artworks/art (5).png", description: "I made this stylish drawing of a confident woman with short hair. I like how strong and bold it looks." },
-        { id: 10, number: "10", name: "GTA FAN ART", image: "../images/gallery/Artworks/art (6).JPG", description: "This is my fan art of a GTA: San Andreas character. I added palm trees to show the city feel." },
+        { id: 10, number: "10", name: "GTA FAN ART", image: "../images/gallery/Artworks/art (6).jpg", description: "This is my fan art of a GTA: San Andreas character. I added palm trees to show the city feel." },
         { id: 11, number: "11", name: "MAGIC STAFF", image: "../images/gallery/Artworks/art (6).png", description: "I drew a fantasy character holding a glowing staff. It feels magical and strong." },
-        { id: 12, number: "12", name: "SCHOOL LIFE WITH MASK", image: "../images/gallery/Artworks/art (7).JPG", description: "This is a student wearing a mask and holding books. I wanted to show school life during the pandemic." },
+        { id: 12, number: "12", name: "SCHOOL LIFE WITH MASK", image: "../images/gallery/Artworks/art (7).jpg", description: "This is a student wearing a mask and holding books. I wanted to show school life during the pandemic." },
         { id: 13, number: "13", name: "BASSIST", image: "../images/gallery/Artworks/art (7).png", description: "I created this simple but cool drawing of a person with a bass on his back, standing in front of a big circle." },
-        { id: 14, number: "14", name: "MILITARY BUDDIES", image: "../images/gallery/Artworks/art (8).JPG", description: "I made this funny cartoon of two military-style characters next to a schedule board." },
-        { id: 15, number: "15", name: "RIDE", image: "../images/gallery/Artworks/art (9).JPG", description: "I drew someone riding a motorcycle fast through the outdoors. It’s full of action and fun." },
-        { id: 16, number: "16", name: "LADY IN RED", image: "../images/gallery/Artworks/bagooo.JPG", description: "I made this peaceful drawing of a woman in a red dress standing in nature. It’s calm and quiet." },
-        { id: 17, number: "17", name: "SUNRISE", image: "../images/gallery/Artworks/hi.JPG", description: "Inspired by the sunrise by Ben&Ben." }
+        { id: 14, number: "14", name: "MILITARY BUDDIES", image: "../images/gallery/Artworks/art (8).jpg", description: "I made this funny cartoon of two military-style characters next to a schedule board." },
+        { id: 15, number: "15", name: "RIDE", image: "../images/gallery/Artworks/art (9).jpg", description: "I drew someone riding a motorcycle fast through the outdoors. It’s full of action and fun." },
+        { id: 16, number: "16", name: "LADY IN RED", image: "../images/gallery/Artworks/bagooo.jpg", description: "I made this peaceful drawing of a woman in a red dress standing in nature. It’s calm and quiet." },
+        { id: 17, number: "17", name: "SUNRISE", image: "../images/gallery/Artworks/hi.jpg", description: "Inspired by the sunrise by Ben&Ben." }
       ],
 
       currentPage: 1,

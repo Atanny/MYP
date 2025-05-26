@@ -201,7 +201,7 @@ export default {
           id: 12,
           number: "12",  // Fixed number (without leading zeros)
           name: "RAIN ANIMATION",
-          videoSrc: "./images/gallery/Animation/1 (1).MOV", // Replace with actual video path
+          videoSrc: "./images/gallery/Animation/1 (1).mov", // Replace with actual video path
           description: "No Description.",
         },
         // Add more mock artworks as needed

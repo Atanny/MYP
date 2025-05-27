@@ -25,7 +25,8 @@
                                             <p>Transnational E-Business Solutions, Inc. (TESI)</p>
                                         </div>
                                     </div>
-                               <p>One of my Role here is Intern Graphic Designer. i help and assist my heads to finish their Design within the said deadlines. </p>
+                               <p><p>As interns at Transnational E-Business Solutions, Inc. (TESI), our role included assisting our senior designers in completing their tasks within the given deadlines. We supported the design process by contributing where we could and learning from our mentors throughout the experience.</p>
+ </p>
                                 </div>
                                
                             </div>
@@ -39,7 +40,8 @@
                                             <p>Kalawaan SK</p>
                                         </div>
                                     </div>
-                               <p>Freelancing for almost a year. I work here as a basic Graphic Designer for their Public Materials. such as posters, announcements, and congratualtion cards.</p>
+                               <p><p>I have been freelancing for almost a year, serving as graphic designers for Kalawaan SK. Our work involved creating basic public materials such as posters, announcements, and congratulatory cards to support community initiatives.</p>
+</p>
                                 </div>
                                
                             </div>
@@ -53,7 +55,8 @@
                                             <p>Transnational E-Business Solutions, Inc. (TESI)</p>
                                         </div>
                                     </div>
-                                <p>I Redesign their OWL Portal, i Design their Thread Outsourcing as an Intern too.</p>
+                                <p><p>As UI/UX interns at Transnational E-Business Solutions, Inc. (TESI), I contributed to redesigning the OWL Portal and worked on the Thread Outsourcing interface. We collaborated with our team to improve the user experience while continuing to learn and grow through feedback and guidance.</p>
+</p>
                                 </div>
                                
                             </div>
@@ -68,7 +71,7 @@
                                             <p>Alight Solutions</p>
                                         </div>
                                     </div>
-                                <p>Intern of Alight Solutions. This help me gain knowledge about how deployment works and how debugging of server will help.</p>
+                                <p>I interned at Alight Solutions, where we gained valuable knowledge about deployment processes and learned how server debugging can support system stability and efficiency.</p>
                                 </div>
                                
                             </div>

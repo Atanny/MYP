@@ -124,7 +124,7 @@ export default {
           tags: ["WEB DESIGN"],
           link: "https://www.figma.com/proto/KG0sGFhseCbCT9AZHFqwLd/new-version-thread?page-id=0%3A1&node-id=51-630&starting-point-node-id=51%3A630&scaling=scale-down-width&content-scaling=fixed&t=RcZBuJ0MsA0r5xaR-1",
           description:
-            "One of my recent work in my TESI UI/UX journey.",
+            "I contribute of redesigning of OWL Portal.",
         },
         {
           id: 2,
@@ -143,7 +143,7 @@ export default {
           tags: ["WEB DESIGN"],
           link: "https://www.figma.com/proto/uraHMKJBGUlzXWTqTAVREh/OWL?page-id=2303%3A2321&node-id=3116-51369&viewport=919%2C619%2C0.06&t=Ec5rtpHc3s814bhz-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=3116%3A51369",
           description:
-            "One of my recent work in my TESI UI/UX journey.",
+            "One of my recent project i did in my TESI UI/UX journey.",
         },
         // Add more artworks if needed
       ],

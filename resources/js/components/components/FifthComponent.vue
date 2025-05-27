@@ -81,6 +81,22 @@
 
     <h2 class="fw-bolder mt-5 outline-text"><b>WEB DESIGNS & DEVELOPMENT</b></h2>
     <div class="row">
+
+        <div class="col-md-3 mt-4">
+        <div class="card rounded shadow-lg border-0 h-100" data-aos="fade-right" data-aos-duration="1000">
+            <div class="card-body d-flex flex-column">
+                <img class="img-fluid card-img-top rounded" src="/images/websites/4.png" style="height: 200px; object-fit: cover;" alt="">
+                <h5 class="card-title fw-bolder mt-4">WEB DESIGN</h5>
+                <P>Web Design who i mostly design on purpose. this designs help mo acoomplish growth and purposes using figma, i have experience of creating this in of my OJT</P>
+            </div>
+             <div class="card-footer bg-white border-0">
+                <router-link to="/website"><a class="btn btn-success mb-3 btn-sm">
+                    See More
+                </a></router-link>
+            </div>
+        </div>
+    </div>
+   
     <div class="col-md-3 mt-4">
         <div class="card rounded shadow-lg border-0 h-100" data-aos="fade-right" data-aos-duration="1600">
             <div class="card-body d-flex flex-column">
@@ -96,21 +112,7 @@
         </div>
     </div>
     
-    <div class="col-md-3 mt-4">
-        <div class="card rounded shadow-lg border-0 h-100" data-aos="fade-right" data-aos-duration="1000">
-            <div class="card-body d-flex flex-column">
-                <img class="img-fluid card-img-top rounded" src="/images/websites/4.png" style="height: 200px; object-fit: cover;" alt="">
-                <h5 class="card-title fw-bolder mt-4">WEB DESIGN</h5>
-                <P>Web Design who i mostly design on purpose. this designs help mo acoomplish growth and purposes using figma, i have experience of creating this in of my OJT</P>
-            </div>
-             <div class="card-footer bg-white border-0">
-                <router-link to="/website"><a class="btn btn-success mb-3 btn-sm">
-                    See More
-                </a></router-link>
-            </div>
-        </div>
-    </div>
-   
+    
 </div>
 
 

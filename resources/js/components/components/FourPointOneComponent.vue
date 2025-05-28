@@ -62,7 +62,37 @@ export default {
     return {
       // Static software list with icons and proficiency levels
       softwares2: [
+        
         {
+          id: 8,
+          name: "HTML",
+          iconClass: "logos:html-5", // Official HTML5 logo
+          proficiency: "Proficient"
+        },
+        {
+          id: 9,
+          name: "CSS",
+          iconClass: "logos:css-3", // Official CSS3 logo
+          proficiency: "Proficient"
+        },
+        {
+          id: 10,
+          name: "JavaScript",
+          iconClass: "logos:javascript", // Official JavaScript logo
+          proficiency: "Beginner"
+        }
+      ]
+    };
+  }
+};
+</script>
+
+<style scoped>
+/* Add any custom styles here */
+</style>
+
+<!-- 
+{
           id: 1,
           name: "VS Code",
           iconClass: "logos:visual-studio-code", // Official VS Code logo
@@ -104,31 +134,4 @@ export default {
           name: "Laravel",
           iconClass: "logos:laravel", // Official Laravel logo
           proficiency: "Proficient"
-        },
-        {
-          id: 8,
-          name: "HTML",
-          iconClass: "logos:html-5", // Official HTML5 logo
-          proficiency: "Proficient"
-        },
-        {
-          id: 9,
-          name: "CSS",
-          iconClass: "logos:css-3", // Official CSS3 logo
-          proficiency: "Proficient"
-        },
-        {
-          id: 10,
-          name: "JavaScript",
-          iconClass: "logos:javascript", // Official JavaScript logo
-          proficiency: "Beginner"
-        }
-      ]
-    };
-  }
-};
-</script>
-
-<style scoped>
-/* Add any custom styles here */
-</style>
+        }, -->

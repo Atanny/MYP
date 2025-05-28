@@ -86,7 +86,7 @@
             WEB DESIGNER &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
             DIGITAL ARTIST &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             GRAPHIC DESIGNER &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            FRONT-END DEVELOPER
+            <!-- FRONT-END DEVELOPER -->
         </b>
     </h1>
 </marquee>

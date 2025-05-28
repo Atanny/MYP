@@ -140,8 +140,8 @@ export default {
           name: "EFITMO: Online Ordering System",
           image: "../images/gallery/weddes/art (4).png",
           tags: ["WEB DESIGN"],
-          link: "https://www.figma.com/proto/uraHMKJBGUlzXWTqTAVREh/OWL?page-id=2303%3A2321&node-id=3116-51369&viewport=919%2C619%2C0.06&t=Ec5rtpHc3s814bhz-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=3116%3A51369",
-          description: "An intuitive online UNIFORM ordering system designed for efficiency.",
+          link: "",
+          description: "An intuitive online UNIFORM ordering system designed for efficiency. made with laravel native. with Online Payment and batch Odering.",
         },
         // Add more artworks here as needed
       ],

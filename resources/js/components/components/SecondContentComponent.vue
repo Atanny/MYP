@@ -4,8 +4,8 @@
         <h1 class="fw-bolder text-dark mt-5"><b>SKILLS AND SPECIALITY</b></h1>
         <div class="row justify-content-start  g-3 ">
     <div class="col-lg-3 py-2">
-        <h1 class="display-1 fw-bolder me-5 outline-text" data-aos="fade-right" data-aos-duration="1000">01</h1>
-        <div class="card rounded p-3 border-2 bg-transparent text-dark h-75 border-dark " style="background-color: #fca311;" data-aos="fade-right" data-aos-duration="5000">
+        <h1 class="display-1 fw-bolder me-5 outline-text" data-aos="fade-right" data-aos-duration="800">01</h1>
+        <div class="card rounded p-3 border-2 bg-transparent text-dark h-75 border-dark " style="background-color: #fca311;" data-aos="fade-right" data-aos-duration="1800">
             <div class="card-body ">
                    
                         <h1><i class="fa-solid fa-desktop mb-0"></i></h1>
@@ -18,7 +18,7 @@
 
     <div class="col-lg-3 py-2">
         <h1 class="display-1 fw-bolder outline-text" data-aos="fade-right" data-aos-duration="1000">02</h1>
-        <div class="card rounded p-3 border-2 bg-transparent text-dark card-group h-75 border-dark " style="background-color: #7EA122;" data-aos="fade-right" data-aos-duration="5000">
+        <div class="card rounded p-3 border-2 bg-transparent text-dark card-group h-75 border-dark " style="background-color: #7EA122;" data-aos="fade-right" data-aos-duration="1300">
             <div class="card-body ">
               
                    
@@ -31,8 +31,8 @@
     </div>
 
     <div class="col-lg-3 py-2">
-        <h1 class="display-1 fw-bolder outline-text" data-aos="fade-right" data-aos-duration="1000">03</h1>
-        <div class="card rounded p-3 border-2 bg-transparent text-dark card-group h-75 border-dark " style="background-color: #fca311;" data-aos="fade-right" data-aos-duration="5000">
+        <h1 class="display-1 fw-bolder outline-text" data-aos="fade-right" data-aos-duration="1200">03</h1>
+        <div class="card rounded p-3 border-2 bg-transparent text-dark card-group h-75 border-dark " style="background-color: #fca311;" data-aos="fade-right" data-aos-duration="800">
             <div class="card-body">
               
                    
@@ -45,20 +45,20 @@
         </div>
     </div>
 
-    <!-- <div class="col-lg-3 py-2">
-        <h1 class="display-1 fw-bolder outline-text" data-aos="fade-right" data-aos-duration="1000">04</h1>
-        <div class="card rounded p-3 border-2 bg-transparent text-dark card-group  h-75 border-dark "  style="background-color: #7EA122;" data-aos="fade-right" data-aos-duration="5000">
-            <div class="card-body">
-              
-                   
-                        <h1><i class="fa-solid fa-code mb-0"></i></h1>
-                        <h6 class="mb-0 fw-bold">FRONT-END DEV</h6>
-                        <p class="mt-2">Front-End Development gave me more knowledge in creativity, which helped me gain more experience by creating user interfaces, interactive components, and responsive web layouts.</p>
-                   
-               
+        <div class="col-lg-3 py-2">
+            <h1 class="display-1 fw-bolder outline-text" data-aos="fade-right" data-aos-duration="1000">04</h1>
+            <div class="card rounded p-3 border-2 bg-transparent text-dark card-group  h-75 border-dark "  style="background-color: #7EA122;" data-aos="fade-right" data-aos-duration="500">
+                <div class="card-body">
+                
+                    
+                            <h1><i class="fa-solid fa-code mb-0"></i></h1>
+                            <h6 class="mb-0 fw-bold">FRONT-END DEV</h6>
+                            <p class="mt-2">Front-End Development gave me more knowledge in creativity, which helped me gain more experience by creating user interfaces, interactive components, and responsive web layouts.</p>
+                    
+                
+                </div>
             </div>
         </div>
-    </div> -->
 </div>
 
 

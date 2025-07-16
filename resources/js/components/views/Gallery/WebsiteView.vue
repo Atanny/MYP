@@ -140,7 +140,7 @@ export default {
           name: "EFITMO: Online Ordering System",
           image: "../images/gallery/weddes/art (4).png",
           tags: ["WEB DESIGN"],
-          link: "",
+           link: "/projects/efitmo",
           description: "An intuitive online UNIFORM ordering system designed for efficiency. made with laravel native. with Online Payment and batch Odering.",
         },
         // Add more artworks here as needed

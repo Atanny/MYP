@@ -7,7 +7,7 @@ import GraphicView from './components/views/Gallery/GraphicDesignView.vue';
 import WebDesView from './components/views/Gallery/WebDesignView.vue';
 import WebdevView from './components/views/Gallery/WebsiteView.vue';
 import IllustratorView from './components/views/Gallery/IllustratorView.vue';
-
+import EfitmoView from './components/views/Gallery/EfitmoView.vue';
 const routes = [
   {
     path: '/',
@@ -51,6 +51,13 @@ const routes = [
     path: '/website',
     component: WebdevView,
   },
+
+  {
+
+    path: '/projects/efitmo',
+    component: EfitmoView,
+  },
+ 
  
  
 ];

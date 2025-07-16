@@ -16,19 +16,23 @@
       </marquee>
 
       <div class=" justify-content-center ">
-        <div class="card rounded mt-5  bg-light border-0 shadow-lg ">
-          <div class="card-body">
+        <div class="card rounded mt-5  bg-light border-0 shadow-lg " >
+          <div class="card-body " >
             <div class="row align-items-center justify-content-center gap-3">
               <div
-                class="col-5 col-lg-2 text shadow-lg rounded  "
-                v-for="software in softwares"
-                :key="software.id"
-              >
-                <div class="d-flex align-items-center ">
-                  <h1 class="fw-bolder mt-3" data-aos="fade-right" data-aos-duration="1000">
+  class="col-5 col-lg-2 text shadow-lg rounded"
+  v-for="(software, index) in softwares"
+  :key="software.id"
+  data-aos="fade-up"
+  :data-aos-delay="index * 200"
+  data-aos-duration="800"
+>
+
+                <div class="d-flex align-items-center " >
+                  <h1 class="fw-bolder mt-3" >
                     {{ software.id }}
                   </h1>
-                  <h1 class="ms-3 mt-3"data-aos="fade-right"data-aos-duration="500">
+                  <h1 class="ms-3 mt-3">
 
                     <iconify-icon :icon="software.iconClass" width="40" height="40" ></iconify-icon>
                   </h1>

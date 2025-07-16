@@ -17,23 +17,25 @@
         <div class="card-body  ">
           <div class="row align-items-center justify-content-center gap-3">
             <!-- Software List -->
-            <div
-              class="col-5 col-lg-2 text shadow-lg rounded p-2  "
-              v-for="software2 in softwares2"
+           <div
+              class="col-5 col-lg-2 text shadow-lg rounded"
+              v-for="(software2, index) in softwares2"
               :key="software2.id"
+              data-aos="fade-up"
+              :data-aos-delay="index * 200"
+              data-aos-duration="800"
             >
+
               <div class="d-flex align-items-center">
                 <h1
                   class="fw-bolder mt-3"
-                  data-aos="fade-right"
-                  data-aos-duration="1000"
+                 
                 >
                   {{ software2.id }}
                 </h1>
                 <h1
                   class="ms-3 mt-3"
-                  data-aos="fade-right"
-                  data-aos-duration="500"
+                 
                 >
                   <!-- Use Iconify component to display real icons -->
                   <iconify-icon :icon="software2.iconClass" width="40" height="40"></iconify-icon>
@@ -41,7 +43,7 @@
               </div>
                <hr class="rounded" style="border: 0.5px solid gray; width: 100%;">
               <h5 class="mb-0 fw-bold text3 " data-aos="fade-right">{{ software2.name }}</h5>
-              <p class="small" data-aos="fade-right" data-aos-duration="500">{{ software2.proficiency }}</p>
+              <p class="small" >{{ software2.proficiency }}</p>
             </div>
           </div>
         </div>

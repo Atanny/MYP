@@ -62,7 +62,7 @@ export default {
   data() {
     return {
      artworks: [
-        { id: 1, number: "1", name: "WEDNESDAY ADAMS", image: "../images/gallery/Artworks/art (1).jpg", description: "I drew this black and white picture of a girl who looks serious. I wanted to show some emotion and drama." },
+        { id: 1, number: "1", name: "LOGIN", image: "../images/gallery/Artworks/art (1).jpg", description: "I drew this black and white picture of a girl who looks serious. I wanted to show some emotion and drama." },
         { id: 2, number: "2", name: "I LIKE THE VIEW", image: "../images/gallery/Artworks/art (1).png", description: "I made this colorful drawing of a happy girl holding a tablet. I wanted it to feel light and creative." },
         { id: 3, number: "3", name: "KIM X LATO-LATO", image: "../images/gallery/Artworks/art (2).png", description: "I drew these three cartoon people wearing glasses. It’s a fun design called 'KIM x LATO-LATO'." },
         { id: 4, number: "4", name: "LUFFY", image: "../images/gallery/Artworks/art (2).jpg", description: "This is a funny drawing I made of a wide-eyed anime-style character with a straw hat. It has an intense look." },

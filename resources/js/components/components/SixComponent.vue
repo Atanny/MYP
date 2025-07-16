@@ -1,8 +1,8 @@
 <template>
   <div class="background mt-5" id="contact-section">
-    <div class="container">
+    <div class="container p-lg-5">
       <div class="h-auto">
-        <div class="card-body row">
+        <div class="card-body row p-5">
           <div class="col-lg-6 d-flex justify-content-center align-items-center">
 
             <!-- Show form if not submitted -->

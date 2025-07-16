@@ -1,7 +1,7 @@
 <template>
-    <div class="container mt-5">
-        <div class="mt-5">
-            <div class="row mt-5">
+    <div class="container p-5">
+        <div class="">
+            <div class="row">
    
     <!-- right Column with Text and Social Links -->
     <div class="col-lg-6 d-flex justify-content-center align-items-center text-start" >

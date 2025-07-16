@@ -1,10 +1,10 @@
 <template>
   
-  <div class="container mb-5" style="margin-top:2vh;">
+  <div class="scale-wrapper mt-5" style="margin-top:2vh;">
      
     <div class="d-flex justify-content-between align-items-center">
       <div class="row">
-        <div class="col-sm-12 col-lg-6 fw-bolder">
+        <div class="col-sm-12 col-lg-6 fw-bolder mt-5">
           <h1><b>ANIMATION</b></h1>
         </div>
 
@@ -258,6 +258,26 @@ export default {
 };
 </script>
 
-<style scoped>
-/* Add custom styles if needed */
+<style>
+.scale-wrapper {
+  transform: scale(0.85);
+  transform-origin: top center;
+}
+
+
+
+.btn {
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+}
+
+.card-body h6 {
+  font-size: 0.9rem;
+}
+
+
+
+.card .position-relative {
+  height: 180px !important;
+}
 </style>

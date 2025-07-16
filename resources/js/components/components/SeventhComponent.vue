@@ -1,7 +1,7 @@
 <template>
-    <div class="my-5 ">
+    <div class="container p-5">
 
-        <h1 class="container fw-bolder text-dark my-5"><b>MY ROLE AND EXPERIENCE </b></h1>
+        <h1 class="container fw-bolder text-dark"><b>MY ROLE AND EXPERIENCE </b></h1>
         
 
         <div class="container card bg-light shadow-lg rounded ">

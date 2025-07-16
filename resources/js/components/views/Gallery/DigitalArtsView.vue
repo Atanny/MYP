@@ -1,9 +1,9 @@
 <template>
-  <div class="container mb-5" style="margin-top:2vh;">
+  <div class="scale-wrapper mb-5 mt-5" style="margin-top:2vh;">
     <!-- Header Row -->
     <div class="d-flex justify-content-between align-items-center">
       <div class="row">
-        <div class="col-sm-12 col-lg-6 fw-bolder">
+        <div class="col-sm-12 col-lg-6 fw-bolder mt-5">
           <h1><b>DIGITAL ARTS</b></h1>
         </div>
         

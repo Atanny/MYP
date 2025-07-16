@@ -1,11 +1,11 @@
 <template>
 <div class="background container-fluid p-0">
-    <div class="container mb-5">
-    <div class="row justify-content-center align-items-center mb-5">
+    <div class="container p-5 ">
+    <div class="row justify-content-center align-items-center ">
 
-        <h1 class="fw-bolder text-light mt-5"><b>ABOUT ME</b></h1>
+        <h1 class="fw-bolder text-light "><b>ABOUT ME</b></h1>
 
-        <div class="col-lg-6 my-5">
+        <div class="col-lg-6 ">
             <div class="card shadow-lg rounded feature-card text-light"  data-aos="fade-right" data-aos-duration="1000">
                 <div class="card-body">
                     

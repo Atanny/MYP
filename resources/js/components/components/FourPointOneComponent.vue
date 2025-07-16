@@ -1,59 +1,39 @@
 <template>
-  <div class="mb-5">
-    <marquee
-      class="bg-dark text-white p-2 transform2 mt-5 container-fluid"
-      behavior="scroll"
-      direction="right"
-      scrollamount="20"
-      scrolldelay="1"
-    >
+  <div class="">
+    
+    <marquee class="bg-dark text-white p-2 transform2 mt-5 container-fluid" behavior="scroll" direction="right" scrollamount="20" scrolldelay="1">
       <h1 class="fw-bolder outline-text3 text-center mt-1 mt-lg-0">
-        <b>FOR WEB DESIGN & WEB DEVELOPMENT</b>
+        <b>FOR WEB DEVELOPMENT CODING</b>
       </h1>
     </marquee>
-
-    <div class=" justify-content-center">
-      <div class="card rounded-0 mt-5 bg-light border-0 shadow-lg ">
-        <div class="card-body  ">
-          <div class="row align-items-center justify-content-center gap-3">
-            <!-- Software List -->
-           <div
-              class="col-5 col-lg-2 text shadow-lg rounded"
-              v-for="(software2, index) in softwares2"
-              :key="software2.id"
-              data-aos="fade-up"
-              :data-aos-delay="index * 200"
-              data-aos-duration="800"
-            >
-
-              <div class="d-flex align-items-center">
-                <h1
-                  class="fw-bolder mt-3"
-                 
-                >
-                  {{ software2.id }}
-                </h1>
-                <h1
-                  class="ms-3 mt-3"
-                 
-                >
-                  <!-- Use Iconify component to display real icons -->
-                  <iconify-icon :icon="software2.iconClass" width="40" height="40"></iconify-icon>
-                </h1>
+    
+    <div class="bg-light shadow-lg rounded-0 align-items-center justify-content-center">
+      <div class="container p-5">
+        <div class="row mb-0 mt-0 p-4 p-lg-5">
+          <div class="card col-6 col-lg-2 shadow-lg rounded border-1 border-light" v-for="(software2, index) in softwares2" :key="software2.id" data-aos="fade-up" :data-aos-delay="index * 200" data-aos-duration="800">  
+            
+              <div class="d-flex">
+                  <h1 class="fw-bolder mt-3"> {{ software2.id }}</h1>
+                  <h1 class="ms-3 mt-3"> <iconify-icon :icon="software2.iconClass" width="40" height="40"></iconify-icon></h1>
               </div>
-               <hr class="rounded" style="border: 0.5px solid gray; width: 100%;">
-              <h5 class="mb-0 fw-bold text3 " data-aos="fade-right">{{ software2.name }}</h5>
-              <p class="small" >{{ software2.proficiency }}</p>
-            </div>
+
+            <hr class="rounded" style="border: 0.5px solid gray; width: 100%;">
+
+              <div>
+                <h5 class="mb-0 fw-bold text3">{{ software2.name }}</h5>
+                  <p class="small">{{ software2.proficiency }}</p>
+              </div>
+              
           </div>
         </div>
       </div>
     </div>
+    
   </div>
 </template>
 
 <script>
-// Import Iconify component for use
+
 import { Icon } from '@iconify/vue';
 
 export default {
@@ -62,78 +42,80 @@ export default {
   },
   data() {
     return {
-      // Static software list with icons and proficiency levels
+
       softwares2: [
         
-        {
-          id: 8,
-          name: "HTML",
-          iconClass: "logos:html-5", // Official HTML5 logo
-          proficiency: "Proficient"
-        },
-        {
-          id: 9,
-          name: "CSS",
-          iconClass: "logos:css-3", // Official CSS3 logo
-          proficiency: "Proficient"
-        },
-        {
-          id: 10,
-          name: "JavaScript",
-          iconClass: "logos:javascript", // Official JavaScript logo
-          proficiency: "Beginner"
-        }
-      ]
-    };
-  }
-};
-</script>
-
-<style scoped>
-/* Add any custom styles here */
-</style>
-
-<!-- 
 {
           id: 1,
           name: "VS Code",
-          iconClass: "logos:visual-studio-code", // Official VS Code logo
+          iconClass: "logos:visual-studio-code", 
           proficiency: "Proficient"
         },
         {
           id: 2,
           name: "Sublime Text",
-          iconClass: "skill-icons:sublime-light", // Official Sublime Text logo
+          iconClass: "skill-icons:sublime-light",
           proficiency: "Proficient"
         },
         {
           id: 3,
           name: "Bootstrap",
-          iconClass: "logos:bootstrap", // Official Bootstrap logo
+          iconClass: "logos:bootstrap", 
           proficiency: "Proficient"
         },
        
         {
           id: 4,
           name: "GitHub",
-          iconClass: "devicon:github", // Official Git logo
+          iconClass: "devicon:github", 
           proficiency: "Basic"
         },
         {
           id: 5,
           name: "PHP",
-          iconClass: "logos:php", // Official PHP logo
+          iconClass: "logos:php", 
           proficiency: "Basic"
         },
         {
           id: 6,
           name: "Vue.js",
-          iconClass: "logos:vue", // Official Vue.js logo
+          iconClass: "logos:vue", 
           proficiency: "Basic"
         },
         {
           id: 7,
           name: "Laravel",
-          iconClass: "logos:laravel", // Official Laravel logo
+          iconClass: "logos:laravel", 
           proficiency: "Proficient"
-        }, -->
+        },
+        {
+          id: 8,
+          name: "HTML",
+          iconClass: "logos:html-5", 
+          proficiency: "Proficient"
+        },
+        {
+          id: 9,
+          name: "CSS",
+          iconClass: "logos:css-3",
+          proficiency: "Proficient"
+        },
+        {
+          id: 10,
+          name: "JavaScript",
+          iconClass: "logos:javascript", 
+          proficiency: "Basic"
+        },
+        {
+          id: 11,
+          name: "ChatGPT",
+          iconClass: "logos:openai", 
+          proficiency: "Profecient"
+        }
+        
+      ]
+    };
+  }
+};
+</script>
+

@@ -59,7 +59,7 @@
                     ></textarea>
                   </div>
 
-                  <button type="submit" class="btn btn-success my-4">Submit</button>
+                  <button type="submit" class="btn btn-white rounded my-4">Submit</button>
                 </div>
               </form>
             </div>
@@ -72,7 +72,7 @@
 
           <!-- Image section -->
           <img
-            class="col-lg-6 img-fluid mb-5 mb-lg-0 mb-md-0 d-none d-sm-block d-lg-block p-5"
+            class="col-lg-6 img-fluid mb-5 mb-lg-0 mb-md-0 d-none d-sm-block d-lg-block py-5"
             src="/images/atanny (2).png"
             alt=""
             data-aos="fade-right"

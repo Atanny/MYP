@@ -44,7 +44,7 @@
 
 <style>
 .background {
-    background: radial-gradient(circle, #2f3155 0%, #14213D 70%);
+    background: radial-gradient(circle, #1e1e1f 0%, #19191a 70%);
 }
 
 

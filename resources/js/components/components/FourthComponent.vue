@@ -9,10 +9,10 @@
         </h1>
       </marquee>
 
-    <div class=" bg-light shadow-lg rounded-0 p-5 align-items-center justify-content-center">
+    <div class=" bg-light shadow-lg  p-5 align-items-center justify-content-center">
       <div class="container p-4 p-lg-5">
         <div class="row mb-0 mt-0 p-0 p-lg-5">
-          <div class="card col-6 col-lg-2 shadow-lg rounded border-1 border-light" v-for="(software, index) in softwares" :key="software.id" data-aos="fade-up" :data-aos-delay="index * 200" data-aos-duration="800">  
+          <div class="card col-6 col-lg-2 shadow-lg rounded-0 border-1 border-light" v-for="(software, index) in softwares" :key="software.id" data-aos="fade-up" :data-aos-delay="index * 200" data-aos-duration="800">  
             
               <div class="d-flex">
                   <h1 class="fw-bolder mt-3"> {{ software.id }}</h1>

@@ -9,7 +9,6 @@
         <fourone-component class=""></fourone-component>
         <five-component class=""></five-component>
         <six-component class=""></six-component>
-        <footer-component class=""></footer-component>
     </div>
    
 </template>
@@ -20,68 +19,105 @@ body{
 }
 
 .active-link .btn-success {
-  background-color: #7EA122 !important;
+  background-color: #19191a !important;
   color: white !important;
   border-style: solid;
-  border-color: #7EA122;
+  border-color: #19191a;
   border-radius: 0%;
 }
 .btn-success {
     position: relative; /* Needed for ::before absolute positioning */
     border-style: solid;
-    border-color: #7EA122;
+    border-color: #19191a;
     border-radius: 0%;
     overflow: hidden;
     background-color: transparent;
     z-index: 1;
-    color: #7EA122; /* Initially text color matches border */
+    color: #19191a; /* Initially text color matches border */
     transition: color 0.3s ease;
 }
 
 .btn-success:disabled {
     border-style: solid;
-    border-color: #7EA122;
+    border-color: #19191a;
     border-radius: 0%;
     overflow: hidden;
     background-color: transparent;
-    color: #7EA122;
+    color: #19191a;
     z-index: 1;
 }
 
 .btn-success::before {
     content: '';
     border-style: solid;
-    border-color: #7EA122;
+    border-color: #19191a;
     position: absolute;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: #7EA122;
+    background-color: #19191a;
     transition: left 0.10s ease;
     z-index: -1;
 }
 
 .btn-success:hover::before {
     border-style: solid;
-    border-color: #7EA122;
+    border-color: #19191a;
     left: 0;
 }
 
 .btn-success:hover {
     color: white;
     border-style: solid;
-    border-color: #7EA122;
-    background-color: #7EA122;
+    border-color: #19191a;
+    background-color: #19191a;
 }
+
+
+.btn-black {
+    border-style: solid;
+    background-color: #19191a;
+    border-radius: 0%;
+    overflow: hidden;
+    z-index: 1;
+    color: white; 
+    transition: transform 0.3s ease; /* ✅ FIXED */
+}
+
+.btn-black:hover {
+    transform: scale(1.05); /* ✅ Will now animate */
+    color: white;
+     background-color: #19191a;
+}
+
+
+
+.btn-white {
+    border-style: solid;
+    background-color: white;
+    border-radius: 0%;
+    overflow: hidden;
+    z-index: 1;
+    color: black; 
+    transition: transform 0.3s ease; /* ✅ FIXED */
+}
+
+.btn-white:hover {
+    transform: scale(1.05); /* ✅ Will now animate */
+    color: black;
+     background-color: white;
+}
+
+
 
 /* ADD THIS: Active state styling for router-link or buttons */
 
 .btn-success.active,
 .btn-success.router-link-exact-active {
     color: white !important;
-    background-color: #7EA122 !important;
-    border-color: #7EA122 !important;
+    background-color: #19191a !important;
+    border-color: #19191a !important;
 }
 
 .btn-success.active::before,
@@ -118,14 +154,14 @@ body{
 
 .outline-text { 
     font-weight: bold;
-    color: #7EA122;
+    color: white;
    
     text-align: start;
 }
 
 .outline-text2 { 
     font-weight: bold;
-    color: #fca311;
+    color:white;
    
     text-align: start;
 }
@@ -138,16 +174,16 @@ body{
 }
 
 .text3{
-    color: #fca311;
+    color: #19191a;
 }
 .text4{
-    color: #7EA122;
+    color: #19191a;
 }
 
 .border-warning1
 {
     border-style: solid;
-    border-color: #7EA122;
+    border-color: #19191a;
     border-width: 2px;
 }
 

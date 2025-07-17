@@ -24,6 +24,7 @@
     <div id="app" class="">
         <Navbar-component></Navbar-component>
         <router-view class=""></router-view>
+         <footer-component class="mt-0"></footer-component>
     </div>
 </body>
 

@@ -167,7 +167,7 @@ export default {
         // Add more artworks if needed
       ],
       currentPage: 1,
-      pageSize: 8,
+      pageSize: 16,
     };
   },
 

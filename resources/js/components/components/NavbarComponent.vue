@@ -4,7 +4,7 @@
 
             
            
-           <img class="navbar-brand shadow-lg bg-white mt-0  px-3 rounded border-1 border-secondary" width="50px" src="/images/logo.png">
+           <img class="navbar-brand  mt-0 b  rounded border-1 border-secondary" width="70px" src="/images/logo.png">
 
         
           
@@ -28,8 +28,8 @@
                   </ul>
 
                   <div class="m-1 mt-3 mt-md-0 mt-lg-0">
-                  <button class="btn btn-success container d-inline-block rounded-pill text-white"
-                    style="background-color: #7EA122;" @click="goToContact">
+                  <button class="btn btn-black container d-inline-block rounded-pill"
+                   @click="goToContact">
                     Contact Me!
                   </button>
 

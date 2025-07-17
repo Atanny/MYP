@@ -1,5 +1,5 @@
 <template>
-  <div class="scale-wrapper ">
+  <div class="scale-wrapper">
     <div class="w-100 px-3 py-4 px-lg-0 py-lg-0">
       <!-- Header Row -->
       <div class="d-flex justify-content-between align-items-center">
@@ -134,6 +134,7 @@
       </div>
     </div>
   </div>
+   
 </template>
 
 
@@ -285,21 +286,20 @@ export default {
 
 <style>
 .scale-wrapper {
-  transform: scale(0.85);
-  transform-origin: top center;
+  padding: 0 10vw 0 10vw; /* simulate scale on left/right only */
   margin-top: 10vh;
-  margin-bottom: 0 !important;
+  max-width: 100vw;
+  box-sizing: border-box;
+  margin-bottom: 20vh;
+}
+
+.scale-wrapper > * {
+
+  padding-bottom: 0;
 }
 
 
-/* Remove scale on small screens (mobile-first) */
-@media screen and (max-width: 576px) {
-  .scale-wrapper {
-    transform: none;
-     transform-origin: top center;
-      transform: scale(0.85);
-  }
-}
+
 
 
 </style>

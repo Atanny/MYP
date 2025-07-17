@@ -129,59 +129,57 @@ export default {
        selectedImage: null,
         currentImageIndex: 0,
       Designs: [
- 
-  { id: 1, number: "1", name: "DASHBOARD", image: "../images/EFITMO/ADMIN/ADashboard/1.png", description: "lOGIN has multiple role, Super Admin, Admin, and ADMIN" },
-  
-  { id: 2, number: "2", name: "MANAGE USERS", image: "../images/EFITMO/ADMIN/ManageUser/1.png", description: "I used SweetAlert for component that will enhance the design of the modal." },
-  { id: 3, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageUser/2.png", description: "No Description." },
-  { id: 4, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageUser/3.png", description: "A Photoshop design created with care." },
-  { id: 5, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageUser/4.png", description: "A simple piece improved in Photoshop." },
-  
-  
-  { id: 6, number: "3", name: "MANAGE PRODUCTS", image: "../images/EFITMO/ADMIN/ManageProduct/1.png", description: "An Design touched up with Photoshop." },
-  { id: 7, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageProduct/2.png", description: "Created using Photoshop with some care." },
-  { id: 8, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageProduct/3.png", description: "A neat Photoshop edit on this Design." },
-  { id: 9, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageProduct/4.png", description: "Made better with some Photoshop work." },
-  { id: 10, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageProduct/5.png", description: "A clean design done in Photoshop." },
+ { id: 1, number: "1", name: "DASHBOARD", image: "../images/EFITMO/ADMIN/ADashboard/1.png", description: "" },
 
-  { id: 11, number: "4", name: "BILLINGS", image: "../images/EFITMO/ADMIN/ManageBillings/1.png", description: "A Photoshop edit to improve the look." },
-  { id: 12, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageBillings/2.png", description: "A basic Design created in Photoshop." },
-  { id: 13, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageBillings/3.png", description: "Made a little nicer with Photoshop." },
-  { id: 14, number: "", name: " ", image: "../images/EFITMO/ADMIN/ManageBillings/4.png", description: "Edited in Photoshop for a smoother look." },
-  { id: 15, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageBillings/5.png", description: "A simple Photoshop layered design." },
-  { id: 16, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageBillings/5.1.png", description: "No Description." },
-  { id: 17, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageBillings/6.png", description: "No Description." },
-  { id: 18, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageBillings/7.png", description: "A simple design with Photoshop help." },
+{ id: 2, number: "2", name: "MANAGE USERS", image: "../images/EFITMO/ADMIN/ManageUser/1.png", description: "" },
+{ id: 3, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageUser/2.png", description: "" },
+{ id: 4, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageUser/3.png", description: "" },
+{ id: 5, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageUser/4.png", description: "" },
+
+{ id: 6, number: "3", name: "MANAGE PRODUCTS", image: "../images/EFITMO/ADMIN/ManageProduct/1.png", description: "" },
+{ id: 7, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageProduct/2.png", description: "" },
+{ id: 8, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageProduct/3.png", description: "" },
+{ id: 9, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageProduct/4.png", description: "" },
+{ id: 10, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageProduct/5.png", description: "" },
+
+{ id: 11, number: "4", name: "BILLINGS", image: "../images/EFITMO/ADMIN/ManageBillings/1.png", description: "" },
+{ id: 12, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageBillings/2.png", description: "" },
+{ id: 13, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageBillings/3.png", description: "" },
+{ id: 14, number: "", name: " ", image: "../images/EFITMO/ADMIN/ManageBillings/4.png", description: "" },
+{ id: 15, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageBillings/5.png", description: "" },
+{ id: 16, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageBillings/5.1.png", description: "" },
+{ id: 17, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageBillings/6.png", description: "" },
+{ id: 18, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageBillings/7.png", description: "" },
+
+{ id: 19, number: "5", name: "MANAGE ORDERS", image: "../images/EFITMO/ADMIN/ManageOrders/1.jpg", description: "" },
+{ id: 20, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageOrders/2.png", description: "" },
+{ id: 21, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageOrders/3.png", description: "" },
+{ id: 22, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageOrders/4.png", description: "" },
+{ id: 23, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageOrders/5.1.png", description: "" },
+{ id: 24, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageOrders/5.png", description: "" },
+{ id: 25, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageOrders/6.png", description: "" },
+{ id: 26, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageOrders/7.png", description: "" },
+{ id: 27, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageOrders/8.1.png", description: "" },
+{ id: 28, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageOrders/8.png", description: "" },
+{ id: 29, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageOrders/9.png", description: "" },
+
+{ id: 30, number: "6", name: "ALL MESSAGES", image: "../images/EFITMO/ADMIN/MEssages/1.png", description: "" },
+
+{ id: 31, number: "7", name: "ALL PAYMENTS", image: "../images/EFITMO/ADMIN/Payments/1.png", description: "" },
+
+{ id: 32, number: "8", name: "MANAGE ANNOUNCEMENTS", image: "../images/EFITMO/ADMIN/Announcements/1.png", description: "" },
+{ id: 33, number: "", name: "", image: "../images/EFITMO/ADMIN/Announcements/2.png", description: "" },
+{ id: 34, number: "", name: "", image: "../images/EFITMO/ADMIN/Announcements/3.png", description: "" },
+{ id: 35, number: "", name: "", image: "../images/EFITMO/ADMIN/Announcements/4.png", description: "" },
+
+{ id: 36, number: "9", name: "Archived Products", image: "../images/EFITMO/ADMIN/ArchivedProducts/1.png", description: "" },
+{ id: 37, number: "", name: "", image: "../images/EFITMO/ADMIN/MyOrder/ArchivedProducts/2.png", description: "" },
+
+{ id: 38, number: "10", name: "FEEDBACKS", image: "../images/EFITMO/ADMIN/Feedback/1.png", description: "" },
+{ id: 39, number: "", name: "", image: "../images/EFITMO/ADMIN/Feedback/2.png", description: "" },
 
 
-  { id: 19, number: "5", name: "MANAGE ORDERS", image: "../images/EFITMO/ADMIN/ManageOrders/1.jpg", description: "Smoothed out with Photoshop." },
-  { id: 20, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageOrders/2.png", description: "An Design with Photoshop corrections." },
-  { id: 21, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageOrders/3.png", description: "Basic edits done using Photoshop." },
-  { id: 22, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageOrders/4.png", description: "Made better with illustrator tools." },
-  { id: 23, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageOrders/5.1.png", description: "Second Version of the Logo." },
-  { id: 24, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageOrders/5.png", description: "Clean design with Photoshop help." },
-  { id: 25, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageOrders/6.png", description: "A Photoshop touch-up to improve it." },
-  { id: 26, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageOrders/7.png", description: "Light Photoshop work on this Design." },
-  { id: 27, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageOrders/8.1.png", description: "Photoshop used to add some details." },
-  { id: 28, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageOrders/8.png", description: "A simple Photoshop edit for clarity." },
-  { id: 29, number: "", name: "", image: "../images/EFITMO/ADMIN/ManageOrders/9.png", description: "Layers combined with Photoshop." },
-  
-  { id: 30, number: "6", name: "ALL MESSAGES", image: "../images/EFITMO/ADMIN/MEssages/1.png", description: "Basic color corrections with Photoshop." },
- 
-  { id: 31, number: "7", name: "ALL PAYMENTS", image: "../images/EFITMO/ADMIN/Payments/1.png", description: "Made smoother using Photoshop." },
-  
-  { id: 32, number: "8", name: "MANAGE ANNOUNCEMENTS", image: "../images/EFITMO/ADMIN/Announcements/1.png", description: "No Description." },
-  { id: 33, number: "", name: "", image: "../images/EFITMO/ADMIN/Announcements/2.png", description: "Simple Photoshop layers added." },
-  { id: 34, number: "", name: "", image: "../images/EFITMO/ADMIN/Announcements/3.png", description: "Photoshop was used for some small fixes." },
-  { id: 35, number: "", name: "", image: "../images/EFITMO/ADMIN/Announcements/4.png", description: "A light Photoshop touch for better look." },
- 
-  { id: 36, number: "9", name: "Archived Products", image: "../images/EFITMO/ADMIN/ArchivedProducts/1.png", description: "Simple Photoshop work on this art." },
-  { id: 37, number: "", name: "", image: "../images/EFITMO/ADMIN/MyOrder/ArchivedProducts/2.png", description: "No Description." },
 
-  { id: 38, number: "10", name: "FEEDBACKS", image: "../images/EFITMO/ADMIN/Feedback/1.png", description: "A basic Photoshop edit to add some depth." },
-   { id: 39, number: "", name: "", image: "../images/EFITMO/ADMIN/Feedback/2.png", description: "Made clearer using Photoshop tools." },
- 
-   { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/gallery/Poster/RUTT.png", description: "No Description." },
        ],
       currentPage: 1,
       pageSize: 16,

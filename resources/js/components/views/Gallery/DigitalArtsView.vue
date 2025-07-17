@@ -14,7 +14,7 @@
 
   <div class="scale-wrapper ">
     <!-- Header Row -->
-    <div class="d-flex justify-content-between align-items-center">
+    <div class="d-flex justify-content-between align-items-center ">
       <div class="row">
 
 

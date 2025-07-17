@@ -1,31 +1,40 @@
 <template>
-  <div class="scale-wrapper p-5 p-lg-0">
+  <div class="scale-wrapper ">
     <div class="w-100 px-3 py-4 px-lg-0 py-lg-0">
       <!-- Header Row -->
       <div class="d-flex justify-content-between align-items-center">
         <div class="row w-100">
           
-          <div class="col-sm-12 col-lg-6 fw-bolder mt-5 d-flex align-items-center justify-content-start">
-            <div class="d-flex flex-wrap justify-content-start me-2">
+
+            <div class="col-sm-12 col-lg-12 fw-bolder mt-5 d-flex align-items-center justify-content-start">
+              <div class="d-flex flex-wrap justify-content-start me-2 mb-5">
               <router-link to="/">
-                <button class="btn btn-success rounded-pill d-inline-block">
-                  <i class="fa-solid fa-arrow-left"></i>
+                <button class="btn btn-success rounded-pill d-none d-lg-block">
+                  <i class="fa-solid fa-home"></i>
                 </button>
               </router-link>
-              <button class="btn btn-success d-lg-none d-inline-block ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
-                <i class="fa fa-bars"></i>
-              </button>
+              
             </div>
 
             <div>
-               <h1 class="fw-bolder"><b>ANIMATION</b></h1>
-               <h6 class="text-muted">Used Application for Animating: <b class="badge bg-dark">ADOBE ANIMATE CC</b> <b class="badge bg-dark">KRITA</b></h6>
+               <h1 class="fw-bolder mb-0"><b>ANIMATION</b></h1>
+               <h6 class="text-muted">Used Application for Animating: <br> <b class="mt-3 badge bg-dark">ADOBE ANIMATE CC</b> <b class="badge bg-dark">KRITA</b></h6>
             </div>
-          </div>
+            </div>
+        
+
+
+
 
           <div class="col-sm-12 col-lg-auto mt-3 d-inline-block">
-            
-
+             <router-link to="/">
+                <button class="btn btn-success rounded-pill d-inline-block d-lg-none me-2">
+                  <i class="fa-solid fa-home"></i>
+                </button>
+              </router-link>
+            <button class="btn btn-success d-lg-none " type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
+                <i class="fa fa-bars"></i> See More Description
+            </button>
             <!-- Collapsible container -->
             <div class="collapse d-lg-flex flex-wrap" id="navButtons">
               <router-link to="/animation" active-class="active-link">
@@ -223,7 +232,7 @@ export default {
      
       ],
       currentPage: 1,
-      pageSize: 8,
+      pageSize: 16,
     };
   },
 
@@ -277,13 +286,18 @@ export default {
 <style>
 .scale-wrapper {
   transform: scale(0.85);
-
+  transform-origin: top center;
+  margin-top: 10vh;
+  margin-bottom: 0 !important;
 }
+
 
 /* Remove scale on small screens (mobile-first) */
 @media screen and (max-width: 576px) {
   .scale-wrapper {
     transform: none;
+     transform-origin: top center;
+      transform: scale(0.85);
   }
 }
 

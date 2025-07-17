@@ -12,36 +12,44 @@
   <button class="close-btn" @click="selectedImage = null">×</button>
 </div>
 
-  <div class="scale-wrapper p-5 p-lg-0">
+  <div class="scale-wrapper">
     <!-- Header Row -->
     <div class="d-flex justify-content-between align-items-center">
       <div class="row">
        
 
 
-           <div class="col-sm-12 col-lg-6 fw-bolder mt-5 d-flex align-items-center justify-content-start">
-            <div class="d-flex flex-wrap justify-content-start me-2">
+
+            <div class="col-sm-12 col-lg-12 fw-bolder mt-5 d-flex align-items-center justify-content-start">
+              <div class="d-flex flex-wrap justify-content-start me-2 mb-5">
               <router-link to="/">
-                <button class="btn btn-success rounded-pill d-inline-block">
-                  <i class="fa-solid fa-arrow-left"></i>
+                <button class="btn btn-success rounded-pill d-none d-lg-block">
+                  <i class="fa-solid fa-home"></i>
                 </button>
               </router-link>
-              <button class="btn btn-success d-lg-none d-inline-block ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
-                <i class="fa fa-bars"></i>
-              </button>
+              
             </div>
 
             <div>
-               <h1 class="fw-bolder"><b>GRAPHIC DESIGNS</b></h1>
-               <h6 class="text-muted">Used Application for Designing: <b class="badge bg-dark">ADOBE ILLUSTRATOR</b> <b class="badge bg-dark">ADOBE PHOTOSHOP</b></h6>
+               <h1 class="fw-bolder mb-0"><b>GRAPHIC DESIGNS</b></h1>
+               <h6 class="text-muted">Used Application for Designing: <br> <b class="mt-3 badge bg-dark">PHOTOSHOP</b> <b class="mt-3 badge bg-dark">ILLUSTRATOR</b> <b class="mt-3 badge bg-dark">CANVA</b></h6>
             </div>
-          </div>
+            </div>
+            
+            
+          
 
 
 
       <div class="col-sm-12 col-lg-auto mt-3  d-inline-block">
-
-
+         <router-link to="/">
+                <button class="btn btn-success rounded-pill d-inline-block d-lg-none me-2">
+                  <i class="fa-solid fa-home"></i>
+                </button>
+              </router-link>
+         <button class="btn btn-success d-lg-none " type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
+                <i class="fa fa-bars"></i> See More Description
+            </button>
 
           <div class="collapse d-lg-flex flex-wrap" id="navButtons">
           
@@ -212,7 +220,7 @@ export default {
      { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/gallery/Poster/RUTT.png", description: "No Description." },
        ],
       currentPage: 1,
-      pageSize: 8,
+      pageSize: 16,
       selectedImage: null, // Fullscreen state
     };
   },

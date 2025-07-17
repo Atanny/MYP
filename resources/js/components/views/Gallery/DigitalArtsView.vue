@@ -1,30 +1,41 @@
 <template>
-  <div class="scale-wrapper mb-5 mt-5" style="margin-top:2vh;">
+  <div v-if="selectedImage" class="border-0 rounded fullscreen-overlay" @click="selectedImage = null">
+  <img :src="selectedImage" class="border-0 rounded fullscreen-img" @click.stop />
+
+
+  <button class="nav-btn left-btn" @click.stop="previousImage">‹</button>
+
+
+  <button class="nav-btn right-btn" @click.stop="nextImage">›</button>
+
+
+  <button class="close-btn" @click="selectedImage = null">×</button>
+</div>
+
+  <div class="scale-wrapper p-5 p-lg-0">
     <!-- Header Row -->
     <div class="d-flex justify-content-between align-items-center">
       <div class="row">
-        <div class="col-sm-12 col-lg-6 fw-bolder mt-5">
-          <h1><b>DIGITAL ARTS</b></h1>
-        </div>
-        
-<div class="col-sm-12 col-lg-auto mt-3  d-inline-block">
- 
+         <div class="col-sm-12 col-lg-6 fw-bolder mt-5 d-flex align-items-center justify-content-start">
+            <div class="d-flex flex-wrap justify-content-start me-2">
+              <router-link to="/">
+                <button class="btn btn-success rounded-pill d-inline-block">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </button>
+              </router-link>
+              <button class="btn btn-success d-lg-none d-inline-block ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
+                <i class="fa fa-bars"></i>
+              </button>
+            </div>
 
-          <div class="d-flex flex-wrap justify-content-start justify-content-lg-start mb-3">
-            <router-link to="/" class="">
-              <button class="btn btn-success rounded-pill d-inline-block"><i class="fa fa-home"></i> Return Home</button>
-            </router-link>
-            <button class="btn btn-success  d-lg-none d-inline-block  ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
-            <i class="fa fa-bars"></i>
-            </button>
-            
+            <div>
+               <h1 class="fw-bolder"><b>DIGITAL ARTS</b></h1>
+               <h6 class="text-muted">Used Application for Drawings: <b class="badge bg-dark">ADOBE ILLUSTRATOR</b> <b class="badge bg-dark">KRITA</b></h6>
+            </div>
           </div>
           
-          
-
-
-
-  <!-- Collapsible container for the buttons -->
+<div class="col-sm-12 col-lg-auto mt-3  d-inline-block">
+ 
           <div class="collapse d-lg-flex flex-wrap" id="navButtons">
           
             <router-link to="/animation" class="" active-class="active-link">
@@ -55,14 +66,16 @@
     <!-- Artwork Thumbnails -->
          <div class="row">
       <div
-        class="col-md-3 mt-4 h-auto"
-        v-for="artwork in paginatedArtworks"
-        :key="artwork.id"
-        v-if="paginatedArtworks.length > 0"
-      >
+          class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4"
+          v-for="(artwork, index) in paginatedArtworks"
+          :key="artwork.id"
+          v-if="paginatedArtworks.length > 0"
+          data-aos="fade-up"
+          :data-aos-delay="index * 100"
+          data-aos-duration="800"
+        >
         <!-- Card with image, title, and description -->
-        <div class="card h-100 shadow-lg border-0 rounded "  data-aos="fade-right"
-              data-aos-duration="900">
+        <div class="card h-100 shadow-lg border-0 rounded " >
           <a
             :href="artwork.link"
             target="_blank"
@@ -95,11 +108,7 @@
       <button class="btn btn-success ms-2" :disabled="currentPage === totalPages" @click="currentPage++">Next</button>
     </div>
 
-    <!-- Fullscreen Image Modal -->
-    <div v-if="selectedImage" class="fullscreen-overlay" @click="selectedImage = null">
-      <img :src="selectedImage" class="fullscreen-img" @click.stop />
-      <button class="close-btn" @click="selectedImage = null">×</button>
-    </div>
+   
   </div>
 </template>
 
@@ -107,6 +116,8 @@
 export default {
   data() {
     return {
+      selectedImage: null,
+        currentImageIndex: 0,
      artworks: [
         { id: 1, number: "1", name: "WEDNESDAY ADAMS", image: "../images/gallery/Artworks/art (1).jpg", description: "I drew this black and white picture of a girl who looks serious. I wanted to show some emotion and drama." },
         { id: 2, number: "2", name: "I LIKE THE VIEW", image: "../images/gallery/Artworks/art (1).png", description: "I made this colorful drawing of a happy girl holding a tablet. I wanted it to feel light and creative." },
@@ -142,43 +153,27 @@ export default {
       return this.artworks.slice(start, end);
     },
   },
-  methods: {
-    viewFullScreen(imagePath) {
+ 
+methods: {
+  viewFullScreen(imagePath) {
+    const index = this.paginatedArtworks.findIndex(d => d.image === imagePath);
+    if (index !== -1) {
       this.selectedImage = imagePath;
-    },
+      this.currentImageIndex = index;
+    }
   },
+  nextImage() {
+    if (this.currentImageIndex < this.paginatedArtworks.length - 1) {
+      this.currentImageIndex++;
+      this.selectedImage = this.paginatedArtworks[this.currentImageIndex].image;
+    }
+  },
+  previousImage() {
+    if (this.currentImageIndex > 0) {
+      this.currentImageIndex--;
+      this.selectedImage = this.paginatedArtworks[this.currentImageIndex].image;
+    }
+  },
+}
 };
 </script>
-
-<style scoped>
-.fullscreen-overlay {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.95);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2000;
-}
-
-.fullscreen-img {
-  max-width: 90%;
-  max-height: 90%;
-
-
-}
-
-.close-btn {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 3rem;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-</style>

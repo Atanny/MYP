@@ -111,6 +111,13 @@ export default {
           name: "ChatGPT",
           iconClass: "logos:openai", 
           proficiency: "Profecient"
+        },
+
+         {
+          id: 12,
+          name: "MySQL",
+          iconClass: "logos:mysql-icon", 
+          proficiency: "Basic"
         }
         
       ]

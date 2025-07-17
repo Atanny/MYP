@@ -1,29 +1,32 @@
 <template>
-  <div class="scale-wrapper mt-5 mb-5" style="margin-top:2vh;">
+  <div class="scale-wrapper p-5 p-lg-0">
     <!-- Header Row -->
     <div class="d-flex justify-content-between align-items-center">
       <div class="row">
-        <div class="col-sm-12 col-lg-6 fw-bolder mt-5" >
-          <h1><b>WEB DESIGNS</b></h1>
-        </div>
+     
+
+           <div class="col-sm-12 col-lg-6 fw-bolder mt-5 d-flex align-items-center justify-content-start">
+            <div class="d-flex flex-wrap justify-content-start me-2">
+              <router-link to="/">
+                <button class="btn btn-success rounded-pill d-inline-block">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </button>
+              </router-link>
+              <button class="btn btn-success d-lg-none d-inline-block ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
+                <i class="fa fa-bars"></i>
+              </button>
+            </div>
+
+            <div>
+               <h1 class="fw-bolder"><b>WEB DESIGNS</b></h1>
+               <h6 class="text-muted">Used Application for Designing: <b class="badge bg-dark">FIGMA</b></h6>
+            </div>
+          </div>
+
+
 
      <div class="col-sm-12 col-lg-auto mt-3  d-inline-block">
- 
 
-          <div class="d-flex flex-wrap justify-content-start justify-content-lg-start mb-3">
-            <router-link to="/" class="">
-              <button class="btn btn-success rounded-pill d-inline-block"><i class="fa fa-home"></i> Return Home</button>
-            </router-link>
-            <button class="btn btn-success  d-lg-none d-inline-block  ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
-            <i class="fa fa-bars"></i>
-            </button>
-            
-          </div>
-          
-
-
-
-  <!-- Collapsible container for the buttons -->
           <div class="collapse d-lg-flex flex-wrap" id="navButtons">
           
             <router-link to="/animation" class="" active-class="active-link">
@@ -52,16 +55,18 @@
 
     <div class="row">
       <div
-        class="col-md-3 mt-4 h-auto"
-        v-for="artwork in paginatedArtworks"
-        :key="artwork.id"
-        v-if="paginatedArtworks.length > 0"
-      >
+          class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4"
+          v-for="(artwork, index) in paginatedArtworks"
+          :key="artwork.id"
+          v-if="paginatedArtworks.length > 0"
+          data-aos="fade-up"
+          :data-aos-delay="index * 100"
+          data-aos-duration="800"
+        >
         <!-- Card with image, title, description, and View button -->
         <div
           class="card h-100 shadow-lg border-0 rounded "
-          data-aos="fade-right"
-          data-aos-duration="900"
+         
         >
           <img
             class="card-img-top rounded-0"
@@ -115,6 +120,7 @@
 export default {
   data() {
     return {
+      
       artworks: [
         {
           id: 1,

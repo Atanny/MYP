@@ -8,6 +8,7 @@ import WebDesView from './components/views/Gallery/WebDesignView.vue';
 import WebdevView from './components/views/Gallery/WebsiteView.vue';
 import IllustratorView from './components/views/Gallery/IllustratorView.vue';
 import EfitmoView from './components/views/Gallery/EfitmoView.vue';
+import Efitmo2View from './components/views/Gallery/Efitmo2View.vue';
 const routes = [
   {
     path: '/',
@@ -54,8 +55,14 @@ const routes = [
 
   {
 
-    path: '/projects/efitmo',
+    path: '/website/student',
     component: EfitmoView,
+  },
+
+  {
+
+    path: '/website/admin',
+    component: Efitmo2View,
   },
  
  

@@ -1,109 +1,136 @@
 <template>
-  <div class="scale-wrapper mt-5 mb-5" style="margin-top:2vh;">
-    <!-- Header Row -->
-    <div class="d-flex justify-content-between align-items-center">
-      <div class="row">
-        <div class="col-sm-12 col-lg-6 fw-bolder mt-5">
-          <h1><b>ILLUSTRATION</b></h1>
-        </div>
+  <div v-if="selectedImage" class="border-0 rounded fullscreen-overlay" @click="selectedImage = null">
+  <img :src="selectedImage" class="border-0 rounded fullscreen-img" @click.stop />
 
-    <div class="col-sm-12 col-lg-auto mt-3  d-inline-block">
- 
+  <!-- Left Arrow -->
+  <button class="nav-btn left-btn" @click.stop="previousImage">‹</button>
 
-          <div class="d-flex flex-wrap justify-content-start justify-content-lg-start mb-3">
-            <router-link to="/" class="">
-              <button class="btn btn-success rounded-pill d-inline-block"><i class="fa fa-home"></i> Return Home</button>
-            </router-link>
-            <button class="btn btn-success  d-lg-none d-inline-block  ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
-            <i class="fa fa-bars"></i>
-            </button>
-            
-          </div>
+  <!-- Right Arrow -->
+  <button class="nav-btn right-btn" @click.stop="nextImage">›</button>
 
-
-
-  <!-- Collapsible container for the buttons -->
-          <div class="collapse d-lg-flex flex-wrap" id="navButtons">
+  <!-- Close Button -->
+  <button class="close-btn" @click="selectedImage = null">×</button>
+</div>
+  <div class="scale-wrapper p-5 p-lg-0">
+    <div class="w-100 px-3 py-4 px-lg-0 py-lg-0">
+      <!-- Header Row -->
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="row w-100">
           
-            <router-link to="/animation" class="" active-class="active-link">
-              <button class="btn btn-success me-1 mt-2">ANIMATION</button>
-            </router-link>
-            <router-link to="/illustrator" class="" active-class="active-link">
-              <button class="btn btn-success me-1 mt-2">ILLUSTRATION</button>
-            </router-link>
-            <router-link to="/digital-arts" class="" active-class="active-link">
-              <button class="btn btn-success me-1 mt-2">DIGITAL ARTS</button>
-            </router-link>
-            <router-link to="/graphic-design" class="" active-class="active-link">
-              <button class="btn btn-success me-1 mt-2">GRAPHIC DESIGNS</button>
-            </router-link>
-            <router-link to="/web-design" class="" active-class="active-link">
-              <button class="btn btn-success me-1 mt-2 ">WEB DESIGNS</button>
-            </router-link>
-            <router-link to="/website" active-class="active-link">
-              <button class="btn btn-success me-1 mt-2 ">WEBSITES</button>
-            </router-link>
+           <div class="col-sm-12 col-lg-6 fw-bolder mt-5 d-flex align-items-center justify-content-start">
+            <div class="d-flex flex-wrap justify-content-start me-2">
+              <router-link to="/">
+                <button class="btn btn-success rounded-pill d-inline-block">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </button>
+              </router-link>
+              <button class="btn btn-success d-lg-none d-inline-block ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
+                <i class="fa fa-bars"></i>
+              </button>
+            </div>
+
+            <div>
+               <h1 class="fw-bolder"><b>ILLUSTRATOR</b></h1>
+               <h6 class="text-muted">Used Application for Illustrating: <b class="badge bg-dark">ADOBE ILLUSTRATOR</b> <b class="badge bg-dark">KRITA</b></h6>
+            </div>
           </div>
-      </div>
 
-      </div>
-    </div>
+          <div class="col-sm-12 col-lg-auto mt-3 d-inline-block">
 
-    <!-- Artwork Thumbnails -->
-     <div class="row">
-      <div
-        class="col-md-3 mt-4 h-auto"
-        v-for="artwork in paginatedArtworks"
-        :key="artwork.id"
-        v-if="paginatedArtworks.length > 0"
-      >
-        <!-- Card with image, title, and description -->
-        <div class="card h-100 shadow-lg border-0 rounded "  data-aos="fade-right"
-              data-aos-duration="900">
-          <a
-            :href="artwork.link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img  @click="viewFullScreen(artwork.image)"
-              class="card-img-top "
-              :src="artwork.image"
-              style="object-fit: cover; height: 250px; width: 100%;"
-             
-            />
-          </a>
-          <div class="card-body">
-            <h6 class="fw-bold mb-1">{{ artwork.number }} - {{ artwork.name }}</h6>
-            <p class="card-text text-muted small">{{ artwork.description }}</p>
+            <div class="collapse d-lg-flex flex-wrap" id="navButtons">
+              <router-link to="/animation" active-class="active-link">
+                <button class="btn btn-success me-1 mt-2">ANIMATION</button>
+              </router-link>
+              <router-link to="/illustrator" active-class="active-link">
+                <button class="btn btn-success me-1 mt-2">ILLUSTRATION</button>
+              </router-link>
+              <router-link to="/digital-arts" active-class="active-link">
+                <button class="btn btn-success me-1 mt-2">DIGITAL ARTS</button>
+              </router-link>
+              <router-link to="/graphic-design" active-class="active-link">
+                <button class="btn btn-success me-1 mt-2">GRAPHIC DESIGNS</button>
+              </router-link>
+              <router-link to="/web-design" active-class="active-link">
+                <button class="btn btn-success me-1 mt-2">WEB DESIGNS</button>
+              </router-link>
+              <router-link to="/website" active-class="active-link">
+                <button class="btn btn-success me-1 mt-2">WEBSITES</button>
+              </router-link>
+            </div>
           </div>
         </div>
       </div>
 
-      <div v-else>
-        <div class="text-center mt-5 card p-3 bg-light shadow-sm">
-          <p class="text-muted mt-3">No artworks available yet.</p>
+      <!-- Artwork Grid -->
+      <div class="row">
+        <div
+          class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4"
+          v-for="(artwork, index) in paginatedArtworks"
+          :key="artwork.id"
+          v-if="paginatedArtworks.length > 0"
+          data-aos="fade-up"
+          :data-aos-delay="index * 100"
+          data-aos-duration="800"
+        >
+          <div class="card h-100 shadow-lg border-0 rounded">
+            <a
+              :href="artwork.link"
+              target="_blank"
+              rel="noopener noreferrer"
+              @click.prevent="viewFullScreen(artwork.image)"
+            >
+              <img
+                class="card-img-top"
+                :src="artwork.image"
+                style="object-fit: cover; height: 250px; width: 100%;"
+              />
+            </a>
+            <div class="card-body d-flex flex-column">
+              <h6 class="fw-bold mb-1">{{ artwork.number }} - {{ artwork.name }}</h6>
+              <p class="card-text text-muted small flex-grow-1">{{ artwork.description }}</p>
+            </div>
+          </div>
+        </div>
+
+        <div v-else>
+          <div class="text-center mt-5 card p-3 bg-light shadow-sm">
+            <p class="text-muted mt-3">No artworks available yet.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Pagination Controls -->
-    <div class="text-center mt-4">
-      <button class="btn btn-success me-2" :disabled="currentPage === 1" @click="currentPage--">Previous</button>
-      <span class="mx-2">Page {{ currentPage }} of {{ totalPages }}</span>
-      <button class="btn btn-success ms-2" :disabled="currentPage === totalPages" @click="currentPage++">Next</button>
-    </div>
 
-    <!-- Fullscreen Image Modal -->
-    <div v-if="selectedImage" class="fullscreen-overlay" @click="selectedImage = null">
-      <img :src="selectedImage" class="fullscreen-img" @click.stop />
-      <button class="close-btn" @click="selectedImage = null">×</button>
+      <!-- Pagination Controls -->
+      <div class="text-center mt-4">
+        <button
+          class="btn btn-success me-2"
+          :disabled="currentPage === 1"
+          @click="currentPage--"
+        >
+          Previous
+        </button>
+        <span class="mx-2">Page {{ currentPage }} of {{ totalPages }}</span>
+        <button
+          class="btn btn-success ms-2"
+          :disabled="currentPage === totalPages"
+          @click="currentPage++"
+        >
+          Next
+        </button>
+      </div>
+
+      <!-- Fullscreen Modal -->
+     
     </div>
   </div>
 </template>
+
 
 <script>
 export default {
   data() {
     return {
+      selectedImage: null,
+        currentImageIndex: 0,
       artworks: [
         { id: 1, number: "1", name: "CONVINNIENCE STORE", image: "../images/gallery/Illustrator/art (1).jpg",  description: "Inspired by the song of Dilaw."},
         { id: 2, number: "2", name: "GELOU", image: "../images/gallery/Illustrator/art (1).png",  description: "Commission." },
@@ -145,11 +172,28 @@ export default {
       return this.artworks.slice(start, end);
     },
   },
-  methods: {
-    viewFullScreen(imagePath) {
+   
+methods: {
+  viewFullScreen(imagePath) {
+    const index = this.paginatedArtworks.findIndex(d => d.image === imagePath);
+    if (index !== -1) {
       this.selectedImage = imagePath;
-    },
+      this.currentImageIndex = index;
+    }
   },
+  nextImage() {
+    if (this.currentImageIndex < this.paginatedArtworks.length - 1) {
+      this.currentImageIndex++;
+      this.selectedImage = this.paginatedArtworks[this.currentImageIndex].image;
+    }
+  },
+  previousImage() {
+    if (this.currentImageIndex > 0) {
+      this.currentImageIndex--;
+      this.selectedImage = this.paginatedArtworks[this.currentImageIndex].image;
+    }
+  },
+}
 };
 </script>
 

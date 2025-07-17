@@ -1,28 +1,28 @@
 <template>
-  <div class="scale-wrapper mt-5 mb-5" style="margin-top:2vh;">
-    <!-- Header Row -->
+  <div class="scale-wrapper p-5 p-lg-0">
+
     <div class="d-flex justify-content-between align-items-center">
       <div class="row">
-        <div class="col-sm-12 col-lg-6 fw-bolder mt-5">
-          <h1><b>WEBSITES</b></h1>
-        </div>
+          <div class="col-sm-12 col-lg-6 fw-bolder mt-5 d-flex align-items-center justify-content-start">
+            <div class="d-flex flex-wrap justify-content-start me-2">
+              <router-link to="/">
+                <button class="btn btn-success rounded-pill d-inline-block">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </button>
+              </router-link>
+              <button class="btn btn-success d-lg-none d-inline-block ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
+                <i class="fa fa-bars"></i>
+              </button>
+            </div>
+
+            <div>
+               <h1 class="fw-bolder"><b>WEB DEVELOP</b></h1>
+               <h6 class="text-muted">Used Application for Illustrating: <b class="badge bg-dark">ADOBE ILLUSTRATOR</b> <b class="badge bg-dark">KRITA</b></h6>
+            </div>
+          </div>
 
       <div class="col-sm-12 col-lg-auto mt-3  d-inline-block">
  
-
-          <div class="d-flex flex-wrap justify-content-start justify-content-lg-start mb-3">
-            <router-link to="/" class="">
-              <button class="btn btn-success rounded-pill d-inline-block"><i class="fa fa-home"></i> Return Home</button>
-            </router-link>
-            <button class="btn btn-success  d-lg-none d-inline-block  ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
-            <i class="fa fa-bars"></i>
-            </button>
-            
-          </div>
-
-
-
-  <!-- Collapsible container for the buttons -->
           <div class="collapse d-lg-flex flex-wrap" id="navButtons">
           
             <router-link to="/animation" class="" active-class="active-link">
@@ -52,14 +52,16 @@
 
     <!-- Artwork Cards -->
     <div class="row">
-      <div
-        class="col-md-3 mt-4"
-        v-for="artwork in paginatedArtworks"
-        :key="artwork.id"
-        v-if="paginatedArtworks.length > 0"
-      >
-        <div class="card h-100 shadow-lg rounded"   data-aos="fade-right"
-            data-aos-duration="900">
+    <div
+          class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4"
+          v-for="(artwork, index) in paginatedArtworks"
+          :key="artwork.id"
+          v-if="paginatedArtworks.length > 0"
+          data-aos="fade-up"
+          :data-aos-delay="index * 100"
+          data-aos-duration="800"
+        >
+        <div class="card h-100 shadow-lg rounded"  >
           <img
             :src="artwork.image"
             class="card-img-top rounded-0"
@@ -80,13 +82,15 @@
             </a>
           </div>
         </div>
+       
       </div>
-
+      
       <div v-else>
         <div class="text-center mt-5 card p-3 bg-light shadow-sm border-0">
           <p class="text-muted mt-3">No artworks available yet.</p>
         </div>
       </div>
+      
     </div>
 
     <!-- Pagination Controls -->
@@ -140,9 +144,11 @@ export default {
           name: "EFITMO: Online Ordering System",
           image: "../images/gallery/weddes/art (4).png",
           tags: ["WEB DESIGN"],
-           link: "/projects/efitmo",
+           link: "/website/student",
           description: "An intuitive online UNIFORM ordering system designed for efficiency. made with laravel native. with Online Payment and batch Odering.",
         },
+        
+        
         // Add more artworks here as needed
       ],
       currentPage: 1,

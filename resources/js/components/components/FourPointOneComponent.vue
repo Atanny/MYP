@@ -110,7 +110,7 @@ export default {
           id: 11,
           name: "ChatGPT",
           iconClass: "logos:openai", 
-          proficiency: "Profecient"
+          proficiency: "Proficient"
         },
 
          {

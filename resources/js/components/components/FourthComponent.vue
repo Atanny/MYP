@@ -98,7 +98,7 @@ export default {
         },
           {
           id: 8,
-          name: "flipaclip",
+          name: "Flipaclip",
           iconClass: "arcticons:flipaclip",
             proficiency: "Proficient"
         },

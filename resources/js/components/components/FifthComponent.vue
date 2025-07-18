@@ -2,7 +2,7 @@
 <div class="container p-lg-5" >
 
     <h1 class="fw-bolder mt-4 text-dark mt-5 px-5"><b>OUTPUT CATEGORIES</b></h1>
-    <h2 class="fw-bolder mt-4 outline-text px-5"><b>GRAPHIC & DIGITAL DESIGN</b></h2>
+    <h2 class="fw-bolder mt-4 text-dark px-5"><b>GRAPHIC & DIGITAL DESIGN</b></h2>
 
     <div class="card-deck px-5">
         <div class="card mt-4 h1-00  rounded shadow-lg border-0"  data-aos="fade-right" data-aos-duration="1600">
@@ -79,7 +79,7 @@
         </div>
     </div>
 
-    <h2 class="px-5 fw-bolder mt-5 outline-text"><b>WEB DESIGNS & DEVELOPMENT</b></h2>
+    <h2 class="px-5 fw-bolder mt-5 text-dark"><b>WEB DESIGNS & DEVELOPMENT</b></h2>
     <div class="row p-5">
 
         <div class="col-md-3 mt-4">

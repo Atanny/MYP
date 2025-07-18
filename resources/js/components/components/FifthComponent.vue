@@ -79,10 +79,10 @@
         </div>
     </div>
 
-    <h2 class="px-5 fw-bolder mt-5 text-dark"><b>WEB DESIGNS & DEVELOPMENT</b></h2>
+    <h2 class="px-5 fw-bolder mt-5 text-dark mb-0"><b>WEB DESIGNS & DEVELOPMENT</b></h2>
     <div class="row p-5">
 
-        <div class="col-md-3 mt-4">
+        <div class=" col-md-3 ">
         <div class="card rounded shadow-lg border-0 h-100" data-aos="fade-right" data-aos-duration="1000">
             <div class="card-body d-flex flex-column">
                 <img class="img-fluid card-img-top rounded" src="/images/websites/4.png" style="height: 200px; object-fit: cover;" alt="">
@@ -97,7 +97,7 @@
         </div>
     </div>
    
-    <div class="col-md-3 mt-4">
+    <div class="col-md-3">
         <div class="card rounded shadow-lg border-0 h-100" data-aos="fade-right" data-aos-duration="1600">
             <div class="card-body d-flex flex-column">
                 <img class="img-fluid card-img-top rounded" src="/images/websites/6.png" style="height: 200px; object-fit: cover;" alt="">

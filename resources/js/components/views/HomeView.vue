@@ -154,7 +154,7 @@ body{
 
 .outline-text { 
     font-weight: bold;
-    color: white;
+    color: #19191a;
    
     text-align: start;
 }

@@ -1,11 +1,11 @@
 <template>
   <div class="container p-lg-5">
 
-    <h1 class="fw-bolder mt-4 text-dark mt-5 px-5"><b>OUTPUT CATEGORIES</b></h1>
-    <h2 class="fw-bolder mt-4 text-dark px-5"><b>GRAPHIC & DIGITAL DESIGN</b></h2>
+    <h1 class="fw-bolder mt-3 text-dark mt-5 px-5"><b>OUTPUT CATEGORIES</b></h1>
+    <h2 class="fw-bolder mt-3 text-dark px-5"><b>GRAPHIC & DIGITAL DESIGN</b></h2>
 
     <div class="card-deck px-5">
-      <div class="card mt-4 h-100 rounded shadow-lg border-0"
+      <div class="card mt-3 h-100 rounded shadow-lg border-0"
            data-aos="fade-up" data-aos-delay="100">
         <div class="card-body">
           <video class="img-fluid card-img-top rounded" 
@@ -14,7 +14,7 @@
                  muted playsinline>
           </video>
           <div>
-            <h5 class="card-title fw-bolder mt-4">ANIMATIONS</h5>
+            <h5 class="card-title fw-bolder mt-3">ANIMATIONS</h5>
           </div>
         </div>
         <div class="card-footer bg-white border-0">
@@ -24,14 +24,14 @@
         </div>
       </div>
 
-      <div class="card mt-4 rounded shadow-lg border-0"
+      <div class="card mt-3 rounded shadow-lg border-0"
            data-aos="fade-up" data-aos-delay="200">
         <div class="card-body">
           <img class="img-fluid card-img-top rounded" 
                src="/images/gallery/Illustrator/art (1).jpg" 
                style="height: 200px; object-fit: cover;" alt="">
           <div>
-            <h5 class="card-title fw-bolder mt-4">ILLUSTRATION</h5>
+            <h5 class="card-title fw-bolder mt-3">ILLUSTRATION</h5>
           </div>
         </div>
         <div class="card-footer bg-white border-0">
@@ -41,14 +41,14 @@
         </div>
       </div>
 
-      <div class="card mt-4 rounded shadow-lg border-0"
+      <div class="card mt-3 rounded shadow-lg border-0"
            data-aos="fade-up" data-aos-delay="300">
         <div class="card-body">
           <img class="img-fluid card-img-top rounded" 
                src="/images/gallery/Artworks/hi.jpg" 
                style="height: 200px; object-fit: cover;" alt="">
           <div>
-            <h5 class="card-title fw-bolder mt-4">DIGITAL ARTS</h5>
+            <h5 class="card-title fw-bolder mt-3">DIGITAL ARTS</h5>
           </div>
         </div>
         <div class="card-footer bg-white border-0">
@@ -58,14 +58,14 @@
         </div>
       </div>
 
-      <div class="card mt-4 rounded shadow-lg border-0"
+      <div class="card mt-3 rounded shadow-lg border-0"
            data-aos="fade-up" data-aos-delay="400">
         <div class="card-body">
           <img class="img-fluid card-img-top rounded" 
                src="/images/gallery/Poster/art (1).jpeg" 
                style="height: 200px; object-fit: cover;" alt="">
           <div>
-            <h5 class="card-title fw-bolder mt-4">GRAPHIC DESIGN</h5>
+            <h5 class="card-title fw-bolder mt-3">GRAPHIC DESIGN</h5>
           </div>
         </div>
         <div class="card-footer bg-white border-0">
@@ -86,7 +86,7 @@
             <img class="img-fluid card-img-top rounded" 
                  src="/images/websites/4.png" 
                  style="height: 200px; object-fit: cover;" alt="">
-            <h5 class="card-title fw-bolder mt-4">WEB DESIGN</h5>
+            <h5 class="card-title fw-bolder mt-3">WEB DESIGN</h5>
           </div>
           <div class="card-footer bg-white border-0">
             <router-link to="/web-design">
@@ -103,7 +103,7 @@
             <img class="img-fluid card-img-top rounded" 
                  src="/images/websites/6.png" 
                  style="height: 200px; object-fit: cover;" alt="">
-            <h5 class="card-title fw-bolder mt-4">WEBSITES</h5>
+            <h5 class="card-title fw-bolder mt-3">WEBSITES</h5>
           </div>
           <div class="card-footer bg-white border-0">
             <router-link to="/website">

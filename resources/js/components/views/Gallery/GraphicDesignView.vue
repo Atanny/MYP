@@ -299,10 +299,12 @@ methods: {
 .card-animation {
   transition: transform 0.5s ease, opacity 0.5s ease;
   transform: scale(0.95);
+  cursor: pointer;
   animation: fadeZoomIn 0.8s forwards;
 }
 
 .card-animation:hover {
+  cursor: pointer;
   transform: scale(1.05);
 }
 

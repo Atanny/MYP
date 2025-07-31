@@ -77,7 +77,7 @@
           <div class=" h-100 shadow-lg d-flex flex-column">
             <div class="position-relative " style="height: 250px;">
               <video 
-                class="card-animation w-100 h-100 border-0 "
+                class="card-animation pe-auto w-100 h-100 border-0 "
                 :src="artwork.videoSrc"
                 style="object-fit: cover;"
                 loop

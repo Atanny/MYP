@@ -1,12 +1,6 @@
 <template>
     <div class="" style="margin-top: 75px;">
-         <button
-      v-show="showButton"
-      @click="scrollToTop"
-      class="back-to-top "
-    >
-      ↑
-    </button>
+    
         <header-component class="mt-5"></header-component>
        
         <second-component class=""></second-component>
@@ -40,12 +34,7 @@ export default {
     handleScroll() {
       this.showButton = window.scrollY > 200;
     },
-    scrollToTop() {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-      });
-    },
+  
   },
 };</script>
 <style>
@@ -80,19 +69,6 @@ body{
     background-color: transparent;
     color: #19191a;
     z-index: 1;
-}
-.back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-  padding: 10px;
-  background-color: #19191a;
-  color: white;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  transition: opacity 0.3s ease;
 }
 
 

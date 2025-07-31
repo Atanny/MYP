@@ -1,4 +1,5 @@
 <template>
+   
   <div v-if="selectedImage" class="border-0 rounded fullscreen-overlay" @click="selectedImage = null">
   <img :src="selectedImage" class="border-0 rounded fullscreen-img" @click.stop />
 
@@ -13,6 +14,11 @@
 </div>
 
   <div class="scale-wrapper ">
+ 
+    <button v-show="showButton" @click="scrollToTop" class=" btn btn-danger ">
+      ↑asdsdas
+    </button>
+   
     <!-- Header Row -->
     <div class="d-flex justify-content-between align-items-center ">
       <div class="row">
@@ -114,11 +120,11 @@
       </div>
     </div>
     <!-- Pagination Controls -->
-    <div class="text-center mt-4">
+    <!-- <div class="text-center mt-4">
       <button class="btn btn-success me-2" :disabled="currentPage === 1" @click="currentPage--">Previous</button>
       <span class="mx-2">Page {{ currentPage }} of {{ totalPages }}</span>
       <button class="btn btn-success ms-2" :disabled="currentPage === totalPages" @click="currentPage++">Next</button>
-    </div>
+    </div> -->
 
    
   </div>
@@ -151,7 +157,7 @@ export default {
       ],
 
       currentPage: 1,
-      pageSize: 100,
+      pageSize: 1000,
       selectedImage: null, // Fullscreen state
     };
   },
@@ -164,9 +170,17 @@ export default {
       const end = start + this.pageSize;
       return this.artworks.slice(start, end);
     },
+    
   },
  
 methods: {
+  scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    },
+
   viewFullScreen(imagePath) {
     const index = this.paginatedArtworks.findIndex(d => d.image === imagePath);
     if (index !== -1) {
@@ -174,6 +188,7 @@ methods: {
       this.currentImageIndex = index;
     }
   },
+  
   nextImage() {
     if (this.currentImageIndex < this.paginatedArtworks.length - 1) {
       this.currentImageIndex++;
@@ -189,3 +204,17 @@ methods: {
 }
 };
 </script>
+<style>
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  padding: 10px;
+  background-color: #19191a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: opacity 0.3s ease;
+}</style>

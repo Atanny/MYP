@@ -120,11 +120,11 @@
       </div>
     </div>
     <!-- Pagination Controls -->
-    <div class="text-center mt-4">
+    <!-- <div class="text-center mt-4">
       <button class="btn btn-success me-2" :disabled="currentPage === 1" @click="currentPage--">Previous</button>
       <span class="mx-2">Page {{ currentPage }} of {{ totalPages }}</span>
       <button class="btn btn-success ms-2" :disabled="currentPage === totalPages" @click="currentPage++">Next</button>
-    </div>
+    </div> -->
 
    
   </div>
@@ -237,7 +237,7 @@ export default {
 
        ],
       currentPage: 1,
-      pageSize: 100,
+      pageSize: 1000,
       selectedImage: null, // Fullscreen state
     };
   },

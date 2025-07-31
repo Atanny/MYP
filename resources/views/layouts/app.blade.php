@@ -28,8 +28,53 @@
     <div id="app" class="">
         <Navbar-component></Navbar-component>
         <router-view class=""></router-view>
+        <!-- Scroll to Top Button -->
+        <button id="scrollTopBtn" onclick="scrollToTop()" title="Go to top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
 
     </div>
 </body>
+<style>
+    #scrollTopBtn {
+        position: fixed;
+        bottom: 40px;
+        right: 30px;
+        z-index: 999;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #343a40;
+        color: white;
+        cursor: pointer;
+        padding: 12px 16px;
+        border-radius: 50%;
+        display: none;
+        transition: opacity 0.3s;
+    }
+
+    #scrollTopBtn:hover {
+        background-color: #212529;
+    }
+</style>
+<script>
+    // Show button when scrolling down
+    window.onscroll = function() {
+        const btn = document.getElementById("scrollTopBtn");
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    };
+
+    // Smooth scroll to top
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+</script>
 
 </html>

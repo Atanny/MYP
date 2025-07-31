@@ -115,7 +115,7 @@
       </div>
 
       <!-- Pagination Controls -->
-      <div class="text-center mt-4">
+      <!-- <div class="text-center mt-4">
         <button
           class="btn btn-success me-2"
           :disabled="currentPage === 1"
@@ -131,7 +131,7 @@
         >
           Next
         </button>
-      </div>
+      </div> -->
 
       <!-- Fullscreen Modal -->
      
@@ -161,7 +161,7 @@ export default {
         
        ],
       currentPage: 1,
-      pageSize: 100,
+      pageSize: 1000,
       selectedImage: null, // Fullscreen state
     };
   },

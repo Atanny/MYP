@@ -32,7 +32,7 @@
     </div>
 
     <div class="col-lg-3 ">
-        <h1 class="display-1 fw-bolder outline-text" style="margin-top: 5vh;" data-aos="fade-right" data-aos-duration="1200">03</h1>
+        <h1 class="display-1 fw-bolder outline-text mt-0 mt-lg-5" data-aos="fade-right" data-aos-duration="1200">03</h1>
         <div class="card rounded  border-2 bg-transparent text-dark card-group h-auto border-dark " style="background-color: #fca311;" data-aos="fade-right" data-aos-duration="800">
             <div class="card-body">
               

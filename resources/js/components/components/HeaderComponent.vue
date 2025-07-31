@@ -69,8 +69,8 @@
     </div>
 
 
-    <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
-        <div class="p-0 p-lg-5">
+    <div class="col-lg-6" >
+        <div class="p-0 p-lg-5 animate__bounceIn">
             <img class=" img-fluid" src="/images/mine.png" alt=""/>
         </div>
      

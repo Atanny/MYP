@@ -83,7 +83,7 @@
           data-aos-duration="800"
         >
         <!-- Card with image, title, and description -->
-        <div class="card h-100 shadow-lg border-0 rounded "  data-aos="fade-up"
+        <div class="card card-animation h-100 shadow-lg border-0 rounded "  data-aos="fade-up"
               data-aos-duration="900">
           <a
             :href="Design.link"

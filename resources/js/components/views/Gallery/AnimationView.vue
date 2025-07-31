@@ -66,7 +66,7 @@
       <!-- Artwork Grid -->
       <div class="row">
         <div
-          class="col-12 col-sm-6 col-md-4 col-lg-3 mt-5"
+          class="col-12 col-sm-6 col-md-4 col-lg-3 mt-5 "
           v-for="(artwork, index) in paginatedArtworks"
           :key="artwork.id"
           v-if="paginatedArtworks.length > 0"
@@ -76,8 +76,8 @@
         >
           <div class=" h-100 shadow-lg d-flex flex-column">
             <div class="position-relative " style="height: 250px;">
-              <video
-                class=" w-100 h-100 border-0"
+              <video 
+                class="card-animation w-100 h-100 border-0 "
                 :src="artwork.videoSrc"
                 style="object-fit: cover;"
                 loop

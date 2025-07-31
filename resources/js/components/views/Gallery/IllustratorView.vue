@@ -87,7 +87,7 @@
           :data-aos-delay="index * 100"
           data-aos-duration="800"
         >
-          <div class="card h-100 shadow-lg border-0 rounded">
+          <div class="card card-animation h-100 shadow-lg border-0 rounded">
             <a
               :href="artwork.link"
               target="_blank"

@@ -81,7 +81,7 @@
         >
         <!-- Card with image, title, description, and View button -->
         <div
-          class="card h-100 shadow-lg border-0 rounded "
+          class="card card-animation h-100 shadow-lg border-0 rounded "
          
         >
           <img

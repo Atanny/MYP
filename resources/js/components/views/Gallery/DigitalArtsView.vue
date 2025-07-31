@@ -62,6 +62,9 @@
             <router-link to="/graphic-design" class="" active-class="active-link">
               <button class="btn btn-success me-1 mt-2">GRAPHIC DESIGNS</button>
             </router-link>
+               <router-link to="/photography" active-class="active-link">
+                <button class="btn btn-success me-1 mt-2">PHOTOGRAPHY</button>
+              </router-link>
             <router-link to="/web-design" class="" active-class="active-link">
               <button class="btn btn-success me-1 mt-2 ">WEB DESIGNS</button>
             </router-link>
@@ -87,7 +90,7 @@
           data-aos-duration="800"
         >
         <!-- Card with image, title, and description -->
-        <div class="card h-100 shadow-lg border-0 rounded " >
+        <div class=" h-100 shadow-lg border-0 rounded " >
           <a
             :href="artwork.link"
             target="_blank"
@@ -100,10 +103,7 @@
              
             />
           </a>
-          <div class="card-body">
-            <h6 class="fw-bold mb-1">{{ artwork.number }} - {{ artwork.name }}</h6>
-            <p class="card-text text-muted small">{{ artwork.description }}</p>
-          </div>
+         
         </div>
       </div>
 
@@ -151,7 +151,7 @@ export default {
       ],
 
       currentPage: 1,
-      pageSize: 16,
+      pageSize: 100,
       selectedImage: null, // Fullscreen state
     };
   },

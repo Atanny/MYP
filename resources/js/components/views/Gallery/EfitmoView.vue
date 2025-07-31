@@ -220,7 +220,7 @@ export default {
 
        ],
       currentPage: 1,
-      pageSize: 16,
+      pageSize: 100,
       selectedImage: null, // Fullscreen state
     };
   },

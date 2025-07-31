@@ -9,6 +9,8 @@ import WebdevView from './components/views/Gallery/WebsiteView.vue';
 import IllustratorView from './components/views/Gallery/IllustratorView.vue';
 import EfitmoView from './components/views/Gallery/EfitmoView.vue';
 import Efitmo2View from './components/views/Gallery/Efitmo2View.vue';
+import PhotographyView from './components/views/Gallery/PhotographyView.vue';
+
 const routes = [
   {
     path: '/',
@@ -19,59 +21,50 @@ const routes = [
     component: AdminView,
   },
   {
-
     path: '/animation',
     component: AnimationView,
   },
-
   {
-
     path: '/illustrator',
     component: IllustratorView,
   },
-
   {
-
     path: '/digital-arts',
     component: DigitalView,
   },
-
   {
-
     path: '/graphic-design',
     component: GraphicView,
   },
-
   {
-
     path: '/web-design',
     component: WebDesView,
   },
   {
-
     path: '/website',
     component: WebdevView,
   },
-
   {
-
     path: '/website/student',
     component: EfitmoView,
   },
-
   {
-
     path: '/website/admin',
     component: Efitmo2View,
   },
- 
- 
- 
+  {
+    path: '/photography',
+    component: PhotographyView,
+  },
 ];
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    // Always scroll to top when navigating
+    return { top: 0 };
+  },
 });
 
 export default router;

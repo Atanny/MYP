@@ -1,6 +1,6 @@
 <template>
   <div class="scale-wrapper">
-    <div class="w-100 px-3 py-4 px-lg-0 py-lg-0">
+    <div class="w-100  px-lg-0 py-lg-0">
       <!-- Header Row -->
       <div class="d-flex justify-content-between align-items-center">
         <div class="row w-100">
@@ -49,6 +49,9 @@
               <router-link to="/graphic-design" active-class="active-link">
                 <button class="btn btn-success me-1 mt-2">GRAPHIC DESIGNS</button>
               </router-link>
+               <router-link to="/photography" active-class="active-link">
+                <button class="btn btn-success me-1 mt-2">PHOTOGRAPHY</button>
+              </router-link>
               <router-link to="/web-design" active-class="active-link">
                 <button class="btn btn-success me-1 mt-2">WEB DESIGNS</button>
               </router-link>
@@ -71,10 +74,10 @@
           :data-aos-delay="index * 100"
           data-aos-duration="800"
         >
-          <div class="card rounded h-100 shadow-lg d-flex flex-column">
-            <div class="position-relative rounded" style="height: 250px;">
+          <div class=" h-100 shadow-lg d-flex flex-column">
+            <div class="position-relative " style="height: 250px;">
               <video
-                class="rounded w-100 h-100 border-0"
+                class=" w-100 h-100 border-0"
                 :src="artwork.videoSrc"
                 style="object-fit: cover;"
                 loop
@@ -99,11 +102,7 @@
               </button>
             </div>
 
-            <!-- Card Body -->
-            <div class="card-body d-flex flex-column">
-              <h6 class="fw-bold mb-1">{{ artwork.number }} - {{ artwork.name }}</h6>
-              <p class="card-text text-muted small flex-grow-1">{{ artwork.description }}</p>
-            </div>
+           
           </div>
         </div>
 
@@ -114,24 +113,25 @@
         </div>
       </div>
 
-      <!-- Pagination -->
-      <div class="text-center mt-4">
-        <button
-          class="btn btn-success me-2"
-          :disabled="currentPage === 1"
-          @click="currentPage--"
-        >
-          Previous
-        </button>
-        <span class="mx-2">Page {{ currentPage }} of {{ totalPages }}</span>
-        <button
-          class="btn btn-success ms-2"
-          :disabled="currentPage === totalPages"
-          @click="currentPage++"
-        >
-          Next
-        </button>
-      </div>
+    <!-- Pagination -->
+<div class="text-center mt-4">
+  <button
+    class="btn btn-success me-2"
+    :disabled="currentPage === 1"
+    @click="goToPage(currentPage - 1)"
+  >
+    Previous
+  </button>
+  <span class="mx-2">Page {{ currentPage }} of {{ totalPages }}</span>
+  <button
+    class="btn btn-success ms-2"
+    :disabled="currentPage === totalPages"
+    @click="goToPage(currentPage + 1)"
+  >
+    Next
+  </button>
+</div>
+
     </div>
   </div>
    
@@ -233,11 +233,20 @@ export default {
      
       ],
       currentPage: 1,
-      pageSize: 16,
+      pageSize: 100,
     };
   },
 
   computed: {
+     goToPage(page) {
+    this.currentPage = page;
+
+    // Scroll to top smoothly
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  },
     animationArtworks() {
       return this.artworks;
     },

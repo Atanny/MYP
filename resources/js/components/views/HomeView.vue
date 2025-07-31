@@ -1,5 +1,12 @@
 <template>
     <div class="" style="margin-top: 75px;">
+         <button
+      v-show="showButton"
+      @click="scrollToTop"
+      class="back-to-top "
+    >
+      ↑
+    </button>
         <header-component class="mt-5"></header-component>
        
         <second-component class=""></second-component>
@@ -8,11 +15,39 @@
         <four-component class=""></four-component>
         <fourone-component class=""></fourone-component>
         <five-component class=""></five-component>
-        <six-component class=""></six-component>
+        <!-- <six-component class=""></six-component> -->
+          <footer-component class="mt-0"></footer-component>
     </div>
    
 </template>
+<script>
 
+export default {
+  data() {
+    return {
+      showButton: false,
+    };
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+
+    
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      this.showButton = window.scrollY > 200;
+    },
+    scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    },
+  },
+};</script>
 <style>
 body{
     overflow-x: hidden;
@@ -46,6 +81,20 @@ body{
     color: #19191a;
     z-index: 1;
 }
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  padding: 10px;
+  background-color: #19191a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: opacity 0.3s ease;
+}
+
 
 .btn-success::before {
     content: '';
@@ -133,19 +182,38 @@ body{
 
 .feature-card {
     background-color: rgba(255, 255, 255, 0.121);
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(1000px);
     transition: transform 0.2s;
     position: relative;
     z-index: 1;
 }
 
 .BackgroundImage {
-    background-color: #14213D;
-    /* background-color: linear-gradient(135deg, #A4C639 25%, rgba(253, 100, 100, 100) 50%, #A4C639 75%); */
-    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.3);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  position: relative;
+  background-color: #14213D;
+
+  overflow: hidden;
+}
+
+.BackgroundImage video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  
+  object-fit: cover;
+  z-index: 0;
+}
+
+.BackgroundImage .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Light black */
+  z-index: 1;
 }
 
 .textdark{

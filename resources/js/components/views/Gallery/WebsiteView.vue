@@ -52,6 +52,9 @@
             <router-link to="/graphic-design" class="" active-class="active-link">
               <button class="btn btn-success me-1 mt-2">GRAPHIC DESIGNS</button>
             </router-link>
+               <router-link to="/photography" active-class="active-link">
+                <button class="btn btn-success me-1 mt-2">PHOTOGRAPHY</button>
+              </router-link>
             <router-link to="/web-design" class="" active-class="active-link">
               <button class="btn btn-success me-1 mt-2 ">WEB DESIGNS</button>
             </router-link>
@@ -143,19 +146,10 @@ export default {
           link: "https://atanny.onrender.com/#/",
           description: "A sleek, responsive portfolio site showcasing minimal design.",
         },
+       
         {
           id: 2,
           number: "2",
-          name: "AVOCADO WEB",
-          image: "../images/gallery/weddes/art (6).png",
-          tags: ["WEB DESIGN"],
-          link: "https://avocadoweb.onrender.com/?fbclid=IwZXh0bgNhZW0CMTEAAR6wyqEI96YD2ky7MgpFjOORMWcIerRw96WeRVg9xVdVABxrLg3JZWt532PKDw_aem_uY9SNLmPdVZqWTeCXdVfRA",
-          description:
-            "Modern web layout featuring animated elements and vibrant colors for my Girlfriend.",
-        },
-        {
-          id: 3,
-          number: "3",
           name: "EFITMO: Online Ordering System",
           image: "../images/gallery/weddes/art (4).png",
           tags: ["WEB DESIGN"],
@@ -167,7 +161,7 @@ export default {
         // Add more artworks here as needed
       ],
       currentPage: 1,
-      pageSize: 16,
+      pageSize: 100,
     };
   },
 

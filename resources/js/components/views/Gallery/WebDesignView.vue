@@ -54,6 +54,9 @@
             <router-link to="/graphic-design" class="" active-class="active-link">
               <button class="btn btn-success me-1 mt-2">GRAPHIC DESIGNS</button>
             </router-link>
+               <router-link to="/photography" active-class="active-link">
+                <button class="btn btn-success me-1 mt-2">PHOTOGRAPHY</button>
+              </router-link>
             <router-link to="/web-design" class="" active-class="active-link">
               <button class="btn btn-success me-1 mt-2 ">WEB DESIGNS</button>
             </router-link>
@@ -160,14 +163,14 @@ export default {
           name: "OWL OUTSOURCING PORTAL",
           image: "../images/gallery/weddes/art (3).png",
           tags: ["WEB DESIGN"],
-          link: "https://www.figma.com/proto/uraHMKJBGUlzXWTqTAVREh/OWL?page-id=2303%3A2321&node-id=3116-51369&viewport=919%2C619%2C0.06&t=Ec5rtpHc3s814bhz-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=3116%3A51369",
+          link: "https://www.figma.com/design/uraHMKJBGUlzXWTqTAVREh/OWL?node-id=2883-22707&t=R1goYolcmG6FYFBk-1",
           description:
             "One of my recent project i did in my TESI UI/UX journey.",
         },
         // Add more artworks if needed
       ],
       currentPage: 1,
-      pageSize: 16,
+      pageSize: 100,
     };
   },
 

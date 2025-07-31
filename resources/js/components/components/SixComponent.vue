@@ -1,5 +1,8 @@
 <template>
-  <div class="background mt-5" id="contact-section">
+  <div class=" mt-5" id="contact-section">
+    
+
+
     <div class="container p-lg-5">
       <div class="h-auto">
         <div class="card-body row p-5">

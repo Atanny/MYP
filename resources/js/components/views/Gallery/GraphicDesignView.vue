@@ -65,6 +65,9 @@
             <router-link to="/graphic-design" class="" active-class="active-link">
               <button class="btn btn-success me-1 mt-2">GRAPHIC DESIGNS</button>
             </router-link>
+               <router-link to="/photography" active-class="active-link">
+                <button class="btn btn-success me-1 mt-2">PHOTOGRAPHY</button>
+              </router-link>
             <router-link to="/web-design" class="" active-class="active-link">
               <button class="btn btn-success me-1 mt-2 ">WEB DESIGNS</button>
             </router-link>
@@ -103,10 +106,10 @@
              
             />
           </a>
-          <div class="card-body">
+          <!-- <div class="card-body">
             <h6 class="fw-bold mb-1">{{ Design.number }} - {{ Design.name }}</h6>
             <p class="card-text text-muted small">{{ Design.description }}</p>
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -218,9 +221,23 @@ export default {
       { id: 80, number: "83", name: "PORTFOLIO 4", image: "../images/gallery/Poster/old portfolio pdf (4).png", description: "No Description." },
      { id: 89, number: "92", name: "PORTFOLIO 5", image: "../images/gallery/Poster/old portfolio pdf (13).png", description: "No Description." },
      { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/gallery/Poster/RUTT.png", description: "No Description." },
+     { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/232.png", description: "No Description." },
+    { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/ESPRESSO LATTE.png", description: "No Description." },
+     { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/1 (1).png", description: "No Description." },
+      { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/1 (2).png", description: "No Description." },
+       { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/1 (3).png", description: "No Description." },
+        { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/1 (4).png", description: "No Description." },
+         { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/1 (5).png", description: "No Description." },
+          { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/1 (6).png", description: "No Description." },
+            { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/2 (1).png", description: "No Description." },
+              { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/2 (2).png", description: "No Description." },
+                { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/2 (3).png", description: "No Description." },
+                  { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/2 (4).png", description: "No Description." },
+                    { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/2 (5).png", description: "No Description." },
+
        ],
       currentPage: 1,
-      pageSize: 16,
+      pageSize: 100,
       selectedImage: null, // Fullscreen state
     };
   },

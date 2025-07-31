@@ -1,5 +1,10 @@
 <template>
-    <div class="background shadow-lg p-3  gap-2  " >
+    <div class="BackgroundImage shadow-lg p-3  gap-2  " >
+         <video autoplay muted loop playsinline>
+    <source src="/images/video.mp4" type="video/mp4" />
+  </video>
+
+
         <div class="container mt-2 p-lg-5" >
            <div class="row justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1000">
 

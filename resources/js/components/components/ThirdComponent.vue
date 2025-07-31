@@ -35,7 +35,7 @@
         <div class="col-lg-6 mb-5">
             <h1 class="display-1 fw-bolder outline-text2 text-start text-light" data-aos="fade-right" data-aos-duration="1000">IIIIIIIIIIIIII  </h1>
             <div class="card shadow-lg  feature-card text-light rounded"  data-aos="fade-right" data-aos-duration="">
-                <img class="card-image img-fluid rounded" src="/images/gallery/illustrator/art (2).png" style="height: auto; object-fit: cover;" alt="">
+                <img class="card-image img-fluid rounded" src="/images/art.png" style="height: auto; object-fit: cover;" alt="">
             </div>
 
             <div class="card shadow-lg rounded mt-4 feature-card text-light"  data-aos="fade-right" data-aos-duration="1000">

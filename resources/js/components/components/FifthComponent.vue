@@ -1,7 +1,7 @@
 <template>
   <div class="container p-lg-5">
 
-    <h1 class="fw-bolder mt-3 text-dark mt-5 px-5"><b>OUTPUT CATEGORIES</b></h1>
+    <h1 class="fw-bolder mt-3 text-dark mt-5 px-5 mb-4"><b>OUTPUT CATEGORIES</b></h1>
     <h2 class="fw-bolder mt-3 text-dark px-5"><b>GRAPHIC & DIGITAL DESIGN</b></h2>
 
     <div class="card-deck px-5">

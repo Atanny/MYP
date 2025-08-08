@@ -9,7 +9,7 @@
         <four-component class=""></four-component>
         <fourone-component class=""></fourone-component>
         <five-component class=""></five-component>
-        <!-- <six-component class=""></six-component> -->
+       <six-component class=""></six-component>
           <footer-component class="mt-0"></footer-component>
     </div>
    

@@ -28,10 +28,12 @@
                   </ul>
 
                   <div class="m-1 mt-3 mt-md-0 mt-lg-0">
-                  <button class="btn btn-black container d-inline-block rounded-pill"
-                   @click="goToContact">
-                    Contact Me!
-                  </button>
+                  <a 
+                      href="https://mail.google.com/mail/?view=cm&to=atanatan190@email.com&su=I WANT TO CONNECT&body=Please write your message here."
+                      target="_blank"
+                      class="btn btn-black d-inline-block ms-1">
+                   <i class="fa-solid fa-envelope"></i>  Email Me 
+                    </a>
 
                   </div>
 

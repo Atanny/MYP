@@ -1,94 +1,51 @@
 <template>
-  <div class=" mt-5" id="contact-section">
-    
+  <div class="mt-0" id="contact-section">
 
 
-    <div class="container p-lg-5">
+    <div class="container p-lg-5 ">
+       <hr class="rounded" style="border: 0.5px solid gray; width: 100%;">
       <div class="h-auto">
         <div class="card-body row p-5">
+          
+          
+
+          <div class="col-lg-6 img-fluid rounded">
+             <img
+              class="img-fluid rounded mt-5 mt-md-0 mt-lg-0"
+              src="/images/gallery/artworks/hi.jpg"
+              alt=""
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            />
+          </div>
           <div class="col-lg-6 d-flex justify-content-center align-items-center">
+            <div class="row">
+              <div class="" data-aos="fade-right" data-aos-duration="1600">
+                <div class="card-body">
 
-            <!-- Show form if not submitted -->
-            <div v-if="!submitted">
-              <form
-                @submit.prevent="handleSubmit"
-                class="card shadow-lg feature-card container my-4 rounded"
-                data-aos="fade-right"
-                data-aos-duration="2000"
-              >
-                <div class="card-body container">
-                  <h1 class="card-title fw-bolder text-white"><b>LET'S TALK!</b></h1>
-                  <hr
-                    style="border: none; height: 3px; background-color: #ffff; margin: 20px 0; border-radius: 5px;"
-                  />
-                  <div class="d-flex justify-content-between gap-2">
-                    <div class="form-group">
-                      <label class="text-white mb-3" for="email">Email address:</label>
-                      <input
-                        type="email"
-                        class="form-control d-inline-block"
-                        id="email"
-                        placeholder="Atanatan190@gmail.com"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label class="text-white mb-3" for="phone">Telephone No.</label>
-                      <input
-                        type="text"
-                        class="form-control d-inline-block"
-                        id="phone"
-                        placeholder="+639"
-                      />
-                    </div>
+                  <h1 class="display-6 fw-bolder outline-text3 text-start text-dark" data-aos="fade-right" data-aos-duration="1000">IIIIIIIIIIIIII <i class="fa-solid fa-envelope"></i></h1>
+         
+                  <h1 class="display-4 fw-bolder text-dark"> 
+                    <b>SEND ME EMAIL</b>
+                  </h1>
+                  <p class="text-dark">Want to talk about design? Let's talk!</p>
+                  <div>
+                    <a 
+                      href="https://mail.google.com/mail/?view=cm&to=atanatan190@email.com&su=I WANT TO CONNECT&body=Please write your message here."
+                      target="_blank"
+                      class="btn btn-black d-inline-block">
+                      Send Email
+                    </a>
+
+                  
                   </div>
 
-                  <div class="form-group">
-                    <label class="text-white my-3" for="name">Your Name:</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="name"
-                      placeholder="Enter your Name..."
-                    />
-                  </div>
-
-                  <div class="form-group">
-                    <label class="text-white my-3" for="message">Your Message:</label>
-                    <textarea
-                      rows="4"
-                      class="form-control"
-                      id="message"
-                      placeholder="Enter your Message Here..."
-                    ></textarea>
-                  </div>
-
-                  <button type="submit" class="btn btn-white rounded my-4">Submit</button>
                 </div>
-              </form>
-            </div>
-
-            <!-- Show message after submit -->
-            <div v-else class="text-center text-white p-5">
-              <h2>Not available for a moment...</h2>
+              </div>
             </div>
           </div>
 
-          <!-- Image section -->
-          <img
-            class="col-lg-6 img-fluid mb-5 mb-lg-0 mb-md-0 d-none d-sm-block d-lg-block py-5"
-            src="/images/atanny (2).png"
-            alt=""
-            data-aos="fade-right"
-            data-aos-duration="2000"
-          />
 
-          <img
-            class="col-lg-6 img-fluid mt-5 mb-lg-0 mb-md-0 d-lg-none d-block"
-            src="/images/atanny (2).png"
-            alt=""
-            data-aos="fade-right"
-            data-aos-duration="2000"
-          />
         </div>
       </div>
     </div>

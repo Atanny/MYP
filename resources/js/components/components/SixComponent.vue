@@ -11,7 +11,7 @@
 
           <div class="col-lg-6 img-fluid rounded">
              <img
-              class="img-fluid rounded mt-5 mt-md-0 mt-lg-0"
+              class="img-fluid rounded "
               src="/images/gallery/artworks/hi.jpg"
               alt=""
               data-aos="fade-right"

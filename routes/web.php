@@ -19,7 +19,9 @@ Route::post('/admin/store', [SoftwareController::class, 'store'])->name('store.s
 Route::post('/admin/development', [SoftwareController::class, 'storeDev'])->name('store.sofwareDev');
 
 
-Route::get('/{any}', function () {return view('layouts.app');})->where('any', '.*');
+Route::get('/{any}', function () {
+    return view('layouts.app');
+})->where('any', '.*');
 
 Route::get('/healthz', function () {
     return response()->json(['status' => 'ok']);

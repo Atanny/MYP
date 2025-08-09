@@ -12,7 +12,7 @@
           <div class="col-lg-6 img-fluid rounded">
              <img
               class="img-fluid rounded "
-              src="/images/gallery/artworks/hi.jpg"
+              src="/images/hi.jpg"
               alt=""
               data-aos="fade-right"
               data-aos-duration="2000"

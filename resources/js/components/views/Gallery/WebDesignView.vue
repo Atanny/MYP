@@ -167,6 +167,16 @@ export default {
           description:
             "One of my recent project i did in my TESI UI/UX journey.",
         },
+         {
+          id: 4,
+          number: "4",
+          name: "SAMPLE DESIGN",
+          image: "../images/gallery/weddes/SDSDS.png",
+          tags: ["WEB DESIGN"],
+          link: "https://www.figma.com/design/6ivyICIq8ugY9Qg29NjqoA/traxiontech?node-id=0-1&t=A8AXN3cSltwB353j-1",
+          description:
+            "Trying to redesign the website of the company i applied for.",
+        },
         // Add more artworks if needed
       ],
       currentPage: 1,

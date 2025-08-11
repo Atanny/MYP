@@ -40,7 +40,7 @@
                                             <p>Kalawaan SK</p>
                                         </div>
                                     </div>
-                               <p><p>I have been freelancing for almost a year, serving as graphic designers for Kalawaan SK. Our work involved creating basic public materials such as posters, announcements, and congratulatory cards to support community initiatives.</p>
+                               <p><p>I have been freelancing for almost 6 months, serving as graphic designers for Kalawaan SK. Our work involved creating basic public materials such as posters, announcements, and congratulatory cards to support community initiatives.</p>
 </p>
                                 </div>
                                

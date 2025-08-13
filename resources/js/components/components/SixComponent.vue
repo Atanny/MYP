@@ -51,3 +51,23 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      submitted: false
+    };
+  },
+  methods: {
+    handleSubmit() {
+      this.submitted = true;
+
+      // Automatically show the form again after 3 seconds
+      setTimeout(() => {
+        this.submitted = false;
+      }, 3000);
+    }
+  }
+};
+</script>

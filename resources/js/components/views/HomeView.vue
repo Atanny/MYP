@@ -122,14 +122,13 @@ body{
     border-style: solid;
     background-color: white;
     border-radius: 0%;
-    overflow: hidden;
     z-index: 1;
     color: black; 
-    transition: transform 0.3s ease; /* ✅ FIXED */
+    transition: transform 0.3s ease;
 }
 
 .btn-white:hover {
-    transform: scale(1.05); /* ✅ Will now animate */
+    transform: scale(1.05); 
     color: black;
      background-color: white;
 }
@@ -165,8 +164,7 @@ body{
 }
 
 .BackgroundImage {
-  background-color: #14213D;
-
+  background-color: #14213D !important;
 }
 
 

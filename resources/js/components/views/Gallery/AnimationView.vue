@@ -74,7 +74,7 @@
           :data-aos-delay="index * 100"
           data-aos-duration="800"
         >
-          <div class=" h-100 shadow-lg d-flex flex-column">
+          <div class=" h-100 shadow d-flex flex-column">
             <div class="position-relative " style="height: 250px;">
               <video 
                 class="card-animation w-100 h-100 border-0 "

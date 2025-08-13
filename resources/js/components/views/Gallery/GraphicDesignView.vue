@@ -93,7 +93,7 @@
           data-aos-duration="800"
         >
         <!-- Card with image, title, and description -->
-        <div class="card h-100 shadow-lg border-0 rounded card-animation" >
+        <div class="card h-100 shadow border-0 rounded card-animation" >
           <a
             :href="Design.link"
             target="_blank"

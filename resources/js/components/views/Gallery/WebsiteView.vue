@@ -79,7 +79,7 @@
           :data-aos-delay="index * 100"
           data-aos-duration="800"
         >
-        <div class="card card-animation h-100 shadow-lg rounded"  >
+        <div class="card card-animation h-100 shadow rounded"  >
           <img
             :src="artwork.image"
             class="card-img-top rounded-0"

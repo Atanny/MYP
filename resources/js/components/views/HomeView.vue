@@ -2,10 +2,10 @@
     <div class="" style="margin-top: 75px;">
     
         <header-component class="mt-5"></header-component>
-       
+        <third-component class=""></third-component>
         <second-component class=""></second-component>
          <seven-component class=""></seven-component>
-        <third-component class=""></third-component>
+       
         <four-component class=""></four-component>
         <fourone-component class=""></fourone-component>
         <five-component class=""></five-component>

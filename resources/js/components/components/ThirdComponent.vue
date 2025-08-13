@@ -2,9 +2,7 @@
    
         
 <div class="BackgroundImage container-fluid p-0">
-      <video autoplay muted loop playsinline>
-    <source src="/images/video.mp4" type="video/mp4" />
-  </video>
+     
 
     <div class="container p-5 mt-3">
         
@@ -55,9 +53,6 @@
 </template>
 
 <style>
-.background {
-    background: radial-gradient(circle, #1e1e1f 0%, #19191a 70%);
-}
 
 
 </style>

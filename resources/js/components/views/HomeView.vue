@@ -165,22 +165,11 @@ body{
 }
 
 .BackgroundImage {
-  position: relative;
   background-color: #14213D;
 
-  overflow: hidden;
 }
 
-.BackgroundImage video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  
-  object-fit: cover;
-  z-index: 0;
-}
+
 
 
 .textdark{

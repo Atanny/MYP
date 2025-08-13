@@ -18,7 +18,7 @@
               data-aos-duration="2000"
             />
           </div>
-          <div class="col-lg-6 d-flex justify-content-center align-items-center">
+          <div class="col-lg-6 d-flex justify-content-center align-items-start align-items-lg-center">
             <div class="row">
               <div class="" data-aos="fade-right" data-aos-duration="1600">
                 <div class="card-body">
@@ -51,23 +51,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      submitted: false
-    };
-  },
-  methods: {
-    handleSubmit() {
-      this.submitted = true;
-
-      // Automatically show the form again after 3 seconds
-      setTimeout(() => {
-        this.submitted = false;
-      }, 3000);
-    }
-  }
-};
-</script>

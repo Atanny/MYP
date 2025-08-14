@@ -72,37 +72,49 @@ export default {
         },
         {
           id: 5,
-          name: "Laravel",
-          iconClass: "logos:laravel", 
+          name: "PHP",
+          iconClass: "logos:php", 
           proficiency: "Basic"
         },
         {
           id: 6,
+          name: "Vue.js",
+          iconClass: "logos:vue", 
+          proficiency: "Basic"
+        },
+        {
+          id: 7,
+          name: "Laravel",
+          iconClass: "logos:laravel", 
+          proficiency: "Proficient"
+        },
+        {
+          id: 8,
           name: "HTML",
           iconClass: "logos:html-5", 
           proficiency: "Proficient"
         },
         {
-          id: 7,
+          id: 9,
           name: "CSS",
           iconClass: "logos:css-3",
           proficiency: "Proficient"
         },
         {
-          id: 8,
+          id: 10,
           name: "JavaScript",
           iconClass: "logos:javascript", 
           proficiency: "Basic"
         },
         {
-          id: 9,
+          id: 11,
           name: "ChatGPT",
           iconClass: "logos:openai", 
           proficiency: "Proficient"
         },
 
          {
-          id: 10,
+          id: 12,
           name: "MySQL",
           iconClass: "logos:mysql-icon", 
           proficiency: "Basic"

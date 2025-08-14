@@ -3,11 +3,11 @@
 
     <div class="">
       
-      <marquee class="bg-dark text-white p-2 transform container-fluid" behavior="scroll" direction="right" scrollamount="20" scrolldelay="1">
+      <div class="bg-dark text-white p-2 transform container-fluid" behavior="scroll" direction="right" scrollamount="20" scrolldelay="1">
         <h1 class="fw-bolder outline-text3 text-center mt-1 mt-lg-0">
           <b>FOR GRAPHICS, ARTS, AND WEB DESIGN</b>
         </h1>
-      </marquee>
+      </div>
 
     <div class=" bg-light shadow-lg  p-5 align-items-center justify-content-center">
       <div class="container p-4 p-lg-5">

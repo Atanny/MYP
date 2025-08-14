@@ -1,11 +1,11 @@
 <template>
   <div class="">
     
-    <marquee class="bg-dark text-white p-2 transform2 mt-5 container-fluid" behavior="scroll" direction="right" scrollamount="20" scrolldelay="1">
+    <div class="bg-dark text-white p-2 transform2 mt-5 container-fluid" behavior="scroll" direction="right" scrollamount="20" scrolldelay="1">
       <h1 class="fw-bolder outline-text3 text-center mt-1 mt-lg-0">
         <b>FOR WEB DEVELOPMENT CODING</b>
       </h1>
-    </marquee>
+    </div>
     
     <div class="bg-light shadow-lg rounded-0 align-items-center justify-content-center">
       <div class="container p-5">

@@ -18,7 +18,7 @@
               data-aos-duration="2000"
             />
           </div>
-          <div class="col-lg-6 d-flex justify-content-center align-items-start align-items-lg-center">
+          <div class="col-lg-6 d-flex justify-content-start justify-content-lg-center align-items-center mt-3 mt-lg-0">
             <div class="row">
               <div class="" data-aos="fade-right" data-aos-duration="1600">
                 <div class="card-body">

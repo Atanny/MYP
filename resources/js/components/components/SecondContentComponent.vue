@@ -5,7 +5,7 @@
         <div class="row justify-content-start p-5 p-lg-0">
                     <h1 class="fw-bolder text-dark "><b>SKILLS AND SPECIALITY</b></h1>
     <div class="col-lg-3  ">
-        <h1 class="display-1 fw-bolder me-5 outline-text" style="margin-top: 5vh;" data-aos="fade-right" data-aos-duration="800">01</h1>
+        <h1 class="display-1 fw-bolder me-5 outline-text mt-2 mt-lg-5" style="margin-top: 5vh;" data-aos="fade-right" data-aos-duration="800">01</h1>
         <div class="card rounded bg-dark border-2  text-white h-auto border-dark " style="background-color: #fca311;" data-aos="fade-right" data-aos-duration="1800">
             <div class="card-body ">
                    
@@ -18,7 +18,7 @@
     </div>
 
     <div class="col-lg-3 ">
-        <h1 class="display-1 fw-bolder outline-text " data-aos="fade-right" data-aos-duration="1000">02</h1>
+        <h1 class="display-1 fw-bolder outline-text mt-2" data-aos="fade-right" data-aos-duration="1000">02</h1>
         <div class="card rounded  border-2 bg-transparent text-dark card-group h-auto border-dark " style="background-color: #7EA122;" data-aos="fade-right" data-aos-duration="1300">
             <div class="card-body ">
               
@@ -32,7 +32,7 @@
     </div>
 
     <div class="col-lg-3 ">
-        <h1 class="display-1 fw-bolder outline-text mt-0 mt-lg-5" data-aos="fade-right" data-aos-duration="1200">03</h1>
+        <h1 class="display-1 fw-bolder outline-text mt-0 mt-lg-5 mt-2" data-aos="fade-right" data-aos-duration="1200">03</h1>
         <div class="card rounded  border-2 bg-transparent text-dark card-group h-auto border-dark " style="background-color: #fca311;" data-aos="fade-right" data-aos-duration="800">
             <div class="card-body">
               
@@ -47,7 +47,7 @@
     </div>
 
         <div class="col-lg-3 ">
-            <h1 class="display-1 fw-bolder outline-text"   data-aos="fade-right" data-aos-duration="1000">04</h1>
+            <h1 class="display-1 fw-bolder outline-text mt-2"   data-aos="fade-right" data-aos-duration="1000">04</h1>
             <div class="card rounded  border-2 bg-transparent text-dark card-group  h-auto border-dark "  style="background-color: #7EA122;" data-aos="fade-right" data-aos-duration="500">
                 <div class="card-body">
                 

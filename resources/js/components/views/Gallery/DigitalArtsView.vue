@@ -77,6 +77,9 @@
             <router-link to="/website" active-class="active-link">
               <button class="btn btn-success me-1 mt-2 ">WEBSITES</button>
             </router-link>
+             <router-link to="/videos" active-class="active-link">
+                <button class="btn btn-success me-1 mt-2">VIDEOS</button>
+              </router-link>
           </div>
       </div>
 

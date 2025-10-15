@@ -4,14 +4,14 @@
 
   
       <h1 class="display-6 fw-bolder"><b>ART CATEGORIES</b></h1>
-              <p class="text-muted">Explore the different categories of art I create.</p>
+              <p class="text-muted">Explore the different categories of art I created.</p>
        <hr class="rounded" style="border: 0.5px solid gray; width: 100%;">
 
       <div class="mt-5 d-flex justify-content-center align-items-center">
         <div class="row">
           <div v-for="(product) in products" :key="product.id" class="col-lg-3 "> 
             <router-link :to="product.route" >
-              <div class="card mb-4 border-1 border-dark rounded bg-dark text-white">
+              <div class="card mb-4 border-1  rounded  text-white" style="background-color: #ff8333; border-color: #ff8333;">
                 <img class="img-fluid card-img-top"  :src="product.image" style="height: 200px; object-fit: cover;" alt="">
               <div class=" p-1 px-4 text-start d-flex justify-content-between align-items-center">
                   <h6><b class="display-6 me-4 fw-bolder">{{product.id}}</b></h6>    
@@ -43,6 +43,7 @@ export default {
         { id: 5, name: 'PHOTOGRAPHY', image: '/images/lowkey/1 (3).jpg' , route: '/photography'},
         { id: 6, name: 'UI/UX DESIGN', image: '/images/websites/4.png' , route: '/web-design'},
         { id: 7, name: 'WEB DEVELOPMNENT', image: '/images/websites/6.png' , route: '/website'},
+          { id: 8, name: 'VIDEO EDITING', image: '/images/gallery/video/ADS 1.png' , route: '/videos'},
        
       ]
     };

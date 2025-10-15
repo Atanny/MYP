@@ -1,9 +1,9 @@
 <template>
   <div class="">
     
-    <div class="bg-dark text-white p-2 transform2 mt-5 container-fluid" behavior="scroll" direction="right" scrollamount="20" scrolldelay="1">
+    <div  class="bg-dark text-white p-2 transform2 mt-5 container-fluid" behavior="scroll" direction="right" scrollamount="20" scrolldelay="1">
       <h1 class="fw-bolder outline-text3 text-center mt-1 mt-lg-0">
-        <b>FOR WEB DEVELOPMENT CODING</b>
+        <b>FOR WEB DEVELOPMENT</b>
       </h1>
     </div>
     

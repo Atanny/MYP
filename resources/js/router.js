@@ -10,7 +10,7 @@ import IllustratorView from './components/views/Gallery/IllustratorView.vue';
 import EfitmoView from './components/views/Gallery/EfitmoView.vue';
 import Efitmo2View from './components/views/Gallery/Efitmo2View.vue';
 import PhotographyView from './components/views/Gallery/PhotographyView.vue';
-
+import VideoView from './components/views/Gallery/VideoEditView.vue';
 const routes = [
   {
     path: '/',
@@ -55,6 +55,10 @@ const routes = [
   {
     path: '/photography',
     component: PhotographyView,
+  },
+   {
+    path: '/videos',
+    component: VideoView,
   },
 ];
 

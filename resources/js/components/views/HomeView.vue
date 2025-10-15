@@ -1,4 +1,5 @@
 <template>
+    
     <div class="" style="margin-top: 75px;">
     
         <header-component class="mt-5"></header-component>
@@ -9,12 +10,13 @@
             </div>
         </div>
         <second-component class=""></second-component>
-         <seven-component class=""></seven-component>
-         <div class="container">
+           <div class="container">
             <div class="container">
                  <hr class="rounded" style="border: 0.5px solid gray; width: 100%;"></hr>
             </div>
         </div>
+         <seven-component class=""></seven-component>
+      
         <four-component class=""></four-component>
         <fourone-component class=""></fourone-component>
         <five-component class=""></five-component>

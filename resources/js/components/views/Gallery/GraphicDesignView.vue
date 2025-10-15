@@ -74,6 +74,9 @@
             <router-link to="/website" active-class="active-link">
               <button class="btn btn-success me-1 mt-2 ">WEBSITES</button>
             </router-link>
+             <router-link to="/videos" active-class="active-link">
+                <button class="btn btn-success me-1 mt-2">VIDEOS</button>
+              </router-link>
           </div>
       </div>
 
@@ -221,20 +224,28 @@ export default {
       { id: 80, number: "83", name: "PORTFOLIO 4", image: "../images/gallery/Poster/old portfolio pdf (4).png", description: "No Description." },
      { id: 89, number: "92", name: "PORTFOLIO 5", image: "../images/gallery/Poster/old portfolio pdf (13).png", description: "No Description." },
      { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/gallery/Poster/RUTT.png", description: "No Description." },
-     { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/232.png", description: "No Description." },
-    { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/ESPRESSO LATTE.png", description: "No Description." },
-     { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/1 (1).png", description: "No Description." },
-      { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/1 (2).png", description: "No Description." },
-       { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/1 (3).png", description: "No Description." },
-        { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/1 (4).png", description: "No Description." },
-         { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/1 (5).png", description: "No Description." },
-          { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/1 (6).png", description: "No Description." },
-            { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/2 (1).png", description: "No Description." },
-              { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/2 (2).png", description: "No Description." },
-                { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/2 (3).png", description: "No Description." },
-                  { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/2 (4).png", description: "No Description." },
-                    { id: 90, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/2 (5).png", description: "No Description." },
-
+     { id: 91, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/232.png", description: "No Description." },
+    { id: 92, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/ESPRESSO LATTE.png", description: "No Description." },
+     { id: 93, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/1 (1).png", description: "No Description." },
+      { id: 94, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/1 (2).png", description: "No Description." },
+       { id: 95, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/1 (3).png", description: "No Description." },
+        { id: 96, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/1 (4).png", description: "No Description." },
+         { id: 97, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/1 (5).png", description: "No Description." },
+          { id: 98, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/1 (6).png", description: "No Description." },
+         { id: 99, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/2 (1).png", description: "No Description." },
+         { id: 100, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/2 (2).png", description: "No Description." },
+        { id: 101, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/2 (3).png", description: "No Description." },
+       { id: 102, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/2 (4).png", description: "No Description." },
+       { id: 103, number: "93", name: "RUTH's RESUME", image: "../images/lowkey/2 (5).png", description: "No Description." },
+       { id: 104, number: "93", name: "RUTH's RESUME", image: "../images/gallery/Poster/img4.jpg", description: "No Description." },
+        { id: 104, number: "93", name: "RUTH's RESUME", image: "../images/gallery/Poster/EXAM 1.png", description: "No Description." },
+          { id: 104, number: "93", name: "RUTH's RESUME", image: "../images/gallery/Poster/EXAM 2.png", description: "No Description." },
+            { id: 104, number: "93", name: "RUTH's RESUME", image: "../images/gallery/Poster/EXAM 3.png", description: "No Description." },
+             { id: 104, number: "93", name: "RUTH's RESUME", image: "../images/gallery/Poster/exam2 (1).png", description: "No Description." },
+          { id: 104, number: "93", name: "RUTH's RESUME", image: "../images/gallery/Poster/exam2 (2).png", description: "No Description." },
+             { id: 104, number: "93", name: "RUTH's RESUME", image: "../images/gallery/Poster/exam2 (3).png", description: "No Description." },
+              { id: 104, number: "93", name: "RUTH's RESUME", image: "../images/gallery/Poster/pos1 (1).png", description: "No Description." },
+               { id: 104, number: "93", name: "RUTH's RESUME", image: "../images/gallery/Poster/pos1 (2).png", description: "No Description." },
        ],
       currentPage: 1,
       pageSize: 1000,

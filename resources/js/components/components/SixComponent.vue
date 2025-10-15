@@ -24,8 +24,8 @@
                 <div class="card-body">
 
                   <h1 class="display-6 fw-bolder outline-text3 text-start text-dark" data-aos="fade-right" data-aos-duration="1000">IIIIIIIIIIIIII <i class="fa-solid fa-envelope"></i></h1>
-         
-                  <h1 class="display-4 fw-bolder text-dark"> 
+       
+                  <h1 class="display-4 fw-bolder" style="color: #ff8333;"> 
                     <b>SEND ME EMAIL</b>
                   </h1>
                   <p class="text-dark">Want to talk about design? Let's talk!</p>

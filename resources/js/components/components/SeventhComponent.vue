@@ -1,9 +1,9 @@
 <template>
-  <div class="container p-5">
+  <div class=" p-5 mt-5" style="background-color: #ff8333;">
 
-    <h1 class="fw-bolder text-dark mb-4">MY ROLE AND EXPERIENCE</h1>
-
-    <div class="card bg-dark shadow rounded p-4">
+   
+    <h1 class="fw-bolder text-light text-center "><b>MY ROLE AND EXPERIENCE</b></h1>
+    <div class="container bg-transparent rounded p-4">
       <div class="row g-4">
 
         <!-- Card 1 -->
@@ -77,6 +77,23 @@
               <p>
                 I interned at Alight Solutions, where we gained valuable knowledge about deployment processes 
                 and learned how server debugging supports system stability and efficiency.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card border-0 shadow rounded h-100" data-aos="fade-right" data-aos-duration="800">
+            <div class="card-body">
+              <div class="d-flex align-items-start mb-3">
+                <i class="fa-solid fa-object-group me-3 display-5"></i>
+                <div>
+                  <h5 class="mb-0 fw-bold">E-COMMERENCE GRAPHIC DESIGN TRAINING</h5>
+                  <p class="mb-0 text-muted">Star Eye</p>
+                </div>
+              </div>
+              <p>
+                2 Weeks training, doing Product Photography, Crafting, Designing, and Cleaning Blemishes using tools. 
               </p>
             </div>
           </div>

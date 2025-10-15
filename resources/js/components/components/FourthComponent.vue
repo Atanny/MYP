@@ -97,13 +97,18 @@ export default {
             proficiency: "Proficient"
         },
           {
-          id: 8,
+          id: 9,
           name: "Flipaclip",
           iconClass: "arcticons:flipaclip",
             proficiency: "Proficient"
         },
 
-        
+         {
+          id: 10,
+          name: "Capcut",
+          iconClass: "hugeicons:capcut",
+            proficiency: "Proficient"
+        },
        
       ],
     };

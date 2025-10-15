@@ -116,16 +116,12 @@ export default {
   filter: brightness(50%);
 }
 
-.bg-dark {
-  position: relative;
-  z-index: 1;
-}
 
 
 .bg-dark {
   position: relative;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.3) !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
 .card {

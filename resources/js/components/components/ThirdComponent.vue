@@ -1,6 +1,6 @@
 <template>
   <div class="video-section">
-    <!-- Static background instead of video -->
+   
     <div class="bg-static"></div>
 
     <div class="">
@@ -87,20 +87,20 @@ export default {
 }
 
 /* Static background image replacing the video */
+
 .bg-static {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('./images/bg-static.jpg'); /* <-- replace with your desired image */
+  background-image: url('/images/bg-static.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
   filter: brightness(50%);
 }
-
 .bg-dark {
   position: relative;
   z-index: 1;

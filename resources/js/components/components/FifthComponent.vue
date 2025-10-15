@@ -1,9 +1,9 @@
 <template>
   <div class="video-section">
-    <!-- 🖼️ Static Background instead of Video -->
+ 
     <div class="bg-static"></div>
 
-    <!-- Foreground Content -->
+
     <div class="bg-dark">
       <div class="container p-5 pb-0 mb-0">
         <div class="p-3 p-lg-5 text-light text-center text-lg-start">

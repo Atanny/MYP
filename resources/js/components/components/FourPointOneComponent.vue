@@ -1,7 +1,7 @@
 <template>
-  <div class="">
+
     
-    <div  class="text-white p-2  mt-5 " behavior="scroll" direction="right" scrollamount="20" scrolldelay="1">
+    <div  class="text-white p-2 mt-5" behavior="scroll" direction="right" scrollamount="20" scrolldelay="1">
       <h1 class="fw-bolder text-center text-dark">
         <b class=""><< SOFTWARES USING >></b>
       </h1>
@@ -12,7 +12,7 @@
             </div>
         </div>
    <div class="d-flex container">
-    <div class="row ">
+    <div class="">
 
         <div class="col-sm-12 col-lg-12 p-2 py-5  ">
           <h4 class="fw-bolder text-center text-dark"><b class="">DESIGN</b></h4>
@@ -52,8 +52,7 @@
     </div>
    </div>
       
-    
-  </div>
+
 </template>
 
 <script>

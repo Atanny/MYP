@@ -8,7 +8,7 @@
      <div class="row">
 
                  
-    <div class="col-lg-3  ">
+    <div class="col-lg-3  my-3">
         <div class="card h-auto rounded-5 bg-dark shadow-lg border-0  text-light h-auto border-dark " style="background-color: #fca311;" data-aos="fade-right" data-aos-duration="1800">
             <div class="card-body ">
                    
@@ -20,7 +20,7 @@
         </div>
     </div>
 
-    <div class="col-lg-3 ">
+    <div class="col-lg-3  my-3">
     
         <div class="card h-auto rounded-5 shadow-lg border-0  bg-white text-dark card-group h-auto border-dark " style="background-color: #7EA122;" data-aos="fade-right" data-aos-duration="1300">
             <div class="card-body ">
@@ -34,7 +34,7 @@
         </div>
     </div>
 
-    <div class="col-lg-3 ">
+    <div class="col-lg-3  my-3">
        
         <div class="card h-auto rounded-5  shadow-lg border-0 bg-transparent text-dark card-group h-auto border-dark " style="background-color: #fca311;" data-aos="fade-right" data-aos-duration="800">
             <div class="card-body">
@@ -49,7 +49,7 @@
         </div>
     </div>
 
-        <div class="col-lg-3 ">
+        <div class="col-lg-3  my-3">
          
             <div class="card h-auto rounded-5 shadow-lg border-0  bg-transparent text-dark card-group  h-auto border-dark "  style="background-color: #7EA122;" data-aos="fade-right" data-aos-duration="500">
                 <div class="card-body">

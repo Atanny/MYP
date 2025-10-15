@@ -4,17 +4,9 @@
     
         <header-component class="mt-5"></header-component>
         <third-component class=""></third-component>
-        <div class="container">
-            <div class="container">
-                 <hr class="rounded" style="border: 0.5px solid gray; width: 100%;"></hr>
-            </div>
-        </div>
+       
         <second-component class=""></second-component>
-           <div class="container">
-            <div class="container">
-                 <hr class="rounded" style="border: 0.5px solid gray; width: 100%;"></hr>
-            </div>
-        </div>
+           
          <seven-component class=""></seven-component>
       
        

@@ -1,20 +1,21 @@
 <template>
-  <div class="glow-bg p-5">
-    <div class="container">
+  <div class="glow-bg p-5 mb-5">
+    <div class="container p-2 p-lg-5">
       <div class="row">
         <!-- Right Column with Text and Social Links -->
         <div
           class="col-lg-6 d-flex justify-content-center align-items-center text-start"
         >
-          <div class="border-0 p-5">
+          <div class="border-0 text-center text-lg-start">
             <p class="mb-0 italic text-dark" data-aos="fade-right" data-aos-duration="500"><i>Hi, I am</i></p>
             <h1 class="fw-bolder card-text" style="color: #ff8b00;" data-aos="fade-right" data-aos-duration="700">
               <b>JONATHAN MARIANO</b>
             </h1>
-            <p data-aos="fade-right" data-aos-duration="900">Graphic Design | UI/UX Design</p>
+                  
+            <p data-aos="fade-right" data-aos-duration="900"> <i class="fa-solid fa-object-group " style="color: #ff8b00;"></i><b> Graphic Design </b> | <i class="fa-solid fa-bars-progress" style="color: #ff8b00;"></i><b> UI/UX Design</b> | <i class="fa-solid fa-pen" style="color: #ff8b00;"></i><b> Digital Arts</b></p>
 
-            <div class="row justify-content-center my-2" data-aos="fade-right" data-aos-duration="1100">
-              <div class="d-flex gap-2">
+            <div class="row  my-2" data-aos="fade-right" data-aos-duration="1100">
+              <div class="d-flex gap-2 justify-content-lg-start justify-content-center">
                 <a href="https://web.telegram.org/k/#@Atanny" class="display-6 text-dark icon">
                   <i class="fa-brands fa-telegram"></i>
                 </a>

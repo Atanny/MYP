@@ -83,7 +83,7 @@
           data-aos-duration="800"
         >
         <!-- Card with image, title, and description -->
-        <div class="card card-animation h-100 shadow border-0 rounded "  data-aos="fade-up"
+        <div class="card card-animation h-100 shadow border-0 rounded-5 "  data-aos="fade-up"
               data-aos-duration="900">
           <a
             :href="Design.link"
@@ -91,7 +91,7 @@
             rel="noopener noreferrer"
           >
             <img  @click="viewFullScreen(Design.image)"
-              class="card-img-top "
+              class="card-img-top rounded-top-5"
               :src="Design.image"
               style="object-fit: cover; height: 250px; width: 100%;"
              

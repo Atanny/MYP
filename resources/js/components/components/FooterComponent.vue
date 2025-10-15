@@ -1,5 +1,5 @@
 <template>
-  <div class="row bg-dark text-white p-5">
+  <div class=" bg-dark text-white p-5">
     <div class="container px-5">
       <div class="row justify-content-between align-items-center px-5">
         

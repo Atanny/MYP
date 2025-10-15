@@ -9,9 +9,9 @@
           
           
 
-          <div class="col-lg-6 img-fluid rounded">
+          <div class="col-lg-6 img-fluid rounded-5">
              <img
-              class="img-fluid rounded "
+              class="img-fluid rounded-5 "
               src="/images/hi.jpg"
               alt=""
               data-aos="fade-right"

@@ -17,7 +17,7 @@
         </div>
          <seven-component class=""></seven-component>
       
-        <four-component class=""></four-component>
+       
         <fourone-component class=""></fourone-component>
         <five-component class=""></five-component>
        <six-component class=""></six-component>

@@ -1,36 +1,17 @@
 <template>
   <div class="video-section">
-    <!-- Background Video for Desktop -->
-    <video
-      v-if="!isMobile"
-      autoplay muted loop playsinline
-      class="bg-video"
-      key="large-video"
-    >
-      <source src="/images/bg (2).MP4" type="video/mp4" />
-      Your browser does not support HTML5 video.
-    </video>
-
-    <!-- Background Video for Mobile -->
-    <video
-      v-else
-      autoplay muted loop playsinline
-      class="bg-video"
-      key="small-video"
-    >
-      <source src="/images/bg (1).mp4" type="video/mp4" />
-      Your browser does not support HTML5 video.
-    </video>
+    <!-- 🖼️ Static Background instead of Video -->
+    <div class="bg-static"></div>
 
     <!-- Foreground Content -->
     <div class="bg-dark">
       <div class="container p-5 pb-0 mb-0">
         <div class="p-3 p-lg-5 text-light text-center text-lg-start">
-          <h1 class="display-6 fw-bolder"><b>ART CATEGORIES</b></h1>
-          <p class="text-light opacity-75">
+          <h1 class="display-6 fw-bolder text-center"><b>ART CATEGORIES</b></h1>
+          <p class="text-light opacity-75 text-center">
             Explore the different categories of art I created.
           </p>
-          <hr class="rounded" style="border: 0.5px solid gray; width: 100%;" />
+          <hr class="rounded-5" style="border: 0.5px solid gray; width: 100%;" />
 
           <div class="mt-5 d-flex justify-content-center align-items-center">
             <div class="row">
@@ -40,9 +21,9 @@
                 class="col-lg-3 col-md-4 col-sm-6 mb-4"
               >
                 <router-link :to="product.route">
-                  <div class="card shadow border-0 rounded text-white h-100">
+                  <div class="card shadow border-0 rounded-5 text-white h-100">
                     <img
-                      class="img-fluid card-img-top"
+                      class="img-fluid card-img-top rounded-top-5"
                       :src="product.image"
                       style="height: 200px; object-fit: cover;"
                       :alt="product.name"
@@ -104,19 +85,19 @@ export default {
   overflow: hidden;
 }
 
-/* Video styles */
-.bg-video {
+.bg-static {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background-image: url('/images/bg-static.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   z-index: -1;
   filter: brightness(50%);
 }
-
-
 
 .bg-dark {
   position: relative;
@@ -130,7 +111,6 @@ export default {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   transition: transform 0.3s ease;
-  
 }
 
 .card:hover {

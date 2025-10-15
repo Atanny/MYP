@@ -29,46 +29,43 @@
 
 
 
-     <div class="col-sm-12 col-lg-auto mt-3  d-inline-block">
-       <router-link to="/">
+   <div class="col-sm-12 col-lg-auto mt-3 d-inline-block">
+             <router-link to="/">
                 <button class="btn btn-success rounded-pill d-inline-block d-lg-none me-2">
                   <i class="fa-solid fa-home"></i>
                 </button>
               </router-link>
-         <button class="btn btn-success d-lg-none " type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
+            <button class="btn btn-success d-lg-none " type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
                 <i class="fa fa-bars"></i> See More Description
             </button>
-
-
-          <div class="collapse d-lg-flex flex-wrap" id="navButtons">
-          
-            <router-link to="/animation" class="" active-class="active-link">
-              <button class="btn btn-success me-1 mt-2">ANIMATION</button>
-            </router-link>
-            <router-link to="/illustrator" class="" active-class="active-link">
-              <button class="btn btn-success me-1 mt-2">ILLUSTRATION</button>
-            </router-link>
-            <router-link to="/digital-arts" class="" active-class="active-link">
-              <button class="btn btn-success me-1 mt-2">DIGITAL ARTS</button>
-            </router-link>
-            <router-link to="/graphic-design" class="" active-class="active-link">
-              <button class="btn btn-success me-1 mt-2">GRAPHIC DESIGNS</button>
-            </router-link>
+            <!-- Collapsible container -->
+            <div class="collapse d-lg-flex flex-wrap" id="navButtons">
+              <router-link to="/animation" active-class="active-link">
+                <button class="btn btn-success rounded-5 me-1 mt-2">ANIMATION</button>
+              </router-link>
+              <router-link to="/illustrator" active-class="active-link">
+                <button class="btn btn-success me-1 mt-2 rounded-5">ILLUSTRATION</button>
+              </router-link>
+              <router-link to="/digital-arts" active-class="active-link">
+                <button class="btn btn-success me-1 mt-2 rounded-5">DIGITAL ARTS</button>
+              </router-link>
+              <router-link to="/graphic-design" active-class="active-link">
+                <button class="btn btn-success me-1 mt-2 rounded-5">GRAPHIC DESIGNS</button>
+              </router-link>
                <router-link to="/photography" active-class="active-link">
-                <button class="btn btn-success me-1 mt-2">PHOTOGRAPHY</button>
+                <button class="btn btn-success me-1 mt-2 rounded-5">PHOTOGRAPHY</button>
               </router-link>
-            <router-link to="/web-design" class="" active-class="active-link">
-              <button class="btn btn-success me-1 mt-2 ">WEB DESIGNS</button>
-            </router-link>
-            <router-link to="/website" active-class="active-link">
-              <button class="btn btn-success me-1 mt-2 ">WEBSITES</button>
-            </router-link>
-             <router-link to="/videos" active-class="active-link">
-                <button class="btn btn-success me-1 mt-2">VIDEOS</button>
+              <router-link to="/web-design" active-class="active-link">
+                <button class="btn btn-success me-1 mt-2 rounded-5">WEB DESIGNS</button>
               </router-link>
+              <router-link to="/website" active-class="active-link">
+                <button class="btn btn-success me-1 mt-2 rounded-5">WEBSITES</button>
+              </router-link>
+               <router-link to="/videos" active-class="active-link">
+                <button class="btn btn-success me-1 mt-2 rounded-5">VIDEOS</button>
+              </router-link>
+            </div>
           </div>
-      </div>
-
       </div>
     </div>
 
@@ -84,11 +81,11 @@
         >
         <!-- Card with image, title, description, and View button -->
         <div
-          class="card card-animation h-100 shadow border-0 rounded "
+          class="card card-animation h-100 shadow border-0 rounded-5 "
          
         >
           <img
-            class="card-img-top rounded-0"
+            class="card-img-top rounded-top-5"
             :src="artwork.image"
             style="object-fit: cover; height: 250px; width: 100%;"
           />
@@ -99,7 +96,7 @@
               :href="artwork.link"
               target="_blank"
               rel="noopener noreferrer"
-              class="btn btn-sm btn-success mt-2"
+              class="btn btn-sm btn-success mt-2 rounded-5"
             >
               View
             </a>

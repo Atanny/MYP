@@ -1,36 +1,17 @@
 <template>
   <div class="video-section">
-    <!-- 🎥 Background Video for Desktop / Tablet -->
-    <video
-      v-if="!isMobile"
-      autoplay muted loop playsinline
-      class="bg-video"
-      key="large-video"
-    >
-      <source src="/images/bg (2).MP4" type="video/mp4" />
-      Your browser does not support HTML5 video.
-    </video>
-
-    <!-- 🎥 Background Video for Mobile -->
-    <video
-      v-else
-      autoplay muted loop playsinline
-      class="bg-video"
-      key="small-video"
-    >
-      <source src="/images/bg (1).mp4" type="video/mp4" />
-      Your browser does not support HTML5 video.
-    </video>
+    <!-- 🖼️ Static Background instead of Video -->
+    <div class="bg-static"></div>
 
     <!-- 🧾 Foreground Content -->
     <div class="content p-5 mt-5">
-      <h1 class="fw-bolder text-light text-center"><b>MY ROLE AND EXPERIENCE</b></h1>
-      <div class="container bg-transparent rounded p-4">
+      <h1 class="fw-bolder text-light text-center mb-5"><b>MY ROLE AND EXPERIENCE</b></h1>
+      <div class="container bg-transparent rounded-5 p-3 p-2">
         <div class="row g-4">
 
           <!-- Card 1 -->
           <div class="col-lg-6">
-            <div class="card border-0 shadow rounded h-100" data-aos="fade-right" data-aos-duration="1600">
+            <div class="card border-0 shadow rounded-5 p-3 h-100" data-aos="fade-right" data-aos-duration="1600">
               <div class="card-body">
                 <div class="d-flex align-items-start mb-3">
                   <i class="fa-solid fa-object-group me-3 display-5"></i>
@@ -49,7 +30,7 @@
 
           <!-- Card 2 -->
           <div class="col-lg-6">
-            <div class="card border-0 shadow rounded h-100" data-aos="fade-right" data-aos-duration="1600">
+            <div class="card border-0 shadow rounded-5 p-3 h-100" data-aos="fade-right" data-aos-duration="1600">
               <div class="card-body">
                 <div class="d-flex align-items-start mb-3">
                   <i class="fa-solid fa-object-group me-3 display-5"></i>
@@ -68,7 +49,7 @@
 
           <!-- Card 3 -->
           <div class="col-lg-6">
-            <div class="card border-0 shadow rounded h-100" data-aos="fade-right" data-aos-duration="1200">
+            <div class="card border-0 shadow rounded-5 p-3 h-100" data-aos="fade-right" data-aos-duration="1200">
               <div class="card-body">
                 <div class="d-flex align-items-start mb-3">
                   <i class="fa-solid fa-bars-progress me-3 display-5"></i>
@@ -87,7 +68,7 @@
 
           <!-- Card 4 -->
           <div class="col-lg-6">
-            <div class="card border-0 shadow rounded h-100" data-aos="fade-right" data-aos-duration="800">
+            <div class="card border-0 shadow rounded-5 p-3 h-100" data-aos="fade-right" data-aos-duration="800">
               <div class="card-body">
                 <div class="d-flex align-items-start mb-3">
                   <i class="fa-solid fa-ticket me-3 display-5"></i>
@@ -106,7 +87,7 @@
 
           <!-- Card 5 -->
           <div class="col-lg-6">
-            <div class="card border-0 shadow rounded h-100" data-aos="fade-right" data-aos-duration="800">
+            <div class="card border-0 shadow rounded-5 p-3 h-100" data-aos="fade-right" data-aos-duration="800">
               <div class="card-body">
                 <div class="d-flex align-items-start mb-3">
                   <i class="fa-solid fa-object-group me-3 display-5"></i>
@@ -144,7 +125,6 @@ export default {
   },
   methods: {
     checkIsMobile() {
-      // You can adjust breakpoint as you want (e.g. 768px or 600px)
       this.isMobile = window.innerWidth <= 768;
     },
   },
@@ -159,13 +139,17 @@ export default {
   overflow: hidden;
 }
 
-.bg-video {
+/* 🖼️ Static background image replacing the video */
+.bg-static {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background-image: url('/images/bg-static.jpg'); /* 🔁 Replace with your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   z-index: -1;
   filter: brightness(50%);
 }

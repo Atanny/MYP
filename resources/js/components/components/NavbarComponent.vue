@@ -1,49 +1,25 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
-        <div class="container-fluid">
+    <nav class="container p-4 fixed-top">
+       
+        <div class="p-3 navbar navbar-expand-lg navbar-light bg-light shadow rounded-5 justify-content-between bg-opacity-50">
 
-            
-           
-           <img class="navbar-brand  mt-0 b  rounded border-1 border-secondary" width="70px" src="/images/logo.png">
+           <img class="navbar-brand rounded border-1 border-secondary" width="70px" src="/images/logo.png">
 
-        
-          
-                          <!-- Navbar Toggler -->
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  @click="toggleNavbar"
-                  aria-controls="navbarNav"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+          <a 
+            href="https://mail.google.com/mail/?view=cm&to=atanatan190@email.com&su=I WANT TO CONNECT&body=Please write your message here."
+              target="_blank"
+              class="btn btn-black rounded-5 d-inline-block ms-1">
+            <i class="fa-solid fa-envelope"></i>  Email Me 
+          </a>
 
-
-                <!-- Collapsible Navbar -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav text-center mx-auto">
-                    <!-- Add your <li><a>...</a></li> items here -->
-                  </ul>
-
-                  <div class="m-1 mt-3 mt-md-0 mt-lg-0">
-                  <a 
-                      href="https://mail.google.com/mail/?view=cm&to=atanatan190@email.com&su=I WANT TO CONNECT&body=Please write your message here."
-                      target="_blank"
-                      class="btn btn-black d-inline-block ms-1">
-                   <i class="fa-solid fa-envelope"></i>  Email Me 
-                    </a>
-
-                  </div>
-
-
-
-
-            </div>
         </div>
+
+      
     </nav>
 </template>
+
+
+
 <script>
 export default {
  methods: {

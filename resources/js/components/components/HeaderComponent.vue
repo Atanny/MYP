@@ -12,7 +12,7 @@
               <b>JONATHAN MARIANO</b>
             </h1>
                   
-            <p data-aos="fade-right" data-aos-duration="900"> <i class="fa-solid fa-object-group " style="color: #ff8b00;"></i><b> Graphic Design </b> | <i class="fa-solid fa-bars-progress" style="color: #ff8b00;"></i><b> UI/UX Design</b> | <i class="fa-solid fa-pen" style="color: #ff8b00;"></i><b> Digital Arts</b></p>
+            <p data-aos="fade-right" data-aos-duration="900"> <i class="fa-solid fa-object-group m-1" style="color: #ff8b00;"></i> Graphic Design  <i class="fa-solid fa-bars-progress m-1" style="color: #ff8b00;"></i> UI/UX Design <i class="fa-solid fa-pen m-1" style="color: #ff8b00;"></i> Digital Arts</p>
 
             <div class="row  my-2" data-aos="fade-right" data-aos-duration="1100">
               <div class="d-flex gap-2 justify-content-lg-start justify-content-center">

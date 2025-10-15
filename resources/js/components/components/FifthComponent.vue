@@ -40,7 +40,7 @@
                 class="col-lg-3 col-md-4 col-sm-6 mb-4"
               >
                 <router-link :to="product.route">
-                  <div class="card border-0 rounded text-white h-100">
+                  <div class="card shadow border-0 rounded text-white h-100">
                     <img
                       class="img-fluid card-img-top"
                       :src="product.image"

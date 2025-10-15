@@ -13,32 +13,34 @@
           </p>
           <hr class="rounded-5" style="border: 0.5px solid gray; width: 100%;" />
 
-          <div class="mt-5 d-flex justify-content-center align-items-center">
-            <div class="row">
-              <div
-                v-for="(product) in products"
-                :key="product.id"
-                class="col-lg-3 col-md-4 col-sm-6 mb-4"
-              >
-                <router-link :to="product.route">
-                  <div class="card shadow border-0 rounded-5 text-white h-100">
-                    <img
-                      class="img-fluid card-img-top rounded-top-5"
-                      :src="product.image"
-                      style="height: 200px; object-fit: cover;"
-                      :alt="product.name"
-                    />
-                    <div
-                      class="p-2 px-3 text-start d-flex justify-content-between align-items-center"
-                    >
-                      <h6 class="fw-bolder display-6 me-4">{{ product.id }}</h6>
-                      <h6 class="mb-0">{{ product.name }}</h6>
-                    </div>
+        <div class="mt-5 d-flex justify-content-center align-items-center">
+          <div class="row">
+            <div
+              v-for="(product, index) in products"
+              :key="product.id"
+              class="col-lg-3 col-md-4 col-sm-6 mb-4"
+              data-aos="fade-right"
+              :data-aos-delay="index * 200"
+              data-aos-duration="800"
+            >
+              <router-link :to="product.route">
+                <div class="card shadow border-0 rounded-5 text-white h-100">
+                  <img
+                    class="img-fluid card-img-top rounded-top-5"
+                    :src="product.image"
+                    style="height: 200px; object-fit: cover;"
+                    :alt="product.name"
+                  />
+                  <div class="p-2 px-3 text-start d-flex justify-content-between align-items-center">
+                    <h6 class="fw-bolder display-6 me-4">{{ product.id }}</h6>
+                    <h6 class="mb-0">{{ product.name }}</h6>
                   </div>
-                </router-link>
-              </div>
+                </div>
+              </router-link>
             </div>
           </div>
+        </div>
+
         </div>
       </div>
     </div>

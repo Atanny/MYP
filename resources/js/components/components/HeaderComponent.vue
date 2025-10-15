@@ -8,7 +8,7 @@
         >
           <div class="border-0 p-5">
             <p class="mb-0 italic text-dark" data-aos="fade-right" data-aos-duration="500"><i>Hi, I am</i></p>
-            <h1 class="fw-bolder card-text" style="color: #ff8333;" data-aos="fade-right" data-aos-duration="700">
+            <h1 class="fw-bolder card-text" style="color: #ff8b00;" data-aos="fade-right" data-aos-duration="700">
               <b>JONATHAN MARIANO</b>
             </h1>
             <p data-aos="fade-right" data-aos-duration="900">Graphic Design | UI/UX Design</p>

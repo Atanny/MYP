@@ -3,7 +3,7 @@
     
     <div  class="text-white p-2 mt-5" behavior="scroll" direction="right" scrollamount="20" scrolldelay="1">
       <h1 class="fw-bolder text-center text-dark">
-        <b class=""><< SOFTWARES USING >></b>
+        <b class="">SOFTWARES USING</b>
       </h1>
     </div>
       <div class="container">

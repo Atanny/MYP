@@ -1,12 +1,13 @@
 <template>
-  <div class="glow-bg p-5 mb-5">
-    <div class="container p-2 p-lg-5">
+<div class="p-1 p-lg-5">
+  <div class=" p-5 mb-5">
+    <div class="container p-1 p-lg-5">
       <div class="row">
         <!-- Right Column with Text and Social Links -->
         <div
           class="col-lg-6 d-flex justify-content-center align-items-center text-start"
         >
-          <div class="border-0 text-center text-lg-start">
+          <div class="border-0 text-center text-lg-start mt-5">
    
             <img class="img-fluid mt-5" src="/images/name.png" alt="" />
                   
@@ -24,6 +25,6 @@
       </div>
     </div>
   </div>
-
+</div>
 
 </template>

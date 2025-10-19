@@ -1,38 +1,24 @@
 @font-face {
-    font-family: 'CustomFont';
-    src: url('/resources/fonts/Roboto-Regular.woff2') format('woff2');
-    font-weight: 100; /* Regular */
-    font-style: normal;
+  font-family: 'HeaderFont';
+  src: url('/resources/fonts/Wintertale.woff2') format('woff2'),
+       url('/resources/fonts/Wintertale.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+0041-005A, U+0061-007A; /* A–Z and a–z only */
 }
 
-
-
+/* Fallback for numbers and symbols in headers */
 @font-face {
-    font-family: 'early-sunday';
-    src: url('/resources/fonts/early-sunday.woff2') format('woff2');
-    font-weight: 3;
-    font-style: italic;
+  font-family: 'HeaderFont';
+  src: local('Arial');
+  unicode-range: U+0030-0039, U+0025, U+002E, U+002C; /* 0–9, %, ., , */
 }
 
+/* Body/Paragraph Font */
 @font-face {
-    font-family: 'CustomFont';
-    src: url('/resources/fonts/intrepid.woff2') format('woff2');
-    font-weight: 700;
-    font-style: bold;
-}
-
-
-@font-face {
-    font-family: 'CustomFont';
-    src: url('/resources/fonts/intrebol.woff2') format('woff2');
-    font-weight: 700;
-    font-style: bolder;
-}
-
-
-/* Apply the custom font globally */
-
-
-p{
-    font-family: 'customFont';
+  font-family: 'BodyFont';
+  src: url('/resources/fonts/Poppins-thin.woff2') format('woff2'),
+       url('/resources/fonts/Poppins-thin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }

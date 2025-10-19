@@ -33,7 +33,7 @@
                     <a 
                       href="https://mail.google.com/mail/?view=cm&to=atanatan190@email.com&su=I WANT TO CONNECT&body=Please write your message here."
                       target="_blank"
-                      class="btn btn-black rounded-5">
+                      class="btn btn-black rounded-5 fw-bold">
                       Send Email
                     </a>
 

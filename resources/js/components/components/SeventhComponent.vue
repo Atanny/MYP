@@ -20,8 +20,8 @@
               <!-- Icon Only -->
               <i :class="role.icon + ' display-4 mt-3 mb-3 text-light'"></i>
 
-              <h5 class="mb-0 fw-bold">{{ role.title }}</h5>
-              <p class="mb-3 text-light">{{ role.company }}</p>
+              <h5 class="mb-0">{{ role.title }}</h5>
+              <p class="mb-3 text-light border rounded-5 mt-2">{{ role.company }}</p>
               <p>{{ role.description }}</p>
             </div>
           </div>
@@ -54,7 +54,7 @@ export default {
             {
               title: 'UI/UX DESIGNER',
               company: 'Transnational e-Business Solutions, Inc',
-              icon: 'fa-solid fa-pencil-ruler',
+              icon: 'fa-solid fa-toggle-on',
               description: 'Redesigned OWL Portal and Thread Outsourcing interface improving UX.',
               duration: 1200,
             },
@@ -68,7 +68,7 @@ export default {
             {
               title: 'E-COMMERCE GRAPHIC DESIGN',
               company: 'Star Eye',
-              icon: 'fa-solid fa-laptop-code',
+              icon: 'fa-solid fa-cart-shopping',
               description: '2 Weeks training: Product Photography, Crafting, Designing, Cleaning Blemishes.',
               duration: 800,
             },

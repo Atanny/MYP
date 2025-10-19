@@ -9,7 +9,7 @@
         <div class="p-3 p-lg-5 text-light text-center text-lg-start">
           <h1 class="display-6 fw-bolder text-center"><b>ART CATEGORIES</b></h1>
           <p class="text-light opacity-75 text-center">
-            Explore the different categories of art I created.
+            Explore the different categories of arts I created.
           </p>
           <hr class="rounded-5" style="border: 0.5px solid gray; width: 100%;" />
 
@@ -32,7 +32,7 @@
                     :alt="product.name"
                   />
                   <div class="p-2 px-3 text-start d-flex justify-content-between align-items-center">
-                    <h6 class="fw-bolder display-6 me-4">{{ product.id }}</h6>
+                    <h1 class="text-white me-4">{{ product.id }}</h1>
                     <h6 class="mb-0">{{ product.name }}</h6>
                   </div>
                 </div>

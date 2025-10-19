@@ -29,9 +29,9 @@
               data-aos-duration="900"
             >
 
-            <div class="text-center">
+            <div class="text-center d-flex align-items-center justify-content-center">
                <img class="img-fluid rounded-5 me-3 mb-3" width="60px" height="60px" style="object-fit: cover;" src="/images/333 (2).jpg" alt="" />
-                  <h1 class="fw-bolder text-light">
+                  <h1 class=" text-light">
                 <b>ABOUT ME</b>
               </h1>
             </div>
@@ -47,13 +47,7 @@
                 designing websites, digital pubmats, and illustrations.
               </p>
 
-              <a
-                class="btn btn-light rounded-5 mt-3 icon shadow-sm"
-                href="/images/gallery/Poster/JonathanMarianoRESUME.png"
-                download="JonathanMarianoRESUME.png"
-              >
-                <i class="fa-solid fa-download"></i> Download CV
-              </a>
+             
               <div class="row  my-2" data-aos="fade-right" data-aos-duration="1100">
               <div class="d-flex gap-2 justify-content-lg-center justify-content-center">
                 <a href="https://web.telegram.org/k/#@Atanny" class="display-6 text-white icon">
@@ -76,6 +70,13 @@
                 </a>
               </div>
             </div>
+             <a
+                class="btn btn-light rounded-5 mt-3 icon shadow-sm fw-bold"
+                href="/images/gallery/Poster/JonathanMarianoRESUME.png"
+                download="JonathanMarianoRESUME.png"
+              >
+                <i class="fa-solid fa-download"></i> Download CV
+              </a>
             </div>
             
           </div>

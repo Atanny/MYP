@@ -23,7 +23,7 @@
                <h1 class=" mt-3"> <iconify-icon :icon="software.iconClass" width="40" height="40"></iconify-icon></h1>    
             </div>
             <div class="text-center">
-              <h5 class="mb-0 fw-bold text3">{{ software.name }}</h5>
+              <h6 class="mb-0 ">{{ software.name }}</h6>
               <p class="small">{{ software.proficiency }}</p>
             </div>
           </div>
@@ -43,7 +43,7 @@
                <h1 class=" mt-3"> <iconify-icon :icon="software2.iconClass" width="40" height="40"></iconify-icon></h1>    
             </div>
             <div class="text-center">
-              <h5 class="mb-0 fw-bold text3">{{ software2.name }}</h5>
+              <h6 class="mb-0 ">{{ software2.name }}</h6>
               <p class="small">{{ software2.proficiency }}</p>
             </div>
           </div>

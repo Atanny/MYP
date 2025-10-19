@@ -5,7 +5,7 @@
           <a 
             href="https://mail.google.com/mail/?view=cm&to=atanatan190@email.com&su=I WANT TO CONNECT&body=Please write your message here."
               target="_blank"
-              class="btn btn-black rounded-5 d-inline-block ms-1">
+              class="btn btn-black rounded-5 d-inline-block ms-1 fw-bold">
             <i class="fa-solid fa-envelope"></i>  Email Me 
           </a>
         </div>
@@ -80,6 +80,7 @@ nav {
 }
 nav.shrink {
   padding: 0.8rem 1rem !important;
+  
 }
 nav.shrink img {
   width: 55px !important;

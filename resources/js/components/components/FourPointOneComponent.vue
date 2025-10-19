@@ -3,7 +3,7 @@
     
     <div  class="text-white p-2 mt-5" behavior="scroll" direction="right" scrollamount="20" scrolldelay="1">
       <h1 class="fw-bolder text-center text-dark">
-        <b class="">SOFTWARES USING</b>
+        <b class="">SOFTWARES AND KNOWLEDGES</b>
       </h1>
     </div>
       <div class="container">
@@ -69,10 +69,10 @@ export default {
         { id: 2, name: "Illustrator", iconClass: "logos:adobe-illustrator", proficiency: "Proficient" },
         { id: 3, name: "Figma", iconClass: "logos:figma", proficiency: "Proficient" },
         { id: 4, name: "Canva", iconClass: "devicon:canva", proficiency: "Proficient" },
-        { id: 5, name: "Premiere", iconClass: "logos:adobe-premiere", proficiency: "Proficient" },
-        { id: 6, name: "Animate CC", iconClass: "logos:adobe-animate", proficiency: "Proficient" },
-        { id: 7, name: "Adobe XD", iconClass: "logos:adobe-xd", proficiency: "Proficient" },
-        { id: 8, name: "Adobe Flash", iconClass: "file-icons:adobe-flash", proficiency: "Proficient" },
+        { id: 5, name: "Premiere", iconClass: "logos:adobe-premiere", proficiency: "Basic" },
+        { id: 6, name: "Animate CC", iconClass: "logos:adobe-animate", proficiency: "Basic" },
+        { id: 7, name: "Adobe XD", iconClass: "logos:adobe-xd", proficiency: "Basic" },
+        { id: 8, name: "Adobe Flash", iconClass: "file-icons:adobe-flash", proficiency: "Basic" },
         { id: 9, name: "Flipaclip", iconClass: "arcticons:flipaclip", proficiency: "Proficient" },
         { id: 10, name: "Capcut", iconClass: "hugeicons:capcut", proficiency: "Proficient" }
       ],

@@ -9,7 +9,9 @@
         >
           <div class="border-0 text-center text-lg-start mt-5">
    
-            <img class="img-fluid mt-5" src="/images/name.png" alt="" />
+            <img data-aos="fade-right"
+              :data-aos-delay="index * 200"
+              data-aos-duration="800" class="img-fluid mt-5" src="/images/name.png" alt="" />
                   
             
             

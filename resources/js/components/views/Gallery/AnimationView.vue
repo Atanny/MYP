@@ -311,7 +311,9 @@ export default {
 }
 
 
-
+.btn{
+  font-weight: bold;
+}
 
 
 </style>

@@ -17,6 +17,8 @@
   font-family: 'BodyFont';
   src: url('/fonts/Poppins-thin.woff2') format('woff2'),
        url('/fonts/Poppins-thin.woff') format('woff');
+       
   font-weight: normal;
   font-style: normal;
 }
+  

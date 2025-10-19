@@ -8,12 +8,15 @@
         <second-component class=""></second-component>
            
          <seven-component class=""></seven-component>
-      
+          
        
         <fourone-component class=""></fourone-component>
         <five-component class=""></five-component>
        <six-component class=""></six-component>
+        <!-- <four-component></four-component> -->
+    
           <footer-component class="mt-0"></footer-component>
+           
     </div>
    
 </template>

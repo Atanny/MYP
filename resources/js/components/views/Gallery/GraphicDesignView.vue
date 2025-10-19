@@ -244,6 +244,7 @@ export default {
              { id: 104, number: "93", name: "RUTH's RESUME", image: "../images/gallery/Poster/exam2 (3).png", description: "No Description." },
               { id: 104, number: "93", name: "RUTH's RESUME", image: "../images/gallery/Poster/pos1 (1).png", description: "No Description." },
                { id: 104, number: "93", name: "RUTH's RESUME", image: "../images/gallery/Poster/pos1 (2).png", description: "No Description." },
+                { id: 104, number: "93", name: "RUTH's RESUME", image: "../images/gallery/Poster/TESI.jpeg", description: "No Description." },
        ],
       currentPage: 1,
       pageSize: 1000,

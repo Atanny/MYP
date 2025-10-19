@@ -1,38 +1,35 @@
 <template>
-    <h1   class="fw-bolder text-dark text-center container p-5"><b>SOFTWARES</b></h1>
+<div class="p-5">
+<div class="comtainer p-5">
+    <div class="row rounded shadow-lg p-5">
+      <div class="d-flex align-items-center">
 
-    <div class="">
-      
-      <div  class="bg-dark text-white p-2  container-fluid" behavior="scroll" direction="right" scrollamount="20" scrolldelay="1">
-        <h1 class="fw-bolder outline-text3 text-center mt-1 mt-lg-0">
-          <b>FOR GRAPHICS, ARTS, AND WEB DESIGN</b>
-        </h1>
-      </div>
-
-    <div class=" bg-light shadow-lg  p-5 align-items-center justify-content-center">
-      <div class="container p-4 p-lg-5">
-        <div class="row mb-0 mt-0 p-0 p-lg-5 gap-4 ">
-          <div class="card col-6 col-lg-2 shadow-lg rounded-5 border-1 border-light" v-for="(software, index) in softwares" :key="software.id" data-aos="fade-up" :data-aos-delay="index * 200" data-aos-duration="800">  
-            
-              <div class="d-flex">
-                  <h1 class="fw-bolder mt-3"> {{ software.id }}</h1>
-                  <h1 class="ms-3 mt-3"> <iconify-icon :icon="software.iconClass" width="40" height="40"></iconify-icon></h1>
-              </div>
-
-            <hr class="rounded" style="border: 0.5px solid gray; width: 100%;">
-
-              <div>
-                <h5 class="mb-0 fw-bold text3">{{ software.name }}</h5>
-                  <p class="small">{{ software.proficiency }}</p>
-              </div>
-              
+          <div class="col-lg-6">
+            <h1 class="fw-bolder outline-text3 text-dark text-center mt-1 mt-lg-0">
+                         <img class="img-fluid" src="/images/coffee.png" alt="" />
+            </h1>
           </div>
-        </div>
+
+          <div class="col-lg-6 row justify-content-center">
+            
+              <div class="col-lg-12">
+                <h1 class="fw-bolder outline-text3 text-dark text-center mt-1 mt-lg-0">
+                  <iconify-icon class="mb-3 me-3" icon="ph:coffee-fill" width="50" height="50"></iconify-icon>
+                  <b>BUY ME A COFFEE</b>
+                </h1>
+              
+              </div>
+               <img class="col-lg-6  rounded-5 mt-1 border border-dark shadow d-flex justify-content-center" src="/images/donate.png" width="150" alt="" />
+  
+
+          </div>
+
+          
+
       </div>
     </div>
-  
-    </div>
- 
+ </div>
+</div>
 </template>
 
 <script>
@@ -50,3 +47,8 @@ export default {
   },
 };
 </script>
+
+<style>
+
+
+</style>

@@ -24,15 +24,21 @@
 
             <!-- About Me Section -->
             <div
-              class="col-lg-4 text-dark p-4 card border-0 shadow text-light shadow rounded-5 "
+              class="col-lg-4 text-white p-4 card border-0 shadow text-light shadow rounded-5 "
               data-aos="fade-right"
               data-aos-duration="900"
             >
-              <h1 class="fw-bolder text-light">
+
+            <div class="text-center">
+               <img class="img-fluid rounded-5 me-3 mb-3" width="60px" height="60px" style="object-fit: cover;" src="/images/333 (2).jpg" alt="" />
+                  <h1 class="fw-bolder text-light">
                 <b>ABOUT ME</b>
               </h1>
+            </div>
 
-              <p class="text-light mt-2">
+           
+
+              <p class="text-light mt-2 text-center">
                 I am a Digital Artist who spends time working on Arts & Designs.
                 Graduated with a Bachelor's Degree in Information Technology Major
                 in Programming, but still passionate about Arts & Design.
@@ -48,7 +54,30 @@
               >
                 <i class="fa-solid fa-download"></i> Download CV
               </a>
+              <div class="row  my-2" data-aos="fade-right" data-aos-duration="1100">
+              <div class="d-flex gap-2 justify-content-lg-center justify-content-center">
+                <a href="https://web.telegram.org/k/#@Atanny" class="display-6 text-white icon">
+                  <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jonathan-mariano-40667824a/" class="display-6 text-white icon">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/jonathan.mariano.7140" class="display-6 text-white icon">
+                  <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/atan.ny/" class="display-6 text-white icon">
+                  <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="https://m.me/jonathan.mariano.7140?hash=AbbL2FfuQZRU571p&source=qr_link_share" class="icon display-6 text-white">
+                  <i class="fa-brands fa-facebook-messenger"></i>
+                </a>
+                <a href="mailto:atanatan190@gmail.com" class="display-6 text-white icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+              </div>
             </div>
+            </div>
+            
           </div>
         </div>
       </div>

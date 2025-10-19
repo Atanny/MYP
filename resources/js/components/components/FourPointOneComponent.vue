@@ -14,7 +14,7 @@
    <div class="d-flex container">
     <div class="">
 
-        <div class="col-sm-12 col-lg-12 p-2 py-5  ">
+        <div class="col-sm-12 col-lg-12 p-2 py-5    ">
           <h4 class="fw-bolder text-center text-dark"><b class="">DESIGN</b></h4>
           <p class="text-center">Sofwares that i use when Designing or Editing.</p>
         <div class="row mb-0 mt-0 p-4 p-lg-5 gap-3 justify-content-center">

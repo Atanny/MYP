@@ -48,7 +48,7 @@
               </p>
 
              
-              <div class="row  my-2" data-aos="fade-right" data-aos-duration="1100">
+              <div class="row  my-2" >
               <div class="d-flex gap-2 justify-content-lg-center justify-content-center">
                 <a href="https://web.telegram.org/k/#@Atanny" class="display-6 text-white icon">
                   <i class="fa-brands fa-telegram"></i>

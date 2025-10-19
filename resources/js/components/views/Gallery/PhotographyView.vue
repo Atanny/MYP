@@ -29,7 +29,7 @@
             </div>
 
             <div>
-               <h1 class="fw-bolder mb-0"><b>PHOTOGRAPHY</b></h1>
+               <h1 class="fw-bolder mb-0" style="color: #ff8b00;"><b>PHOTOGRAPHY</b></h1>
                <h6 class="text-muted">Used Application for Illustrating: <br> <b class="mt-3 badge bg-dark">ADOBE LIGHTROOM</b> <b class="badge bg-dark">CULLING</b></h6>
             </div>
             </div>

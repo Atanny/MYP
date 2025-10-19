@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'HeaderFont';
-  src: url('/resources/fonts/Wintertale.woff2') format('woff2'),
-       url('/resources/fonts/Wintertale.woff') format('woff');
+  src: url('/images/fonts/Wintertale.woff2') format('woff2'),
+       url('/images/fonts/Wintertale.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   unicode-range: U+0041-005A, U+0061-007A; /* A–Z and a–z only */
@@ -17,8 +17,8 @@
 /* Body/Paragraph Font */
 @font-face {
   font-family: 'BodyFont';
-  src: url('/resources/fonts/Poppins-thin.woff2') format('woff2'),
-       url('/resources/fonts/Poppins-thin.woff') format('woff');
+  src: url('/images/fonts/Poppins-thin.woff2') format('woff2'),
+       url('/images/fonts/Poppins-thin.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

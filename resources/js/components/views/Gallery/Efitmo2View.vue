@@ -29,7 +29,7 @@
             </div>
 
             <div>
-               <h1 class="fw-bolder mb-0"><b>EFITMO CAPSTONE PROJECT - SUPER ADMIN/ADMIN INTERFACE</b></h1>
+               <h1 class="fw-bolder mb-0" style="color: #ff8b00;"><b>EFITMO CAPSTONE PROJECT - SUPER ADMIN/ADMIN INTERFACE</b></h1>
                <h6 class="text-muted">Used Application for Developing: <br> <b class="mt-3 badge bg-dark">FIGMA</b> <b class="badge bg-dark">PHP</b> <b class="badge bg-dark">LARAVEL NATIVE</b> <b class="badge bg-dark">HTML</b> <b class="badge bg-dark">CSS</b> <b class="badge bg-dark">JAVASCRIPT</b> <b class="badge bg-dark">MYSQL</b></h6>
             </div>
             </div>
@@ -53,14 +53,14 @@
 
             
            <router-link to="/website" active-class="active-link">
-              <button class="btn btn-success me-1 mt-2 "> <i class="fa-solid fa-arrow-left"></i> WEBSITES</button>
+              <button class="btn btn-success rounded-5 me-1 mt-2 "> <i class="fa-solid fa-arrow-left"></i> WEBSITES</button>
                
             </router-link>
             <router-link to="/website/student" class="" active-class="active-link">
-              <button class="btn btn-success me-1 mt-2">STUDENT INTERFACE</button>
+              <button class="btn btn-success rounded-5 me-1 mt-2">STUDENT INTERFACE</button>
             </router-link>
             <router-link to="/website/admin" class="" active-class="active-link">
-              <button class="btn btn-success me-1 mt-2">SUPER ADMIN INTERFACE</button>
+              <button class="btn btn-success rounded-5 me-1 mt-2">SUPER ADMIN INTERFACE</button>
             </router-link>
            
            

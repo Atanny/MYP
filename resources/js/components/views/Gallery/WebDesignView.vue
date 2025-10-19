@@ -17,7 +17,7 @@
             </div>
 
             <div>
-               <h1 class="fw-bolder mb-0"><b>WEB DESIGNS</b></h1>
+               <h1 class="fw-bolder mb-0" style="color: #ff8b00;"><b>WEB DESIGNS</b></h1>
                <h6 class="text-muted">Used Application for Designing: <br> <b class="mt-3 badge bg-dark">FIGMA</b></h6>
             </div>
             </div>

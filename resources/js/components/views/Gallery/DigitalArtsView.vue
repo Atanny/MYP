@@ -35,7 +35,7 @@
             </div>
 
             <div>
-               <h1 class="fw-bolder mb-0"><b>DIGITAL ARTS</b></h1>
+               <h1 class="fw-bolder mb-0" style="color: #ff8b00;"><b>DIGITAL ARTS</b></h1>
                <h6 class="text-muted">Used Application for Drawing: <br> <b class="mt-3 badge bg-dark">ADOBE ILLUSTRATOR</b> <b class="badge bg-dark">KRITA</b></h6>
             </div>
             </div>

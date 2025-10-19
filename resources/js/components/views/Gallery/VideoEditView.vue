@@ -14,7 +14,7 @@
             </div>
 
             <div>
-              <h1 class="fw-bolder mb-0"><b>VIDEOS</b></h1>
+              <h1 class="fw-bolder mb-0" style="color: #ff8b00;"><b>VIDEOS</b></h1>
               <h6 class="text-muted">Used Application for Illustrating: <br> <b class="mt-3 badge bg-dark">CAPCUT</b> <b class="badge bg-dark">PREMIER PRO</b></h6>
          
             </div>

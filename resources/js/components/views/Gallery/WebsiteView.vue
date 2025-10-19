@@ -17,7 +17,7 @@
             </div>
 
             <div>
-               <h1 class="fw-bolder mb-0"><b>WEB DEVELOPED</b></h1>
+               <h1 class="fw-bolder mb-0" style="color: #ff8b00;"><b>WEB DEVELOPED</b></h1>
                 <h6 class="text-muted">Used Application for Designing: <br> <b class="mt-3 badge bg-dark">PHP</b> <b class="mt-3 badge bg-dark">LARAVEL</b> <b class="mt-3 badge bg-dark">VUE JS</b> <b class="mt-3 badge bg-dark">HTML</b> <b class="mt-3 badge bg-dark">CSS</b> <b class="mt-3 badge bg-dark">JAVASCRIPT</b> <b class="mt-3 badge bg-dark">MYSQL</b> </h6>
             </div>
             </div>

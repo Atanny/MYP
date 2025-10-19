@@ -31,7 +31,7 @@
             </div>
 
             <div>
-               <h1 class="fw-bolder mb-0"><b>GRAPHIC DESIGNS</b></h1>
+               <h1 class="fw-bolder mb-0" style="color: #ff8b00;"><b>GRAPHIC DESIGNS</b></h1>
                <h6 class="text-muted">Used Application for Designing: <br> <b class="mt-3 badge bg-dark">PHOTOSHOP</b> <b class="mt-3 badge bg-dark">ILLUSTRATOR</b> <b class="mt-3 badge bg-dark">CANVA</b></h6>
             </div>
             </div>

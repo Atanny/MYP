@@ -1,8 +1,9 @@
-# Use PHP FPM with required extensions
+# 1. Base PHP-FPM image
 FROM php:8.2-fpm
 
-# Install system dependencies
+# 2. Install system dependencies + nginx
 RUN apt-get update && apt-get install -y \
+    nginx \
     git \
     unzip \
     curl \
@@ -11,26 +12,32 @@ RUN apt-get update && apt-get install -y \
     zip \
     && docker-php-ext-install pdo pdo_mysql zip mbstring
 
-# Install Composer
+# 3. Install Composer
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
-# Set working directory
+# 4. Set working directory
 WORKDIR /var/www/html
 
-# Copy project files
+# 5. Copy project files
 COPY . .
 
-# Install PHP dependencies
+# 6. Install PHP dependencies
 RUN composer install --no-dev --optimize-autoloader
 
-# Copy Vue build (if already built locally)
+# 7. Copy Vue build (already in public/)
 COPY ./public ./public
 
-# Set permissions for storage & bootstrap
+# 8. Set permissions for Laravel
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 
-# Expose port
-EXPOSE 9000
+# 9. Remove default Nginx site
+RUN rm /etc/nginx/sites-enabled/default
 
-# Start PHP-FPM server
-CMD ["php-fpm"]
+# 10. Add custom Nginx config (see nginx.conf)
+COPY nginx.conf /etc/nginx/sites-enabled/laravel.conf
+
+# 11. Expose HTTP port
+EXPOSE 80
+
+# 12. Start Nginx and PHP-FPM
+CMD ["sh", "-c", "php-fpm -D && nginx -g 'daemon off;'"]

@@ -38,3 +38,30 @@
 <IfModule mod_headers.c>
   Header unset Content-Encoding
 </IfModule>
+<IfModule mod_mime.c>
+  AddType font/woff .woff
+  AddType font/woff2 .woff2
+</IfModule>
+
+
+<FilesMatch "\.(js|css|woff2|woff|ttf|png|jpg|jpeg|gif|svg)$">
+  Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
+
+
+# Disable charset for fonts
+<IfModule mod_headers.c>
+  <FilesMatch "\.(woff|woff2|ttf|otf|eot)$">
+    Header unset Content-Type
+    Header set Content-Type "application/font-woff2"
+  </FilesMatch>
+</IfModule>
+# Security headers
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always unset X-Powered-By
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+  Header always set Content-Security-Policy "default-src 'self' 'unsafe-inline' data: https:;"
+</IfModule>

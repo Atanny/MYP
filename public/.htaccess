@@ -20,11 +20,21 @@
     RewriteRule ^ index.php [L]
 </IfModule>
 
+# ✅ MIME TYPES for Fonts (prevents “Failed to decode downloaded font”)
 <IfModule mod_mime.c>
-  AddType font/woff .woff
+  AddType application/font-woff .woff
   AddType font/woff2 .woff2
+  AddType application/vnd.ms-fontobject .eot
+  AddType font/ttf .ttf
+  AddType font/otf .otf
 </IfModule>
 
-<FilesMatch "\.(woff|woff2)$">
+# ✅ Cache fonts for a long time (optional, for speed)
+<FilesMatch "\.(woff|woff2|eot|ttf|otf)$">
   Header set Cache-Control "max-age=31536000, public"
 </FilesMatch>
+
+# ✅ Prevent double encoding
+<IfModule mod_headers.c>
+  Header unset Content-Encoding
+</IfModule>

@@ -44,19 +44,30 @@ export default {
   },
 };</script>
 <style>
-
-
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'HeaderFont', 'Arial', sans-serif;
-  letter-spacing: 2px;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-weight: bold; /* optional: make headers bold */
 }
 
-/* Paragraphs and body text */
-body, p {
-  font-family: 'BodyFont', serif;
-  letter-spacing: 1px;
+/* Paragraphs use monospace */
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: normal; /* optional */
+  font-size: 1rem; /* adjust size as needed */
 }
 
+/* Links inherit header font */
+a {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  text-decoration: none;
+  color: inherit; /* keeps link color consistent */
+  font-weight: bold;
+}
+
+/* Optional: headings bold by default */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
 
 body{
     overflow-x: hidden;

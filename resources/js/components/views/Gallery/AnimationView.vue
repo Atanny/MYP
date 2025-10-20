@@ -32,7 +32,7 @@
                   <i class="fa-solid fa-home"></i>
                 </button>
               </router-link>
-            <button class="btn btn-success d-lg-none " type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
+            <button class="btn btn-success rounded-5 d-lg-none " type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
                 <i class="fa fa-bars"></i> See More Description
             </button>
             <!-- Collapsible container -->

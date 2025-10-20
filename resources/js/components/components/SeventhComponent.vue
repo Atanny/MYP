@@ -4,7 +4,8 @@
     <div class="bg-static"></div>
 
     <div class="content p-5 mt-5">
-      <h1 class="fw-bolder text-light text-center mb-5"><b>MY ROLE AND EXPERIENCE</b></h1>
+      <h1 class="fw-bolder text-light text-center "><b>MY ROLE & EXPERIENCE</b></h1>
+      <p class="text-center mb-5 text-white">A summary of my professional journey and key contributions.</p>
       <div class="container bg-transparent rounded-5 p-3">
         <div class="row g-4">
 
@@ -16,13 +17,14 @@
             :data-aos="'fade-right'"
             :data-aos-duration="role.duration"
           >
-            <div class="card border-0 shadow rounded-5 h-100 text-center p-4">
+            <div class="card border-0 shadow rounded-5 h-100 text-center p-5">
               <!-- Icon Only -->
               <i :class="role.icon + ' display-4 mt-3 mb-3 text-light'"></i>
 
-              <h5 class="mb-0">{{ role.title }}</h5>
-              <p class="mb-3 text-light border rounded-5 mt-2">{{ role.company }}</p>
-              <p>{{ role.description }}</p>
+              <h5 class="mb-0">{{ role.title }} </h5>
+              <p class=" text-light border rounded-5 mt-2 p-1 fw-bold">{{ role.company }} - {{ role.year }}</p>
+              <hr class="mb-1 mt-1" style="border: none; height: 2px; background-color: white; border-radius: 5px;"> 
+              <p class="mt-2">{{ role.description }}</p>
             </div>
           </div>
 
@@ -39,7 +41,8 @@ export default {
       roles: [
             {
               title: 'GRAPHIC DESIGNER',
-              company: 'Transnational e-Business Solutions, Inc',
+              company: 'Tesi',
+              year: '3 months',
               icon: 'fa-solid fa-object-group ', // changed icon
               description: 'Assisted senior designers, supported the design process, and learned from mentors.',
               duration: 1600,
@@ -47,13 +50,15 @@ export default {
             {
               title: 'GRAPHIC DESIGNER',
               company: 'Kalawaan SK',
+              year: '6 months',
               icon: 'fa-solid fa-object-group ', // changed icon
               description: 'Freelance designer for 6 months creating posters, announcements, and cards.',
               duration: 1600,
             },
             {
               title: 'UI/UX DESIGNER',
-              company: 'Transnational e-Business Solutions, Inc',
+              company: 'Tesi',
+              year: '3 months',
               icon: 'fa-solid fa-toggle-on',
               description: 'Redesigned OWL Portal and Thread Outsourcing interface improving UX.',
               duration: 1200,
@@ -61,6 +66,7 @@ export default {
             {
               title: 'IT SUPPORT',
               company: 'Alight Solutions',
+              year: '2 months',
               icon: 'fa-solid fa-headset',
               description: 'Gained knowledge in deployment processes and server debugging.',
               duration: 800,
@@ -68,6 +74,7 @@ export default {
             {
               title: 'E-COMMERCE GRAPHIC DESIGN',
               company: 'Star Eye',
+              year: '2 weeks',
               icon: 'fa-solid fa-cart-shopping',
               description: '2 Weeks training: Product Photography, Crafting, Designing, Cleaning Blemishes.',
               duration: 800,

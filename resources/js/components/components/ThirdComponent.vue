@@ -13,27 +13,31 @@
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              <div>
+            <div class="image-container">
                 <img
-                  class="img-fluid rounded-5"
+                  class="img-fluid rounded-5 shadow-lg border-light border border-5"
                   src="/images/art.png"
                   alt="Artwork"
                 />
+                <div class="overlay-text text-start "><h5 class="mb-0 ms-2">THINKING HAND ANOTOMY</h5><p class="ms-2 text-light">Created Using ADOBE ILLUSTRATOR.</p></div>
               </div>
             </div>
 
-            <!-- About Me Section -->
+         
             <div
               class="col-lg-4 text-white p-4 card border-0 shadow text-light shadow rounded-5 "
               data-aos="fade-right"
               data-aos-duration="900"
             >
 
-            <div class="text-center d-flex align-items-center justify-content-center">
-               <img class="img-fluid rounded-5 me-3 mb-3" width="60px" height="60px" style="object-fit: cover;" src="/images/333 (2).jpg" alt="" />
-                  <h1 class=" text-light">
+            <div class="text-center d-flex align-items-center justify-content-start border rounded-5 mb-3">
+               <img class="img-fluid rounded-start-5 me-3" width="60px" height="60px" style="object-fit: cover;" src="/images/333 (2).jpg" alt="" />
+                 
+              <h4 class="text-start text-light mb-0" 
+                 >
                 <b>ABOUT ME</b>
-              </h1>
+              </h4>
+
             </div>
 
            
@@ -149,4 +153,37 @@ export default {
 .text-light {
   color: white !important;
 }
+  .image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  .image-container img {
+    transition: transform 0.4s ease;
+    display: block;
+  }
+
+  .image-container:hover img {
+    transform: scale(1.05);
+    filter: brightness(70%);
+  }
+
+  .overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    padding: 10px;
+  }
+
+  .image-container:hover .overlay-text {
+    opacity: 1;
+  }
 </style>

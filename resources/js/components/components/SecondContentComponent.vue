@@ -3,8 +3,8 @@
       
 
         <div class=" justify-content-start p-5 p-lg-0">
-                    <h1 class="fw-bolder text-dark text-center mb-5"><b>SKILLS AND SPECIALITY</b></h1>
-
+                    <h1 class="fw-bolder text-dark text-center "><b>SKILLS & SPECIALITY</b></h1>
+            <p class="mb-5 text-center">My expertise and technical strengths.</p>
      <div class="row">
  <div class="col-lg-3  my-3">
        

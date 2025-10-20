@@ -20,43 +20,40 @@
     RewriteRule ^ index.php [L]
 </IfModule>
 
-# ✅ MIME TYPES for Fonts (prevents “Failed to decode downloaded font”)
-<IfModule mod_mime.c>
-  AddType application/font-woff .woff
-  AddType font/woff2 .woff2
-  AddType application/vnd.ms-fontobject .eot
-  AddType font/ttf .ttf
-  AddType font/otf .otf
-</IfModule>
-
-# ✅ Cache fonts for a long time (optional, for speed)
-<FilesMatch "\.(woff|woff2|eot|ttf|otf)$">
-  Header set Cache-Control "max-age=31536000, public"
-</FilesMatch>
-
-# ✅ Prevent double encoding
-<IfModule mod_headers.c>
-  Header unset Content-Encoding
-</IfModule>
+# =========================================================
+# ✅ MIME TYPES FOR STATIC FILES (including fonts)
+# =========================================================
 <IfModule mod_mime.c>
   AddType font/woff .woff
   AddType font/woff2 .woff2
+  AddType font/ttf .ttf
+  AddType font/otf .otf
+  AddType application/vnd.ms-fontobject .eot
+  AddType image/svg+xml .svg
+  AddType application/javascript .js
+  AddType text/css .css
 </IfModule>
 
+# =========================================================
+# ✅ FONT CORS (for external loading)
+# =========================================================
+<IfModule mod_headers.c>
+  <FilesMatch "\.(ttf|otf|eot|woff|woff2)$">
+    Header set Access-Control-Allow-Origin "*"
+    Header set Cache-Control "max-age=31536000, public"
+  </FilesMatch>
+</IfModule>
 
-<FilesMatch "\.(js|css|woff2|woff|ttf|png|jpg|jpeg|gif|svg)$">
+# =========================================================
+# ✅ CACHING FOR STATIC ASSETS
+# =========================================================
+<FilesMatch "\.(js|css|woff2|woff|ttf|png|jpg|jpeg|gif|svg|webp)$">
   Header set Cache-Control "max-age=31536000, public"
 </FilesMatch>
 
-
-# Disable charset for fonts
-<IfModule mod_headers.c>
-  <FilesMatch "\.(woff|woff2|ttf|otf|eot)$">
-    Header unset Content-Type
-    Header set Content-Type "application/font-woff2"
-  </FilesMatch>
-</IfModule>
-# Security headers
+# =========================================================
+# ✅ SECURITY HEADERS
+# =========================================================
 <IfModule mod_headers.c>
   Header always set X-Content-Type-Options "nosniff"
   Header always unset X-Powered-By
@@ -64,4 +61,15 @@
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
   Header always set Content-Security-Policy "default-src 'self' 'unsafe-inline' data: https:;"
+</IfModule>
+
+# =========================================================
+# ✅ GZIP / BROTLI COMPRESSION (optional)
+# =========================================================
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/xml text/css text/javascript application/javascript application/json
 </IfModule>

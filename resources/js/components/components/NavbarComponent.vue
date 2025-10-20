@@ -5,8 +5,8 @@
           <a 
             href="https://mail.google.com/mail/?view=cm&to=atanatan190@email.com&su=I WANT TO CONNECT&body=Please write your message here."
               target="_blank"
-              class="btn btn-black rounded-5 d-inline-block ms-1 fw-bold">
-            <i class="fa-solid fa-envelope"></i>  Email Me 
+              class="btn btn-black rounded-5 d-inline-block ms-1 ">
+            <i class="fa-solid fa-envelope"></i> Send Email
           </a>
         </div>
     </nav>

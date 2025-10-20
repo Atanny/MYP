@@ -35,29 +35,32 @@
             </div>
             
          
+    <div class="col-sm-12 col-lg-auto mt-3  d-inline-block">
 
-
-      <div class="col-sm-12 col-lg-auto mt-3  d-inline-block">
-           <router-link to="/">
+         <router-link to="/">
                 <button class="btn btn-success rounded-pill d-inline-block d-lg-none me-2">
                   <i class="fa-solid fa-home"></i>
                 </button>
               </router-link>
-         <button class="btn btn-success d-lg-none rounded-5" type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
+
+ <button class="btn btn-success d-lg-none rounded-5" type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
                 <i class="fa fa-bars"></i> See More Description
             </button>
 
           <div class="collapse d-lg-flex flex-wrap" id="navButtons">
+
+            
            <router-link to="/website" active-class="active-link">
-              <button class="btn btn-success rounded-5 me-1 mt-2 "> <i class="fa-solid fa-arrow-left"></i> WEBSITES</button>
+              <button class="btn btn-success rounded-5 me-1 mt-2 "> <i class="fa-solid fa-arrow-left"></i> Back</button>
+               
             </router-link>
             <router-link to="/website/student" class="" active-class="active-link">
-              <button class="btn btn-success rounded-5 me-1 mt-2">STUDENT INTERFACE</button>
+              <button class="btn btn-success rounded-5 me-1 mt-2">Student</button>
             </router-link>
             <router-link to="/website/admin" class="" active-class="active-link">
-              <button class="btn btn-success rounded-5 me-1 mt-2">SUPER ADMIN INTERFACE</button>
+              <button class="btn btn-success rounded-5 me-1 mt-2">Super Admin</button>
             </router-link>
-            
+           
            
           </div>
       </div>

@@ -53,14 +53,14 @@
 
             
            <router-link to="/website" active-class="active-link">
-              <button class="btn btn-success rounded-5 me-1 mt-2 "> <i class="fa-solid fa-arrow-left"></i> WEBSITES</button>
+              <button class="btn btn-success rounded-5 me-1 mt-2 "> <i class="fa-solid fa-arrow-left"></i> Back</button>
                
             </router-link>
             <router-link to="/website/student" class="" active-class="active-link">
-              <button class="btn btn-success rounded-5 me-1 mt-2">STUDENT INTERFACE</button>
+              <button class="btn btn-success rounded-5 me-1 mt-2">Student</button>
             </router-link>
             <router-link to="/website/admin" class="" active-class="active-link">
-              <button class="btn btn-success rounded-5 me-1 mt-2">SUPER ADMIN INTERFACE</button>
+              <button class="btn btn-success rounded-5 me-1 mt-2">Super Admin</button>
             </router-link>
            
            

@@ -40,48 +40,46 @@
             </div>
             </div>
             
-            
-          
-<div class="col-sm-12 col-lg-auto mt-3 d-inline-block">
+      <div class="col-sm-12 col-lg-auto mt-3 d-inline-block">
              <router-link to="/">
                 <button class="btn btn-success rounded-pill d-inline-block d-lg-none me-2">
                   <i class="fa-solid fa-home"></i>
                 </button>
               </router-link>
-            <button class="btn btn-success d-lg-none rounded-5" type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
+            <button class="btn btn-success rounded-5 d-lg-none " type="button" data-bs-toggle="collapse" data-bs-target="#navButtons" aria-expanded="false" aria-controls="navButtons">
                 <i class="fa fa-bars"></i> See More Description
             </button>
             <!-- Collapsible container -->
             <div class="collapse d-lg-flex flex-wrap" id="navButtons">
               <router-link to="/animation" active-class="active-link">
-                <button class="btn btn-success rounded-5 me-1 mt-2">ANIMATION</button>
+                <button class="btn btn-success rounded-5 me-1 mt-2">Animation</button>
               </router-link>
               <router-link to="/illustrator" active-class="active-link">
-                <button class="btn btn-success me-1 mt-2 rounded-5">ILLUSTRATION</button>
+                <button class="btn btn-success me-1 mt-2 rounded-5">Illustration</button>
               </router-link>
               <router-link to="/digital-arts" active-class="active-link">
-                <button class="btn btn-success me-1 mt-2 rounded-5">DIGITAL ARTS</button>
+                <button class="btn btn-success me-1 mt-2 rounded-5">Digital Arts</button>
               </router-link>
               <router-link to="/graphic-design" active-class="active-link">
-                <button class="btn btn-success me-1 mt-2 rounded-5">GRAPHIC DESIGNS</button>
+                <button class="btn btn-success me-1 mt-2 rounded-5">Graphic Design</button>
               </router-link>
                <router-link to="/photography" active-class="active-link">
-                <button class="btn btn-success me-1 mt-2 rounded-5">PHOTOGRAPHY</button>
+                 <router-link to="/videos" active-class="active-link">
+                <button class="btn btn-success me-1 mt-2 rounded-5">Videos</button>
+              </router-link>
+                <button class="btn btn-success me-1 mt-2 rounded-5">Photography</button>
               </router-link>
               <router-link to="/web-design" active-class="active-link">
-                <button class="btn btn-success me-1 mt-2 rounded-5">WEB DESIGNS</button>
+                <button class="btn btn-success me-1 mt-2 rounded-5">Web Design</button>
               </router-link>
               <router-link to="/website" active-class="active-link">
-                <button class="btn btn-success me-1 mt-2 rounded-5">WEBSITES</button>
+                <button class="btn btn-success me-1 mt-2 rounded-5">Websites</button>
               </router-link>
-               <router-link to="/videos" active-class="active-link">
-                <button class="btn btn-success me-1 mt-2 rounded-5">VIDEOS</button>
-              </router-link>
+              
             </div>
           </div>
-
+        </div>
       </div>
-    </div>
 
 
     <!-- Artwork Thumbnails -->

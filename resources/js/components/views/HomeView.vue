@@ -57,7 +57,6 @@ p {
 
 a{
    font-family: 'Poppins', sans-serif;
-  font-weight: 400;
 }
 
 body{
